@@ -2,13 +2,13 @@
     "name": "duotone-template",
     "version": "0.1.0",
     "private": true,
-    "description": "Личный проект «Duotone»",
+    "description": "Личный проект «Sports store»",
     "author": "Алексей Истомин",
     "repository": {
         "type": "git",
-        "url": "git@github.com:webistomin/duotone-template.git"
+        "url": "git@github.com:webistomin/my-shop.git"
     },
-    "homepage": "https://github.com/webistomin/duotone-template",
+    "homepage": "https://github.com/webistomin/my-shop",
     "devDependencies": {
         "@htmlacademy/editorconfig-cli": "1.0.0",
         "autoprefixer": "7.1.2",
