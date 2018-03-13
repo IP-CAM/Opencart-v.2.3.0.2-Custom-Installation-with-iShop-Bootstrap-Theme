@@ -13,16 +13,18 @@
   &__buttons {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   &__toggler {
     display: block;
     width: 16px;
-    height: 12px;
+    height: 16px;
     border: none;
     background-color: transparent;
     padding: 0;
     position: relative;
+    margin-right: 15px;
 
     & span {
       position: absolute;
@@ -44,5 +46,23 @@
         top: 12px;
       }
     }
+  }
+
+  &__search {
+    display: block;
+    box-sizing: border-box;
+    margin-right: 15px;
+  }
+
+  &__cart {
+    display: flex;
+    position: relative;
+    align-items: baseline;
+    margin-right: 15px;
+  }
+
+  &__counter {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 12px;
   }
 }
