@@ -101,7 +101,11 @@ To emphasise this I use inline style="display: none" -->
         <li class="main-nav__item">
           <a href="#" class="main-nav__link">
             <span class="main-nav__text">Features</span>
-            <span class="main-nav__toggler"></span>
+            <span class="main-nav__toggler">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </span>
           </a>
           <ul class="main-nav__sublist">
             <li class="main-nav__item">
@@ -1087,5 +1091,7 @@ To emphasise this I use inline style="display: none" -->
     </div>
   </footer>
   <button id="back-to-top"></button>
+
+<script src="js/main-nav.js" async></script>
 </body>
 </html>

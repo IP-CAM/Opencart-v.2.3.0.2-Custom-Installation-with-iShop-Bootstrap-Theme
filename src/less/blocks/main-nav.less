@@ -1,5 +1,11 @@
 .main-nav {
+  &--closed {
+    display: none;
+  }
 
+  &--opened {
+    display: block;
+  }
 
   &__sublist {
     display: none;
@@ -46,5 +52,26 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  &__sublink {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    font-size: 13px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 400;
+    background-color: #191919;
+    color: rgba(255,255,255,0.65);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+      color: rgba(255,255,255,1);
+    }
   }
 }
