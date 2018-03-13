@@ -1,14 +1,32 @@
 .main-nav {
   &--closed {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   }
 
   &--opened {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   }
 
   &__sublist {
-    display: none;
+   &--closed {
+     display: none;
+   }
+
+    &--opened {
+      display: block;
+    }
   }
 
   &__link {
