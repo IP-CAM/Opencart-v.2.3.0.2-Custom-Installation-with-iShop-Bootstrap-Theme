@@ -14,36 +14,67 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   &__toggler {
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     border: none;
     background-color: transparent;
     padding: 0;
     position: relative;
     margin-right: 15px;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
 
     & span {
       position: absolute;
       top: 0;
       display: block;
-      width: 16px;
+      width: 20px;
       height: 2px;
       background-color: #000000;
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
 
       &:nth-child(1) {
         top: 0;
       }
 
       &:nth-child(2) {
-        top: 6px;
+        top: 7px;
       }
 
       &:nth-child(3) {
-        top: 12px;
+        top: 14px;
+      }
+    }
+
+    &--opened span {
+      &:nth-child(1) {
+        top: 7px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        top: 7px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
       }
     }
   }
