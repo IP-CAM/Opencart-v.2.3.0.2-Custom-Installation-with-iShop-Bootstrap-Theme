@@ -1,5 +1,9 @@
 .featured {
 
+  &__slider {
+    margin-top: 40px;
+  }
+
   &__title {
     position: relative;
     margin: 0;
@@ -21,5 +25,110 @@
       background-color: #ff4301;
       transform: translateX(-50%) translateY(200%);
     }
+  }
+
+  &__item {
+    border: 1px solid transparent;
+    padding: 12px !important;
+    min-height: 390px;
+    transition: all 0.5s;
+    box-sizing: border-box;
+
+    &:hover {
+      border-color: lightgray;
+      transition: all 0.5s;
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+  }
+
+  &__img {
+    vertical-align: top;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    position: absolute;
+    padding: 10px 0;
+    bottom: 0;
+    color: #ffffff;
+    background-color: #a0a0a0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: #000000;
+      transition: all 0.5s;
+    }
+  }
+
+  &__name {
+    display: block;
+    margin-top: 12px;
+    color: #101010;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+
+    &:hover {
+      color: #ff4301;
+      transition: all 0.5s;
+    }
+  }
+
+  &__categories {
+    color: #545454;
+  }
+
+  &__category {
+    color: #545454;
+    transition: all 0.5s;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+
+    &:hover {
+      color: #ff4301;
+      transition: all 0.5s;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    margin-top: 5px;
+    color: #101010;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 400;
+  }
+
+  &__list {
+    width: 74px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__star {
+    color: gold;
   }
 }

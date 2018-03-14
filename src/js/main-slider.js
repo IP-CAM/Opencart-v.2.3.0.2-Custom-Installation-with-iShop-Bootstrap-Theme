@@ -20,3 +20,31 @@ var slider = tns({
     }
   }
 });
+
+var featuresSlider = tns({
+  container: '.featured__slider',
+  nav: false,
+  controls: false,
+  items: 1,
+  autoplay: true,
+  autoplayButtonOutput: false,
+  responsive: {
+    640: {
+      gutter: 20,
+      items: 1,
+      edgePadding: 12,
+      navContainer: '.featured__controls'
+    },
+    700: {
+      gutter: 30,
+      items: 2,
+      edgePadding: 12
+    },
+    900: {
+      items: 4,
+      edgePadding: 12
+    }
+  }
+});
+
+
