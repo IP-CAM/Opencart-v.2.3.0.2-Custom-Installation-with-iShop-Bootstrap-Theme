@@ -1,0 +1,25 @@
+.featured {
+
+  &__title {
+    position: relative;
+    margin: 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #101010;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 50%;
+      width: 30px;
+      height: 3px;
+      background-color: #ff4301;
+      transform: translateX(-50%) translateY(200%);
+    }
+  }
+}

@@ -1,5 +1,7 @@
 .benefits {
   margin-top: 60px;
+  margin-bottom: 80px;
+
 
   &__item {
     display: flex;
@@ -8,6 +10,25 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 270px;
+    position: relative;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      opacity: 0;
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.3;
+        transition: all 0.5s;
+      }
+    }
 
     &--first {
       background-image: url("../img/2.jpg");
