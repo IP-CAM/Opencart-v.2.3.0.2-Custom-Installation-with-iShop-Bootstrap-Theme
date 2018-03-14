@@ -7,7 +7,6 @@
   <meta name="description" content="Sports store - спортивный магазин. Спортивная обувь, одежда, инвентарь и другие спортивные товары в магазине Sports Store. Интернет-магазин спорттоваров с доставкой по Москве, Санкт-Петербургу и в другие регионы.">
   <meta name="keywords" content="спортивный магазин, спорт товары, спортивная экипировка, спортивный инвентарь, спортивное оборудование, спортивное снаряжение, для спорта, туризма и отдыха, спорттовары и спортинвентарь, спортивный гипермаркет">
   <title>Sports Store – спортивный магазин.</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="apple-mobile-web-app-title" content="Sport Store">
   <meta name="application-name" content="Sport Store">
@@ -84,7 +83,7 @@ To emphasise this I use inline style="display: none" -->
         <li class="main-nav__item">
           <a href="#" class="main-nav__link main-nav__link--active">
             <span class="main-nav__text">Home</span>
-            <span class="main-nav__toggler" onclick="Submenu()">
+            <span class="main-nav__toggler">
               <svg class="main-nav__icon" width="20" height="20">
                 <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
               </svg>
@@ -101,7 +100,7 @@ To emphasise this I use inline style="display: none" -->
         <li class="main-nav__item">
           <a href="#" class="main-nav__link">
             <span class="main-nav__text">Features</span>
-            <span class="main-nav__toggler" onclick="Submenu()">
+            <span class="main-nav__toggler"">
               <svg class="main-nav__icon" width="20" height="20">
                 <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
               </svg>
@@ -172,20 +171,15 @@ To emphasise this I use inline style="display: none" -->
   </section>
 
   <section class="slider">
-    <button class="slider__button slider__button--prev"></button>
-    <div class="slider__slide">
-      <img src="#" alt="#" class="slider__image" width="" height="">
+    <div class="slider__slide slider__slide--active slider__slide--first">
       <h1 class="slider__text">Run fast, run slow, run far, run close</h1>
     </div>
-    <div class="slider__slide">
-      <img src="#" alt="#" class="slider__image" width="" height="">
+    <div class="slider__slide slider__slide--second">
       <h1 class="slider__text">Run fast, run slow, run far, run close</h1>
     </div>
-    <div class="slider__slide">
-      <img src="#" alt="#" class="slider__image" width="" height="">
+    <div class="slider__slide slider__slide--third">
       <h1 class="slider__text">Run fast, run slow, run far, run close</h1>
     </div>
-    <button class="slider__button slider__button--next"></button>
   </section>
 
   <section class="benefits">
@@ -1099,8 +1093,6 @@ To emphasise this I use inline style="display: none" -->
     </div>
   </footer>
   <button id="back-to-top"></button>
-
-<script src="js/main-nav.js" async></script>
-<script src="js/submenu.js" async></script>
+<script src="js/script.min.js" async></script>
 </body>
 </html>
