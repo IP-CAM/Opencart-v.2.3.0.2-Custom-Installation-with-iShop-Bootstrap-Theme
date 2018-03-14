@@ -1,13 +1,15 @@
 .main-nav {
+  position: absolute;
+  width: 100%;
+
   &--closed {
     visibility: hidden;
     opacity: 0;
-    top: 100%;
     left: 0;
     width: 100%;
     transform: translateY(-2em);
-    z-index: -1;
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    z-index: 0;
+    transition: all 0.5s;
   }
 
   &--opened {
@@ -16,7 +18,7 @@
     z-index: 1;
     transform: translateY(0%);
     transition-delay: 0s, 0s, 0.3s;
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    transition: all 0.5s;
   }
 
   &__sublist {
