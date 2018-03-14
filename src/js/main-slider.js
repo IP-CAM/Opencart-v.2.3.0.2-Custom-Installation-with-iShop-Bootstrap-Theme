@@ -23,17 +23,19 @@ var slider = tns({
 
 var featuresSlider = tns({
   container: '.featured__slider',
-  nav: false,
+  nav: true,
+  navContainer: '.featured__controls',
   controls: false,
   items: 1,
   autoplay: true,
   autoplayButtonOutput: false,
+  navAsThumbnails: true,
   responsive: {
     640: {
       gutter: 20,
       items: 1,
       edgePadding: 12,
-      navContainer: '.featured__controls'
+
     },
     700: {
       gutter: 30,
