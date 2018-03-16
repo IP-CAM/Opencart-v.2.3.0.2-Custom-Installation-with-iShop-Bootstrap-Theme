@@ -134,14 +134,23 @@
 
   &__controls {
     margin: 0 auto;
+    margin-top: 30px;
     width: 200px;
     display: flex;
     justify-content: space-between;
   }
 
   &__control {
-    width: 15px;
-    height: 15px;
-    background-color: red;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(84, 84, 84);
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.5s;
+
+    &:hover {
+      opacity: 1;
+      transition: all 0.5s;
+    }
   }
 }
