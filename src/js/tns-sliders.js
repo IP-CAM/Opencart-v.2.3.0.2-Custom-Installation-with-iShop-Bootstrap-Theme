@@ -49,4 +49,29 @@ var featuresSlider = tns({
   }
 });
 
+var newsSlider = tns({
+  container: '.news__slider',
+  nav: true,
+  navContainer: '.news__controls',
+  controls: false,
+  items: 1,
+  autoplay: true,
+  autoplayButtonOutput: false,
+  navAsThumbnails: true,
+  lazyload: true,
+  responsive: {
+    640: {
+      gutter: 20,
+      items: 1
+    },
+    700: {
+      gutter: 30,
+      items: 2
+    },
+    900: {
+      items: 4
+    }
+  }
+});
+
 
