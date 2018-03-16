@@ -55,16 +55,21 @@
     margin-top: 30px;
     width: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__control {
     width: 8px;
     height: 8px;
+    margin-right: 10px;
     background-color: rgb(84, 84, 84);
     border-radius: 50%;
     opacity: 0.5;
     transition: all 0.5s;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &:hover {
       opacity: 1;
