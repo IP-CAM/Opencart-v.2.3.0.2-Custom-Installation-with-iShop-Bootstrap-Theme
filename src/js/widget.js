@@ -6,6 +6,6 @@ var feed = new Instafeed({
   template: '<li class="widget__item"><a href="{{link}}"><img src="{{image}}" /></a></li>',
   sortBy: 'most-recent',
   limit: '10',
-  resolution: 'thumbnail'
+  resolution: 'low_resolution'
 });
 feed.run();
