@@ -30,12 +30,12 @@ var featuresSlider = tns({
   autoplay: true,
   autoplayButtonOutput: false,
   navAsThumbnails: true,
+  lazyload: true,
   responsive: {
     640: {
       gutter: 20,
       items: 1,
-      edgePadding: 12,
-
+      edgePadding: 12
     },
     700: {
       gutter: 30,

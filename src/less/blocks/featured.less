@@ -43,6 +43,12 @@
   &__link {
     display: block;
     position: relative;
+    overflow: hidden;
+
+    &:hover .featured__button {
+      bottom: 0;
+      transition: bottom 0.5s, background-color 0.5s;
+    }
   }
 
   &__img {
@@ -54,7 +60,7 @@
     width: 100%;
     position: absolute;
     padding: 10px 0;
-    bottom: 0;
+    bottom: -40px;
     color: #ffffff;
     background-color: #a0a0a0;
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -64,7 +70,7 @@
     line-height: 20px;
     text-align: center;
     border: none;
-    transition: all 0.5s;
+    transition: bottom 0.5s, background-color 0.5s;
 
     &:hover {
       background-color: #000000;
