@@ -3,7 +3,7 @@ var feed = new Instafeed({
   userId: '6725512930',   // <-- new
   clientId: '218e4100d4a44d94b8a38e2dbab7e81d',
   accessToken: '6725512930.218e410.24afc32b09b14c2eb3464b1dc3a4664f',
-  template: '<li class="widget__item"><a href="{{link}}"><img src="{{image}}" /></a></li>',
+  template: '<li class="widget__item"><a href="{{link}}" class="widget__link"><img src="{{image}}" class="widget__img" /></a></li>',
   sortBy: 'most-recent',
   limit: '10',
   resolution: 'low_resolution'
