@@ -99,4 +99,23 @@ var quoteSlider = tns({
   }
 });
 
-
+var companiesSlider = tns({
+  container: '.companies__list',
+  nav: false,
+  controls: false,
+  items: 1,
+  autoplay: true,
+  autoplayButtonOutput: false,
+  responsive: {
+    640: {
+      gutter: 20,
+      items: 1
+    },
+    700: {
+      gutter: 30
+    },
+    900: {
+      items: 1
+    }
+  }
+});
