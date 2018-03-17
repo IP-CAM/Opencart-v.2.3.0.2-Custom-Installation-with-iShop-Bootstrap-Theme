@@ -45,4 +45,34 @@ p {
   outline-color: #fa5400;
 }
 
+.back-to-top {
+  position: fixed;
+  padding: 0;
+  right: 10px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #dbdbdb;
+  background-color: #f8f8f8;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .3s ease-in-out;
+
+  &:hover {
+    background-color: #fa5400;
+    border-color: #fa5400;
+  }
+
+  &:hover .back-to-top__icon {
+    fill: #ffffff;
+    transition: all .3s ease-in-out;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    transition: all .3s ease-in-out;
+  }
+}
+
 
