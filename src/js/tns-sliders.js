@@ -60,9 +60,9 @@ var newsSlider = tns({
   navAsThumbnails: true,
   lazyload: true,
   responsive: {
-    640: {
+    620: {
       gutter: 20,
-      items: 1
+      items: 2
     },
     700: {
       gutter: 30,
