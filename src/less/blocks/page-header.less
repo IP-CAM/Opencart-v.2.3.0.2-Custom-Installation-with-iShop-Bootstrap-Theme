@@ -1,5 +1,19 @@
 .page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding-top: 20px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+  background-color: #ffffff;
+
+  &--fixed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+  }
 
   &__logo {
     text-align: center;
@@ -14,7 +28,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
   }
 
   &__toggler {
