@@ -44,6 +44,10 @@
     -o-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
 
+    &:hover span {
+      background-color: #ff4301;
+    }
+
     & span {
       position: absolute;
       top: 0;
@@ -76,6 +80,7 @@
         -moz-transform: rotate(135deg);
         -o-transform: rotate(135deg);
         transform: rotate(135deg);
+        background-color: #ff4301;
       }
 
       &:nth-child(2) {
@@ -88,6 +93,7 @@
         -moz-transform: rotate(-135deg);
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg);
+        background-color: #ff4301;
       }
     }
   }
@@ -103,6 +109,11 @@
     position: relative;
     align-items: flex-end;
     margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #ff4301;
+    }
   }
 
   &__counter {
@@ -111,7 +122,12 @@
   }
 
   &__icon {
-    fill: #000000;
+    fill: #353535;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      fill: #ff4301;
+    }
   }
 
   @media @screen-xs {
