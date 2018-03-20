@@ -46,6 +46,7 @@
     border-radius: 50%;
     border: 2px solid #ffffff;
     background-color: transparent;
+    transition: all 0.3s ease-in-out;
 
     &::before {
       content: "►";
@@ -54,6 +55,11 @@
       left: 55%;
       font-size: 40px;
       transform: translateY(-50%) translateX(-50%);
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.3s ease-in-out;
     }
   }
 }

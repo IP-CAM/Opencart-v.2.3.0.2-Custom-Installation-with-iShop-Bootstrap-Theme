@@ -85,4 +85,30 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  @media @screen-md {
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      &--first {
+        width: 48%;
+      }
+
+      &--second {
+        width: 48%;
+        margin-bottom: 0;
+      }
+
+      &--third,
+      &--fourth,
+      &--fifth {
+        width: 30%;
+        margin-top: 30px;
+      }
+    }
+  }
 }
