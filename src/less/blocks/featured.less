@@ -168,14 +168,19 @@
   @media @screen-xs {
 
     &__slider {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      &--flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
 
     &__item {
-      max-width: 220px;
       min-height: auto;
+
+      &--maxwidth {
+        max-width: 220px;
+      }
     }
   }
 }
