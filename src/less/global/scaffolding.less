@@ -46,6 +46,7 @@ p {
 }
 
 .back-to-top {
+  display: none;
   position: fixed;
   padding: 0;
   right: 10px;
@@ -72,6 +73,10 @@ p {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     transition: all .3s ease-in-out;
+  }
+
+  &--show {
+    display: block;
   }
 }
 
