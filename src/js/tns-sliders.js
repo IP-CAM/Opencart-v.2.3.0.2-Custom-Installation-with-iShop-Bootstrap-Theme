@@ -32,9 +32,9 @@ var featuresSlider = tns({
   navAsThumbnails: true,
   lazyload: true,
   responsive: {
-    640: {
+    480: {
       gutter: 20,
-      items: 1,
+      items: 2,
       edgePadding: 12
     },
     700: {

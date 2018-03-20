@@ -164,4 +164,18 @@
       transition: all 0.5s;
     }
   }
+
+  @media @screen-xs {
+
+    &__slider {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      max-width: 220px;
+      min-height: auto;
+    }
+  }
 }
