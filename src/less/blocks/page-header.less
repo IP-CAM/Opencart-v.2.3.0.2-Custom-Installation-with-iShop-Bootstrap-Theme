@@ -13,6 +13,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid rgb(219, 219, 219);
   }
 
   &__logo {
@@ -153,6 +154,14 @@
   }
 
   @media @screen-lg {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &--fixed {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
     &__buttons {
       order: 3;
     }
@@ -160,5 +169,7 @@
     &__toggler {
       display: none;
     }
+
+
   }
 }

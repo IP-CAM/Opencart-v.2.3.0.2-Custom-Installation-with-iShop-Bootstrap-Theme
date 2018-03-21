@@ -86,11 +86,9 @@ var quoteSlider = tns({
   lazyload: true,
   responsive: {
     640: {
-      gutter: 20,
       items: 1
     },
     700: {
-      gutter: 30,
       items: 1
     },
     900: {
