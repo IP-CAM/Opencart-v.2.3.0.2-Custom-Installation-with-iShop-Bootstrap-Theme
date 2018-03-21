@@ -100,4 +100,36 @@
       transform: translateY(2.5em);
     }
   }
+
+  @media @screen-lg {
+    &--closed {
+      min-width: 500px;
+      visibility: visible;
+      opacity: 1;
+      left: auto;
+      width: auto;
+      z-index: auto;
+      position: relative;
+      transform: translateY(0);
+      order: 2;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__link {
+      padding-right: 20px;
+      background-color: transparent;
+      color: #191919;
+
+      &:hover {
+        color: #ff4301;
+      }
+    }
+
+    &__toggler {
+      display: none;
+    }
+  }
 }
