@@ -63,7 +63,8 @@ var newsSlider = tns({
       items: 2
     },
     900: {
-      items: 4
+      items: 4,
+      gutter: 20
     }
   }
 });
