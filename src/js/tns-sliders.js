@@ -9,11 +9,9 @@ var slider = tns({
   autoplayButtonOutput: false,
   responsive: {
     640: {
-      gutter: 20,
       items: 1
     },
     700: {
-      gutter: 30
     },
     900: {
       items: 1
@@ -33,12 +31,10 @@ var featuredSlider = tns({
   lazyload: true,
   responsive: {
     480: {
-      gutter: 20,
       items: 1,
       edgePadding: 12
     },
     700: {
-      gutter: 30,
       items: 2,
       edgePadding: 12
     },
@@ -61,11 +57,9 @@ var newsSlider = tns({
   lazyload: true,
   responsive: {
     620: {
-      gutter: 20,
       items: 2
     },
     700: {
-      gutter: 30,
       items: 2
     },
     900: {
@@ -106,14 +100,15 @@ var companiesSlider = tns({
   autoplayButtonOutput: false,
   responsive: {
     640: {
-      gutter: 20,
       items: 1
     },
     700: {
-      gutter: 30
     },
     900: {
-      items: 1
+      items: 2
+    },
+    1140: {
+      items: 3
     }
   }
 });
