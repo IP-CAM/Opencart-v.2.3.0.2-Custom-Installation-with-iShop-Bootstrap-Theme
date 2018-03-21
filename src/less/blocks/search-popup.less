@@ -70,8 +70,8 @@
 
   &__input {
     font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: bold;
     font-style: normal;
     text-transform: uppercase;
@@ -93,6 +93,13 @@
   }
   :-moz-placeholder { /* Firefox 18- */
     color: #ffffff;
+  }
+
+  @media @screen-sm {
+    &__input {
+      font-size: 42px;
+      line-height: 52px;
+    }
   }
 
 
