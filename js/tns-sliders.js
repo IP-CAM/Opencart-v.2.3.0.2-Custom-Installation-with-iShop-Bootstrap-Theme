@@ -9,11 +9,9 @@ var slider = tns({
   autoplayButtonOutput: false,
   responsive: {
     640: {
-      gutter: 20,
       items: 1
     },
     700: {
-      gutter: 30
     },
     900: {
       items: 1
@@ -21,7 +19,7 @@ var slider = tns({
   }
 });
 
-var featuresSlider = tns({
+var featuredSlider = tns({
   container: '.featured__slider',
   nav: true,
   navContainer: '.featured__controls',
@@ -32,13 +30,11 @@ var featuresSlider = tns({
   navAsThumbnails: true,
   lazyload: true,
   responsive: {
-    640: {
-      gutter: 20,
+    480: {
       items: 1,
       edgePadding: 12
     },
     700: {
-      gutter: 30,
       items: 2,
       edgePadding: 12
     },
@@ -60,16 +56,15 @@ var newsSlider = tns({
   navAsThumbnails: true,
   lazyload: true,
   responsive: {
-    640: {
-      gutter: 20,
-      items: 1
+    620: {
+      items: 2
     },
     700: {
-      gutter: 30,
       items: 2
     },
     900: {
-      items: 4
+      items: 4,
+      gutter: 20
     }
   }
 });
@@ -86,11 +81,9 @@ var quoteSlider = tns({
   lazyload: true,
   responsive: {
     640: {
-      gutter: 20,
       items: 1
     },
     700: {
-      gutter: 30,
       items: 1
     },
     900: {
@@ -108,14 +101,15 @@ var companiesSlider = tns({
   autoplayButtonOutput: false,
   responsive: {
     640: {
-      gutter: 20,
       items: 1
     },
     700: {
-      gutter: 30
     },
     900: {
-      items: 1
+      items: 2
+    },
+    1140: {
+      items: 3
     }
   }
 });
