@@ -55,10 +55,17 @@
       left: 55%;
       font-size: 40px;
       transform: translateY(-50%) translateX(-50%);
+      transition: all 0.3s ease-in-out;
     }
 
     &:hover {
+      border-color: #ff4301;
       transform: scale(1.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      color: #ff4301;
       transition: all 0.3s ease-in-out;
     }
   }
