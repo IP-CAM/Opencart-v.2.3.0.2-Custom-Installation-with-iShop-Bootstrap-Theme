@@ -402,6 +402,8 @@
 var navToggle = document.querySelector('.page-header__toggler');
 var navMain = document.querySelector('.main-nav');
 
+navMain.removeAttribute("style");
+
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
@@ -413,6 +415,16 @@ navToggle.addEventListener('click', function() {
     navToggle.classList.remove('page-header__toggler--opened');
   }
 });
+
+document.body.onload = function(){
+  setTimeout(function() {
+    var preloader = document.getElementById('loader');
+    if( !preloader.classList.contains('done') )
+    {
+      preloader.classList.add('done');
+    }
+  }, 1000)
+};
 
 var searchLink = document.querySelector(".page-header__search");
 var searchPopup = document.querySelector(".search-popup");
