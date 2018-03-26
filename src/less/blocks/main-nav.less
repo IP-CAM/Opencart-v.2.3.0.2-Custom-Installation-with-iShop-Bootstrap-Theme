@@ -1,24 +1,28 @@
 .main-nav {
   position: absolute;
   width: 100%;
+  top: 100%;
+  left: 0;
 
   &--closed {
-    visibility: hidden;
-    opacity: 0;
-    left: 0;
-    width: 100%;
-    transform: translateY(-2em);
-    z-index: 0;
-    transition: all 0.5s;
+    display: none;
+    //visibility: hidden;
+    //opacity: 0;
+    //left: 0;
+    //width: 100%;
+    //transform: translateY(-2em);
+    //z-index: 0;
+    //transition: all 0.5s;
   }
 
   &--opened {
-    visibility: visible;
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0%);
-    transition-delay: 0s, 0s, 0.3s;
-    transition: all 0.5s;
+    display: block;
+    //visibility: visible;
+    //opacity: 1;
+    //z-index: 1;
+    //transform: translateY(3%);
+    //transition-delay: 0s, 0s, 0.3s;
+    //transition: all 0.5s;
   }
 
   &__sublist {
@@ -97,12 +101,13 @@
 
   @media @screen-md {
     &--opened {
-      transform: translateY(2.5em);
+      //transform: translateY(2.5em);
     }
   }
 
   @media @screen-lg {
     &--closed {
+      display: block;
       min-width: 650px;
       visibility: visible;
       opacity: 1;
