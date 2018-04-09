@@ -19,3 +19,6 @@
 ## Для их достижения я использовал следующие технологии:
 1. -
 2. -
+
+## Скриншот сайта:
+<img src="https://mini.s-shot.ru/1366x0/PNG/1366/Z100/?https%3A%2F%2Fwebistomin.github.io%2Fmy-shop%2F">
