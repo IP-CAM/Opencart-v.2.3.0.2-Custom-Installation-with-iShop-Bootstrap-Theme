@@ -1057,10 +1057,12 @@ p {
 }
 .featured__link {
   display: block;
+}
+.featured__buttons {
   position: relative;
   overflow: hidden;
 }
-.featured__link:hover .featured__button {
+.featured__buttons:hover .featured__button {
   bottom: 0;
   transition: bottom 0.5s, background-color 0.5s;
 }
