@@ -31,6 +31,17 @@
 </head>
 
 <body>
+<script>
+  document.body.onload = function(){
+    setTimeout(function() {
+      var preloader = document.getElementById('loader');
+      if( !preloader.classList.contains('done') )
+      {
+        preloader.classList.add('done');
+      }
+    }, 1000)
+  };
+</script>
 <div class="loader-body" id="loader">
   <div class="loader"></div>
 </div>
@@ -297,10 +308,12 @@ To emphasise this I use inline style="display: none" -->
       <h3 class="featured__title">Featured Products</h3>
       <ul class="featured__slider">
         <li class="featured__item">
-          <a href="#" class="featured__link">
-            <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
             <button class="featured__button" type="button">Add to cart</button>
-          </a>
+          </div>
           <div class="featured__description">
             <a href="#" class="featured__name">Waterproof Hiking Boot</a>
             <div class="featured__categories">
@@ -324,10 +337,12 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
         <li class="featured__item">
-          <a href="#" class="featured__link">
-            <img src="img/1-12.jpg" alt="#" class="featured__img" width="600" height="600">
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
             <button class="featured__button" type="button">Add to cart</button>
-          </a>
+          </div>
           <div class="featured__description">
             <a href="#" class="featured__name">Waterproof Hiking Boot</a>
             <div class="featured__categories">
@@ -351,10 +366,12 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
         <li class="featured__item">
-          <a href="#" class="featured__link">
-            <img src="img/1-7.jpg" alt="#" class="featured__img" width="600" height="600">
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
             <button class="featured__button" type="button">Add to cart</button>
-          </a>
+          </div>
           <div class="featured__description">
             <a href="#" class="featured__name">Waterproof Hiking Boot</a>
             <div class="featured__categories">
@@ -378,10 +395,12 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
         <li class="featured__item">
-          <a href="#" class="featured__link">
-            <img src="img/1-1.jpg" alt="#" class="featured__img" width="600" height="600">
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
             <button class="featured__button" type="button">Add to cart</button>
-          </a>
+          </div>
           <div class="featured__description">
             <a href="#" class="featured__name">Waterproof Hiking Boot</a>
             <div class="featured__categories">
@@ -459,10 +478,12 @@ To emphasise this I use inline style="display: none" -->
       <h3 class="featured__title">Featured Products</h3>
       <ul class="featured__slider featured__slider--flex">
         <li class="featured__item featured__item--maxwidth">
-          <a href="#" class="featured__link">
-            <img src="img/1-1.jpg" alt="#" class="featured__img" width="600" height="600">
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
             <button class="featured__button" type="button">Add to cart</button>
-          </a>
+          </div>
           <div class="featured__row">
             <div class="featured__colors">
               <span class="featured__color"></span>
@@ -497,10 +518,12 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
         <li class="featured__item featured__item--maxwidth">
-          <a href="#" class="featured__link">
-            <img src="img/1-7.jpg" alt="#" class="featured__img" width="600" height="600">
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
             <button class="featured__button" type="button">Add to cart</button>
-          </a>
+          </div>
           <div class="featured__row">
             <div class="featured__colors">
               <span class="featured__color"></span>
@@ -535,10 +558,12 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
         <li class="featured__item featured__item--maxwidth">
-          <a href="#" class="featured__link">
-            <img src="img/1-12.jpg" alt="#" class="featured__img" width="600" height="600">
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
             <button class="featured__button" type="button">Add to cart</button>
-          </a>
+          </div>
           <div class="featured__row">
             <div class="featured__colors">
               <span class="featured__color"></span>
@@ -573,10 +598,12 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
         <li class="featured__item featured__item--maxwidth">
-          <a href="#" class="featured__link">
-            <img src="img/1-6.jpg" alt="#" class="featured__img" width="600" height="600">
-            <button class="featured__button">Add to cart</button>
-          </a>
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
+            <button class="featured__button" type="button">Add to cart</button>
+          </div>
           <div class="featured__row">
             <div class="featured__colors">
               <span class="featured__color"></span>
@@ -611,10 +638,12 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
         <li class="featured__item featured__item--maxwidth">
-          <a href="#" class="featured__link">
-            <img src="img/1-11.jpg" alt="#" class="featured__img" width="600" height="600">
-            <button class="featured__button">Add to cart</button>
-          </a>
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
+            <button class="featured__button" type="button">Add to cart</button>
+          </div>
           <div class="featured__row">
             <div class="featured__colors">
               <span class="featured__color"></span>
@@ -649,10 +678,12 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
         <li class="featured__item featured__item--maxwidth">
-          <a href="#" class="featured__link">
-            <img src="img/1-18.jpg" alt="#" class="featured__img" width="600" height="600">
-            <button class="featured__button">Add to cart</button>
-          </a>
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
+            <button class="featured__button" type="button">Add to cart</button>
+          </div>
           <div class="featured__row">
             <div class="featured__colors">
               <span class="featured__color"></span>
@@ -687,10 +718,12 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
         <li class="featured__item featured__item--maxwidth">
-          <a href="#" class="featured__link">
-            <img src="img/1-21.jpg" alt="#" class="featured__img  " width="600" height="600">
-            <button class="featured__button">Add to cart</button>
-          </a>
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
+            <button class="featured__button" type="button">Add to cart</button>
+          </div>
           <div class="featured__row">
             <div class="featured__colors">
               <span class="featured__color"></span>
@@ -725,10 +758,12 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
         <li class="featured__item featured__item--maxwidth">
-          <a href="#" class="featured__link">
-            <img src="img/1-23.jpg" alt="#" class="featured__img  " width="600" height="600">
-            <button class="featured__button">Add to cart</button>
-          </a>
+          <div class="featured__buttons">
+            <a href="#" class="featured__link">
+              <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+            </a>
+            <button class="featured__button" type="button">Add to cart</button>
+          </div>
           <div class="featured__row">
             <div class="featured__colors">
               <span class="featured__color"></span>
