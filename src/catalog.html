@@ -311,14 +311,17 @@ To emphasise this I use inline style="display: none" -->
         </div>
         <div class="catalog__goods">
           <div class="catalog__sort">
-            <select name="#" id="#" class="catalog__input">
-              <option value="#"></option>
-            </select>
             <span class="catalog__text">Showing <span class="catalog__value">1–12</span> of <span class="catalog__value">35</span> results</span>
+            <select name="#" id="#" class="catalog__input">
+              <option value="popularity" selected>Сортировка по популярности</option>
+              <option value="rating">Сортировка по рейтингу</option>
+              <option value="date">Сначала новые</option>
+              <option value="price-low">Сначала дешовые</option>
+              <option value="price-high">Сначала дорогие</option>
+            </select>
           </div>
           <section class="featured">
             <div class="container">
-              <h3 class="featured__title">Featured Products</h3>
               <ul class="featured__slider">
                 <li class="featured__item">
                   <div class="featured__buttons">
