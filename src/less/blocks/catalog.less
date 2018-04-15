@@ -30,6 +30,8 @@
   }
 
   &__input {
+    width: 100%;
+    box-sizing: border-box !important;
     font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
     font-size: 13px;
     line-height: 22px;
@@ -43,5 +45,47 @@
     & option {
       color: #a0a0a0;
     }
+  }
+
+  &__pagination {
+    margin-top: 20px;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 5px;
+  }
+
+  &__link {
+    display: block;
+    color: #545454;
+    border: 1px solid #dbdbdb;
+    line-height: 36px;
+    font-size: 13px;
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: 400;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    box-sizing: border-box;
+
+    &--active {
+      color: #fa5400;
+    }
+
+    &:hover {
+      color: #fa5400;
+    }
+  }
+
+  &__search {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
   }
 }
