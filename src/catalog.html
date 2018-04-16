@@ -272,16 +272,19 @@ To emphasise this I use inline style="display: none" -->
               </svg>
             </button>
           </form>
+
           <div class="catalog__progress">
             <h2 class="catalog__title">Filter by price</h2>
             <input type="range"class="catalog__range">
             <div class="catalog__price">
-              <span class="catalog__desc">price:
-                <span class="catalog__value"></span>
-                <span class="catalog__value"></span>
+              <span class="catalog__desc">От:
+                <input type="text" class="catalog__value" value="100" placeholder="Цена">
+                <span class="catalog__currency">Р</span>
               </span>
               <button class="catalog__btn">Filter</button>
             </div>
+          </div>
+
             <div class="catalog__categories">
               <h2 class="catalog__title">Product categories</h2>
               <ul class="catalog__list">
@@ -305,9 +308,8 @@ To emphasise this I use inline style="display: none" -->
                 <option class="catalog__option">Пункт 2</option>
               </select>
             </div>
-          </div>
-
         </div>
+
         <div class="catalog__goods">
           <div class="catalog__sort">
             <span class="catalog__text">Showing <span class="catalog__value">1–12</span> of <span class="catalog__value">35</span> results</span>
@@ -652,9 +654,9 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </div>
       </div>
-    </div>
   </section>
 </main>
+
 <footer class="page-footer">
   <div class="container">
     <div class="page-footer__logo">

@@ -87,6 +87,7 @@
 
   &__search {
     position: relative;
+    margin-bottom: 40px;
   }
 
   &__button {
@@ -103,6 +104,7 @@
     -webkit-appearance: none;
     width: 100%;
     margin: 3px 0;
+    margin-bottom: 20px;
 
     &:focus {
       outline: none;
@@ -186,5 +188,51 @@
       background: #fa5f1c;
     }
 
+  }
+
+  &__btn {
+    display: block;
+    font-size: 13px;
+    line-height: 38px;
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    color: #ffffff;
+    background-color: #101010;
+    border: none;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__desc {
+    color: #101010;
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__value {
+    width: 20px;
+    border: none;
+  }
+
+  &__title {
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #101010;
   }
 }
