@@ -265,17 +265,16 @@ To emphasise this I use inline style="display: none" -->
       <div class="catalog__inner">
         <div class="catalog__filter">
           <form action="#" class="catalog__search">
-            <input type="search" class="catalog__input">
-            <button class="catalog__button" type="submit"></button>
+            <input type="search" class="catalog__input" placeholder="Search for a product">
+            <button class="catalog__button" type="submit">
+              <svg class="catalog__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-search"></use>
+              </svg>
+            </button>
           </form>
           <div class="catalog__progress">
             <h2 class="catalog__title">Filter by price</h2>
-            <div class="catalog__seek-bar">
-              <div class="catalog__bar">
-                <div class="catalog__bullet"></div>
-                <div class="catalog__bullet"></div>
-              </div>
-            </div>
+            <input type="range"class="catalog__range">
             <div class="catalog__price">
               <span class="catalog__desc">price:
                 <span class="catalog__value"></span>
@@ -321,14 +320,24 @@ To emphasise this I use inline style="display: none" -->
             </select>
           </div>
           <section class="featured">
-            <div class="container">
-              <ul class="featured__slider">
-                <li class="featured__item">
+              <ul class="featured__items featured__slider--flex">
+                <li class="featured__item featured__item--maxwidth">
                   <div class="featured__buttons">
                     <a href="#" class="featured__link">
                       <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
                     </a>
                     <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                    </div>
                   </div>
                   <div class="featured__description">
                     <a href="#" class="featured__name">Waterproof Hiking Boot</a>
@@ -352,12 +361,23 @@ To emphasise this I use inline style="display: none" -->
                     </div>
                   </div>
                 </li>
-                <li class="featured__item">
+                <li class="featured__item featured__item--maxwidth">
                   <div class="featured__buttons">
                     <a href="#" class="featured__link">
                       <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
                     </a>
                     <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                    </div>
                   </div>
                   <div class="featured__description">
                     <a href="#" class="featured__name">Waterproof Hiking Boot</a>
@@ -381,12 +401,23 @@ To emphasise this I use inline style="display: none" -->
                     </div>
                   </div>
                 </li>
-                <li class="featured__item">
+                <li class="featured__item featured__item--maxwidth">
                   <div class="featured__buttons">
                     <a href="#" class="featured__link">
                       <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
                     </a>
                     <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                    </div>
                   </div>
                   <div class="featured__description">
                     <a href="#" class="featured__name">Waterproof Hiking Boot</a>
@@ -410,12 +441,183 @@ To emphasise this I use inline style="display: none" -->
                     </div>
                   </div>
                 </li>
-                <li class="featured__item">
+                <li class="featured__item featured__item--maxwidth">
                   <div class="featured__buttons">
                     <a href="#" class="featured__link">
                       <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
                     </a>
                     <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                      <a href="#" class="featured__btn"></a>
+                    </div>
                   </div>
                   <div class="featured__description">
                     <a href="#" class="featured__name">Waterproof Hiking Boot</a>
@@ -440,15 +642,6 @@ To emphasise this I use inline style="display: none" -->
                   </div>
                 </li>
               </ul>
-            </div>
-            <div class="featured__pagination">
-              <ul class="featured__controls">
-                <li class="featured__control"></li>
-                <li class="featured__control"></li>
-                <li class="featured__control"></li>
-                <li class="featured__control"></li>
-              </ul>
-            </div>
           </section>
           <div class="catalog__pagination">
             <ul class="catalog__items">

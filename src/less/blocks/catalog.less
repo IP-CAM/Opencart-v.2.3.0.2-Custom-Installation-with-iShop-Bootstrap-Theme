@@ -12,11 +12,14 @@
 
   &__goods {
     order: 1;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 40px;
   }
 
   &__sort {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
   }
 
   &__text {
@@ -48,7 +51,8 @@
   }
 
   &__pagination {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   &__items {
@@ -87,5 +91,11 @@
 
   &__button {
     position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    padding: 0;
+    border: none;
   }
 }
