@@ -21,6 +21,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   &__text {
@@ -62,6 +64,21 @@
 
   &__item {
     margin-right: 5px;
+  }
+
+  &__category {
+    font-size: 14px;
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    line-height: 22px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    color: #545454;
+
+    &:hover {
+      color: #f34c05;
+      transition: all 0.3s ease-in-out;
+    }
+
   }
 
   &__link {
