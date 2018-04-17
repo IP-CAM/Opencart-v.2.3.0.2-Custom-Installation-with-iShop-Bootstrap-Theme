@@ -27,6 +27,12 @@
     }
   }
 
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__item {
     border: 1px solid transparent;
     padding: 12px !important;
@@ -192,6 +198,10 @@
       &--maxwidth {
         max-width: 280px;
       }
+    }
+
+    &__items {
+      justify-content: space-between;
     }
   }
 

@@ -254,4 +254,43 @@
   &__options {
     margin-bottom: 20px;
   }
+
+  @media @screen-md {
+    &__inner {
+      flex-direction: row;
+      padding-top: 42px;
+    }
+
+    &__filter {
+      order: 1;
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+
+    &__input {
+      width: initial;
+
+      &--height {
+        height: 42px;
+      }
+
+      &--width {
+        width: 100%;
+      }
+    }
+
+    &__goods {
+      border-bottom: none;
+    }
+
+    &__sort {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__text {
+      order: 2;
+    }
+  }
 }
