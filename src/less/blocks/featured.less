@@ -222,6 +222,50 @@
       &--catalog {
         max-width: 33%;
       }
+
+      &:hover .featured__row {
+        visibility: visible;
+      }
     }
+
+    &__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+      visibility: hidden;
+    }
+
+    &__colors {
+      display: flex;
+    }
+
+    &__color {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: #000000;
+      box-sizing: border-box;
+      border-radius: 50%;
+      margin-right: 5px;
+      padding: 2px;
+      border: 2px solid #6b6b6b;
+    }
+
+    &__btn {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+
+
+
   }
 }
