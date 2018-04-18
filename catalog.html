@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+        content="Sports store - спортивный магазин. Спортивная обувь, одежда, инвентарь и другие спортивные товары в магазине Sports Store. Интернет-магазин спорттоваров с доставкой по Москве, Санкт-Петербургу и в другие регионы.">
+  <meta name="keywords"
+        content="спортивный магазин, спорт товары, спортивная экипировка, спортивный инвентарь, спортивное оборудование, спортивное снаряжение, для спорта, туризма и отдыха, спорттовары и спортинвентарь, спортивный гипермаркет">
+  <title>Sports Store – спортивный магазин.</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="apple-mobile-web-app-title" content="Sport Store">
+  <meta name="application-name" content="Sport Store">
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<!-- this svg is a container for svg icons and should not appear on the page.
+To emphasise this I use inline style="display: none" -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-arrow-left" viewBox="0 0 512 512">
+    <path d="M352 115.4L331.3 96 160 256l171.3 160 20.7-19.3L201.5 256z"/>
+  </symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 512 512">
+    <path d="M160 115.4L180.7 96 352 256 180.7 416 160 396.7 310.5 256z"/>
+  </symbol>
+  <symbol id="icon-arrow-top" viewBox="0 0 32 32">
+    <path
+      d="M16.714 11.297a1.02 1.02 0 0 0-1.429 0l-8.999 8.976a1.008 1.008 0 1 0 1.428 1.426L16 13.436l8.285 8.264a1.012 1.012 0 0 0 1.429 0 1.008 1.008 0 0 0 0-1.426l-9-8.977z"
+    />
+  </symbol>
+  <symbol id="icon-compare" viewBox="0 0 32 24">
+    <path
+      d="M26 12l-6 6h4c0 1.102-.898 2-2 2H10c-1.102 0-2-.898-2-2v-2H4v2c0 3.309 2.691 6 6 6h12c3.309 0 6-2.691 6-6h4l-6-6zM22 0H10C6.691 0 4 2.691 4 6v.062H0L6 12l6-5.938H8V6c0-1.102.898-2 2-2h12c1.102 0 2 .898 2 2v2h4V6c0-3.309-2.691-6-6-6z"
+      />
+  </symbol>
+  <symbol id="icon-approved" viewBox="0 0 16 16">
+    <g>
+      <path
+        d="M8 16c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM8 1C4.1 1 1 4.1 1 8s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z"/>
+      <path
+        d="M6 11.6c-.1 0-.3-.1-.4-.1L2.5 8.3c-.2-.2-.2-.5 0-.7s.5-.2.7 0L6 10.4l6-5.9c.2-.2.5-.2.7 0s.2.5 0 .7l-6.3 6.3c-.1.1-.2.1-.4.1z"
+      />
+    </g>
+  </symbol>
+  <symbol id="icon-delivery" viewBox="0 0 100 100">
+    <g>
+      <path
+        d="M98.8 66.2l-4.4-7.5c-1.2-2.5-3.8-4.4-6.9-4.4H80c-.6 0-1.3.1-1.9.2v-5.9c0-2.5-2.5-5-5-5H15.6c-1.9 0-3.1 1.2-3.1 3.1s1.2 3.1 3.1 3.1h56.2v34.8c-.8.8-1.4 1.7-1.9 2.7h-28c-1.2-2.9-4.1-5-7.5-5s-6.3 2.1-7.5 5H15.6c-1.9 0-3.1 1.2-3.1 3.1s1.2 3.1 3.1 3.1h11.2c1.2 2.9 4.1 5 7.5 5s6.3-2.1 7.5-5H70c1.2 2.9 4.1 5 7.5 5s6.3-2.1 7.5-5h6.9c4.4 0 8.1-3.8 8.1-8.8V70.6c0-1.2-.6-3.1-1.2-4.4zm-5 18.8c0 1.2-.6 2.5-1.9 2.5H85c-1.1-2.8-3.8-4.7-6.9-5V63.1c0-1.2.6-2.5 1.9-2.5h6.9c.6 0 1.2.6 1.9 1.2l4.4 7.5c.6.6.6.6.6 1.2V85z"
+      />
+      <path
+        d="M6.2 62.5h31.9c1.9 0 3.1-1.2 3.1-3.1s-1.2-3.1-3.1-3.1H6.2c-1.9 0-3.1 1.2-3.1 3.1s1.3 3.1 3.1 3.1zm31.9 9.4c0-1.9-1.2-3.1-3.1-3.1H3.1C1.2 68.8 0 70 0 71.9S1.2 75 3.1 75H35c1.9 0 3.1-1.2 3.1-3.1z"
+      />
+    </g>
+  </symbol>
+  <symbol id="icon-quote" viewBox="0 0 32 24">
+    <path
+      d="M32 24V12h-8c0-4.41 3.586-8 8-8V0c-6.617 0-12 5.383-12 12v12h12zm-20 0V12H4c0-4.41 3.586-8 8-8V0C5.383 0 0 5.383 0 12v12h12z"
+      fill="#4e4e50"/>
+  </symbol>
+  <symbol id="icon-card" viewBox="0 0 100 100">
+    <path
+      d="M95 18.8H5c-2.5 0-5 2.5-5 5v58.8c0 2.5 2.5 5 5 5h90c2.5 0 5-2.5 5-5V23.8c0-2.6-2.5-5-5-5zM93.8 25v12.5H6.2V25h87.6zM6.2 81.2V43.8h87.5v37.5H6.2z"
+    />
+  </symbol>
+  <symbol id="icon-view" viewBox="0 0 512 512">
+    <path
+      d="M504.984 478.912L361.365 335.271c28.868-34.715 46.246-79.299 46.246-127.965C407.611 96.672 317.939 7 207.306 7 96.692 7 7 96.672 7 207.306c0 110.608 89.692 200.301 200.306 200.301 48.676 0 93.256-17.379 127.972-46.248L478.896 505l26.088-26.088zM28.085 207.306c0-98.825 80.386-179.221 179.221-179.221 98.815 0 179.221 80.396 179.221 179.221 0 98.831-80.405 179.215-179.221 179.215-98.835 0-179.221-80.384-179.221-179.215z"
+      fill="#425661"/>
+    <path fill="#425661" d="M105.181 197.438H305.91v21.084H105.181z"/>
+    <path fill="#425661" d="M195.003 107.615h21.084v200.729h-21.084z"/>
+  </symbol>
+  <symbol id="icon-vk" viewBox="0 0 800 800">
+    <path
+      d="M393 566c-135 0-208-143-276-285-10-21 6-23 16-23l81-1c12 0 17 9 20 15 13 31 66 142 92 129 18-9 15-107 4-122-7-9-20-12-26-13-5-1 3-11 13-16 18-9 87-9 111-3 28 7 19 32 19 95 0 20-4 50 11 58 24 12 81-101 91-131 3-8 9-11 19-11h85c20 0 27 1 30 8 5 12-9 40-44 87-57 77-65 70-17 114 46 42 55 63 57 66 14 28-11 34-21 34h-76c-9 0-21 0-38-11-29-19-55-70-76-64-17 5-20 34-21 53-1 16-10 21-20 21h-34z"
+    />
+  </symbol>
+  <symbol id="icon-twitter" viewBox="0 0 800 800">
+    <path
+      d="M679 239s-21 34-55 57c7 156-107 329-314 329-103 0-169-50-169-50s81 17 163-45c-83-5-103-77-103-77s23 6 50-2c-93-23-89-110-89-110s23 14 50 14c-84-65-34-148-34-148s76 107 228 116c-22-121 117-177 188-101 37-6 71-27 71-27s-12 41-49 61c30-2 63-17 63-17z"
+    />
+  </symbol>
+  <symbol id="icon-instagram" viewBox="0 0 800 800">
+    <path
+      d="M150 400c0-119 0-166 42-208s88-42 208-42 166 0 208 42 42 89 42 208 0 166-42 208-88 42-208 42-166 0-208-42-42-89-42-208zm455 0c0-114 0-148-29-176-29-29-62-29-176-29s-148 0-176 29c-29 29-29 62-29 176s0 148 29 176c29 29 62 29 176 29s148 0 176-29c29-29 29-62 29-176zM400 272a128 128 0 1 1 0 256 128 128 0 0 1 0-256zm0 211c46 0 83-37 83-83s-37-83-83-83-83 37-83 83 37 83 83 83zm163-216c0 16-13 30-30 30-16 0-30-14-30-30 0-17 14-30 30-30 17 0 30 13 30 30z"
+    />
+  </symbol>
+  <symbol id="icon-googleplus" viewBox="0 0 800 800">
+    <path
+      d="M487 370c21 129-62 237-195 237-114 0-207-93-207-207s93-207 207-207c89 0 138 54 138 54l-56 54s-29-32-82-32c-71 0-128 59-128 131 0 73 57 131 128 131 81 0 113-58 117-90H292v-71h195zm189-59v59h59v60h-59v59h-59v-59h-59v-60h59v-59h59z"
+    />
+  </symbol>
+  <symbol id="icon-facebook" viewBox="0 0 800 800">
+    <path
+      d="M445 643h-90V419h-75v-87h75v-64q0-55 32-86 30-29 80-29 28 0 67 3v78h-47q-42 0-42 38v60h86l-11 87h-75v224z"/>
+  </symbol>
+  <symbol id="icon-search" viewBox="0 0 100 100">
+    <path
+      d="M98.8 95L71.2 67.4c6.3-7.1 10.1-16.5 10.1-26.8C81.2 18.1 63.1 0 40.6 0S0 18.1 0 40.6s18.1 40.6 40.6 40.6c10 0 19.1-3.6 26.1-9.5l27.6 27.6c.6.6 1.9.6 2.5.6s1.9 0 1.9-.6c1.3-1.2 1.3-3.1.1-4.3zM6.2 40.6c0-18.8 15.6-34.4 34.4-34.4S75 21.9 75 40.6 59.4 75 40.6 75 6.2 59.4 6.2 40.6z"
+    />
+  </symbol>
+  <symbol id="icon-cart" viewBox="0 0 100 100">
+    <g>
+      <path
+        d="M98.8 26.9c-.7-1.3-1.9-1.9-3.8-1.9H18.3L14.4 8.8c-.6-1.2-1.9-2.5-3.1-2.5H3.1C1.2 6.2 0 7.5 0 9.4s1.2 3.1 3.1 3.1h5.6l4.2 17.9c0 .2.1.4.1.6l5.7 24.6c.1.2.2.4.3.5l3.4 14.5c.6 2.5 2.5 4.4 5 4.4H85c2.5 0 4.4-1.9 5-3.8l10-40c0-1.2-.6-3.1-1.2-4.3zm-15 41.9H28.1l-3-13.8c0-.4 0-.8-.1-1.2l-1.5-6.4L20 31.2h73.1l-9.3 37.6z"
+      />
+      <circle cx="31.2" cy="87.5" r="6.2"/>
+      <circle cx="75" cy="87.5" r="6.2"/>
+    </g>
+  </symbol>
+  <symbol id="icon-heart" viewBox="0 0 16 16">
+    <path
+      d="M8 16c-.1 0-.2 0-.3-.1C7.4 15.7 0 10.1 0 5.8 0 2.8 2.1 1 4.2 1c1.3 0 2.9.7 3.8 2.7.9-2 2.5-2.7 3.8-2.7C13.9 1 16 2.8 16 5.8c0 4.3-7.4 9.9-7.7 10.1-.1.1-.2.1-.3.1zM4.2 2C2.6 2 1 3.4 1 5.8c0 3.4 5.6 8 7 9.1 1.4-1.1 7-5.7 7-9.1C15 3.4 13.4 2 11.8 2S9 3.3 8.5 5.4c-.1.5-.9.5-1 0C7 3.3 5.8 2 4.2 2z"
+    />
+  </symbol>
+
+</svg>
+<header class="page-header" role="banner">
+  <div class="page-header__logo">
+    <a href="#" class="page-header__link">
+      <img src="img/logo.png" alt="Sports Store" class="page-header__logotype" width="177" height="28">
+    </a>
+  </div>
+  <div class="page-header__buttons">
+    <button class="page-header__toggler" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="#" class="page-header__search">
+      <svg class="page-header__icon" width="20" height="20">
+        <use x="0" y="0" xlink:href="#icon-search"></use>
+      </svg>
+    </a>
+    <a href="#" class="page-header__cart">
+      <svg class="page-header__icon" width="20" height="20">
+        <use x="0" y="0" xlink:href="#icon-cart"></use>
+      </svg>
+      <span class="page-header__counter">0</span>
+    </a>
+    <a href="#" class="page-header__wishlist">
+      <svg class="page-header__icon" width="20" height="20">
+        <use x="0" y="0" xlink:href="#icon-heart"></use>
+      </svg>
+    </a>
+  </div>
+  <nav class="main-nav main-nav--closed" style="display: none" role="navigation">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link main-nav__link--active">
+          <span class="main-nav__text">Home</span>
+          <span class="main-nav__toggler">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </span>
+        </a>
+        <ul class="main-nav__sublist main-nav__sublist--closed">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Home</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <span class="main-nav__text">Features</span>
+          <span class="main-nav__toggler">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </span>
+        </a>
+        <ul class="main-nav__sublist main-nav__sublist--closed">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">New collection</span>
+            </a>
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Product Simple</span>
+            </a>
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Product Extended</span>
+            </a>
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Cart</span>
+            </a>
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Wishlist</span>
+            </a>
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Blog</span>
+            </a>
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Contacts</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <span class="main-nav__text">Women</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <span class="main-nav__text">Men</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <span class="main-nav__text">Shortcodes</span>
+          <span class="main-nav__toggler">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <span class="main-nav__text">Post types</span>
+          <span class="main-nav__toggler">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="page-content" role="main">
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner">
+        <h1 class="breadcrumbs__title">SHOP</h1>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Home</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Shop</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="container">
+      <div class="catalog__inner">
+        <div class="catalog__filter">
+          <form action="#" class="catalog__search">
+            <input type="search" class="catalog__input catalog__input--height" placeholder="Search for a product">
+            <button class="catalog__button" type="submit">
+              <svg class="catalog__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="catalog__progress">
+            <h2 class="catalog__title">Filter by price</h2>
+            <input type="range"class="catalog__range">
+            <div class="catalog__price">
+              <span class="catalog__desc">От:
+                <input type="text" class="catalog__value" value="100" placeholder="Цена">
+                <span class="catalog__currency">Р</span>
+              </span>
+              <button class="catalog__btn">Filter</button>
+            </div>
+          </div>
+
+            <div class="catalog__categories">
+              <h2 class="catalog__title">Product categories</h2>
+              <ul class="catalog__list">
+                <li class="catalog__item"><a href="#" class="catalog__category">Accessories</a></li>
+                <li class="catalog__item"><a href="#" class="catalog__category">Boot</a></li>
+                <li class="catalog__item"><a href="#" class="catalog__category">Bra</a></li>
+                <li class="catalog__item"><a href="#" class="catalog__category">For men</a></li>
+              </ul>
+            </div>
+            <div class="catalog__options">
+              <h2 class="catalog__title">Select color</h2>
+              <select class="catalog__input catalog__input--width">
+                <option class="catalog__option">Пункт 1</option>
+                <option class="catalog__option">Пункт 2</option>
+              </select>
+            </div>
+            <div class="catalog__options">
+              <h2 class="catalog__title">Select size</h2>
+              <select class="catalog__input catalog__input--width">
+                <option class="catalog__option">Пункт 1</option>
+                <option class="catalog__option">Пункт 2</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="catalog__goods">
+          <div class="catalog__sort">
+            <span class="catalog__text">Showing <span class="catalog__value">1–12</span> of <span class="catalog__value">35</span> results</span>
+            <select name="#" id="#" class="catalog__input">
+              <option value="popularity" selected>Сортировка по популярности</option>
+              <option value="rating">Сортировка по рейтингу</option>
+              <option value="date">Сначала новые</option>
+              <option value="price-low">Сначала дешовые</option>
+              <option value="price-high">Сначала дорогие</option>
+            </select>
+          </div>
+          <section class="featured">
+              <ul class="featured__items">
+                <li class="featured__item featured__item--maxwidth featured__item--catalog">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-heart"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-compare"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth featured__item--catalog">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-heart"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-compare"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth featured__item--catalog">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-heart"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-compare"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth featured__item--catalog">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-heart"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-compare"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth featured__item--catalog">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-heart"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-compare"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth featured__item--catalog">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-heart"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-compare"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth featured__item--catalog">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-heart"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-compare"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="featured__item featured__item--maxwidth featured__item--catalog">
+                  <div class="featured__buttons">
+                    <a href="#" class="featured__link">
+                      <img src="img/3-11.jpg" alt="#" class="featured__img" width="600" height="600">
+                    </a>
+                    <button class="featured__button" type="button">Add to cart</button>
+                  </div>
+                  <div class="featured__row">
+                    <div class="featured__colors">
+                      <span class="featured__color"></span>
+                      <span class="featured__color"></span>
+                    </div>
+                    <div class="featured__btns">
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-heart"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-compare"></use>
+                        </svg>
+                      </button>
+                      <button class="featured__btn">
+                        <svg class="featured__icon" width="15" height="15">
+                          <use x="0" y="0" xlink:href="#icon-search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="featured__description">
+                    <a href="#" class="featured__name">Waterproof Hiking Boot</a>
+                    <div class="featured__categories">
+                      <a href="#" class="featured__category">Shoes</a>,
+                      <a href="#" class="featured__category">Sneakers</a>,
+                      <a href="#" class="featured__category">Unisex</a>
+                    </div>
+                    <div class="featured__info">
+              <span class="featured__price">
+                <span class="featured__currency">£</span>55.00</span>
+                      <div class="featured__rating">
+                        <ul class="featured__list">
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">★</li>
+                          <li class="featured__star">☆</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+          </section>
+          <div class="catalog__pagination">
+            <ul class="catalog__items">
+              <li class="catalog__item"><a href="#" class="catalog__link catalog__link--active">1</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">2</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__logo">
+      <a href="#" class="page-footer__link">
+        <img src="img/logo-for-home.png" alt="Sports Store" class="page-footer__logotype  " width="177" height="28">
+      </a>
+    </div>
+    <section class="socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg class="socials__icon" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg class="socials__icon" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg class="socials__icon" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg class="socials__icon" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg class="socials__icon" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-googleplus"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="more more--dark">
+      <div class="more__inner">
+        <div class="more__column">
+          <h3 class="more__title more__title--white">HELP</h3>
+          <ul class="more__list">
+            <li class="more__item">
+              <a href="#" class="more__link">How to Make an Order?</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Delivery Terms</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">My Orders</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Return</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Gift Certificates</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">About Us</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">For Partners</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Submit a Review</a>
+            </li>
+          </ul>
+        </div>
+        <div class="more__column">
+          <h3 class="more__title more__title--white">SHOP BY BRAND</h3>
+          <ul class="more__list">
+            <li class="more__item">
+              <a href="#" class="more__link">Viking</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Brown</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Sportmaster</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Dalance</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Heavy Armor</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Kontakt</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Camio</a>
+            </li>
+          </ul>
+        </div>
+        <div class="more__column">
+          <h3 class="more__title more__title--white">SHOP BY SPORT</h3>
+          <ul class="more__list">
+            <li class="more__item">
+              <a href="#" class="more__link">Running</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Training & Gym</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Soccer</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Basketball</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Golf</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Skateboarding</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Baseball</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Tennis</a>
+            </li>
+          </ul>
+        </div>
+        <div class="more__column">
+          <h3 class="more__title more__title--white">CATEGORIES</h3>
+          <ul class="more__list">
+            <li class="more__item">
+              <a href="#" class="more__link">For Men</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">For Women</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Accessories</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Shoes</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Tools for Fitness</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Training Shorts</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Unisex</a>
+            </li>
+            <li class="more__item">
+              <a href="#" class="more__link">Sneakers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="page-footer__copyright">
+      <p class="page-footer__text">© 2018 Sports Store</p>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" type="button">
+  <svg class="back-to-top__icon" width="20" height="20">
+    <use x="0" y="0" xlink:href="#icon-arrow-top"></use>
+  </svg>
+</button>
+<script src="js/script.min.js" async></script>
+<section class="search-popup search-popup--closed">
+  <button class="search-popup__btn">
+    <span></span>
+    <span></span>
+  </button>
+  <form action="#" class="search-popup__form">
+    <input type="search" class="search-popup__input" placeholder="SEARCH FOR PRODUCTS">
+  </form>
+  <div class="search-popup__result">
+  </div>
+</section>
+</body>
+</html>
