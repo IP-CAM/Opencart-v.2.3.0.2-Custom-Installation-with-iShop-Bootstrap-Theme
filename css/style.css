@@ -858,7 +858,7 @@ p {
   color: #ffffff;
 }
 .main-nav__link--active {
-  color: #ffffff;
+  color: #ff4301;
 }
 .main-nav__toggler {
   position: absolute;
@@ -929,21 +929,21 @@ p {
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
-  min-height: 480px;
+  height: 500px;
   background-color: #294764;
-  background-position: 20% 0;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .slider__slide--first {
-  background-image: url("../img/slide-2.jpg");
+  background-image: url("../img/main-slide-1.jpg");
 }
 .slider__slide--second {
-  background-image: url("../img/slide-3.jpg");
+  background-image: url("../img/main-slide-2.jpg");
   background-position: 70%;
 }
 .slider__slide--third {
-  background-image: url("../img/1-2.jpg");
+  background-image: url("../img/main-slide-3.jpg");
 }
 .benefits {
   margin-top: 60px;
@@ -2299,6 +2299,9 @@ p {
   .featured__item--catalog {
     max-width: 200px;
   }
+  .featured__controls {
+    display: none;
+  }
   .features__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2428,6 +2431,9 @@ p {
     color: #191919;
   }
   .main-nav__link:hover {
+    color: #ff4301;
+  }
+  .main-nav__link--active {
     color: #ff4301;
   }
   .main-nav__toggler {
