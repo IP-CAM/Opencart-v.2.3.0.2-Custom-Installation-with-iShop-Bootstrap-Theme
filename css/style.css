@@ -810,6 +810,9 @@ p {
 .page-header__cart:hover {
   color: #ff4301;
 }
+.page-header__wishlist {
+  margin-right: 15px;
+}
 .page-header__counter {
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-size: 12px;
@@ -1144,8 +1147,11 @@ p {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+.featured__star {
+  height: 20px;
 }
 .featured__row {
   display: none;
@@ -1159,14 +1165,10 @@ p {
   font-weight: 400;
 }
 .featured__list {
-  width: 74px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
-}
-.featured__star {
-  color: gold;
 }
 .featured__controls {
   margin: 0 auto;
@@ -2217,7 +2219,8 @@ p {
 @media (min-width : 480px) {
   .page-header__toggler,
   .page-header__search,
-  .page-header__cart {
+  .page-header__cart,
+  .page-header__wishlist {
     margin-right: 20px;
   }
   .intro__text {
@@ -2314,7 +2317,7 @@ p {
     max-width: 200px;
   }
   .featured__controls {
-    display: none;
+    opacity: 0;
   }
   .features__list {
     -webkit-box-orient: horizontal;
@@ -2477,6 +2480,9 @@ p {
     padding-bottom: 20px;
     margin-top: 79px;
   }
+  .intro__text {
+    padding: 0;
+  }
   .benefits__item--third,
   .benefits__item--fourth,
   .benefits__item--fifth {
@@ -2523,7 +2529,10 @@ p {
     padding: 0;
     border: none;
     background-color: transparent;
-    margin-right: 10px;
+    margin-right: 5px;
+  }
+  .featured__btn:first-child {
+    margin-right: 0;
   }
   .featured__btn:last-child {
     margin-right: 0;
@@ -2534,6 +2543,20 @@ p {
   .featured__icon:hover {
     fill: #f34c05;
     transition: fill 0.3s ease-in-out;
+  }
+  .featured__icon--star {
+    fill: gold;
+    stroke: gold;
+  }
+  .featured__icon--star:hover {
+    fill: gold;
+  }
+  .featured__icon--stroke {
+    fill: #ffffff;
+    stroke: gold;
+  }
+  .featured__icon--stroke:hover {
+    fill: #ffffff;
   }
   .subscribe {
     padding-top: 40px;
