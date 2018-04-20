@@ -125,7 +125,11 @@
   &__info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+  }
+
+  &__star {
+    height: 20px;
   }
 
   &__row {
@@ -142,13 +146,8 @@
   }
 
   &__list {
-    width: 74px;
     display: flex;
     justify-content: space-between;
-  }
-
-  &__star {
-    color: gold;
   }
 
   &__controls {
@@ -282,6 +281,24 @@
       &:hover {
         fill: #f34c05;
         transition: fill 0.3s ease-in-out;
+      }
+
+      &--star {
+        fill: gold;
+        stroke: gold;
+
+        &:hover {
+          fill: gold;
+        }
+      }
+
+      &--stroke {
+        fill: #ffffff;
+        stroke: gold;
+
+        &:hover {
+          fill: #ffffff;
+        }
       }
     }
 
