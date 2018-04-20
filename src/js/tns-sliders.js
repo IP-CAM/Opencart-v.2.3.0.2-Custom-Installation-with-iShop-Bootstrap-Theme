@@ -99,6 +99,7 @@ var companiesSlider = tns({
   items: 1,
   autoplay: true,
   autoplayButtonOutput: false,
+  lazyload: true,
   responsive: {
     640: {
       items: 1
