@@ -1037,6 +1037,11 @@ p {
 .featured__slider {
   margin-top: 40px;
 }
+.featured__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .featured__title {
   position: relative;
   margin: 0;
@@ -1194,6 +1199,27 @@ p {
 .featured__control:hover {
   opacity: 1;
   transition: all 0.5s;
+}
+.featured__icon {
+  transition: fill 0.3s ease-in-out;
+}
+.featured__icon:hover {
+  fill: #f34c05;
+  transition: fill 0.3s ease-in-out;
+}
+.featured__icon--star {
+  fill: gold;
+  stroke: gold;
+}
+.featured__icon--star:hover {
+  fill: gold;
+}
+.featured__icon--stroke {
+  fill: #ffffff;
+  stroke: gold;
+}
+.featured__icon--stroke:hover {
+  fill: #ffffff;
 }
 .video {
   margin-top: 80px;
@@ -1620,7 +1646,7 @@ p {
 .quotes__icon {
   position: absolute;
   left: 50%;
-  top: 25%;
+  top: 90px;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   fill: #dbdbdb;
@@ -2536,27 +2562,6 @@ p {
   }
   .featured__btn:last-child {
     margin-right: 0;
-  }
-  .featured__icon {
-    transition: fill 0.3s ease-in-out;
-  }
-  .featured__icon:hover {
-    fill: #f34c05;
-    transition: fill 0.3s ease-in-out;
-  }
-  .featured__icon--star {
-    fill: gold;
-    stroke: gold;
-  }
-  .featured__icon--star:hover {
-    fill: gold;
-  }
-  .featured__icon--stroke {
-    fill: #ffffff;
-    stroke: gold;
-  }
-  .featured__icon--stroke:hover {
-    fill: #ffffff;
   }
   .subscribe {
     padding-top: 40px;
