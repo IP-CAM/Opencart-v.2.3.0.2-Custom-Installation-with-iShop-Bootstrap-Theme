@@ -1,5 +1,5 @@
 # Дипломный проект Sport Store 
-<a href="http://webistomin.github.io/my-shop/" target="_blank">http://webistomin.github.io/my-shop/</a>
+<a href="http://webistomin.github.io/my-shop/" target="_blank" rel="noreferrer">http://webistomin.github.io/my-shop/</a>
 ---
 [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
