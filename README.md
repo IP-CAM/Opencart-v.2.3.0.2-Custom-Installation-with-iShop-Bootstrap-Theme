@@ -1,4 +1,6 @@
-# Дипломный проект Sport Store
+# Дипломный проект Sport Store 
+<a href="http://webistomin.github.io/my-shop/">http://webistomin.github.io/my-shop/</a>
+---
 [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
