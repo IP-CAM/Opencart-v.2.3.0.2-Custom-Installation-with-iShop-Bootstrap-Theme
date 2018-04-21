@@ -17,7 +17,6 @@ var concat = require("gulp-concat");
 var del = require("del");
 var runSequence = require("run-sequence");
 var csscomb = require("gulp-csscomb");
-var critical = require('critical');
 
 gulp.task("style", function() {
   gulp.src("src/less/style.less")
