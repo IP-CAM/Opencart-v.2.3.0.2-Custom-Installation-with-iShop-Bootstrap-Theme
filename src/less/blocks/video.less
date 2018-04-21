@@ -48,25 +48,24 @@
     background-color: transparent;
     transition: all 0.3s ease-in-out;
 
-    &::before {
-      content: "►";
-      position: absolute;
-      top: 50%;
-      left: 55%;
-      font-size: 40px;
-      transform: translateY(-50%) translateX(-50%);
-      transition: all 0.3s ease-in-out;
-    }
-
     &:hover {
       border-color: #ff4301;
-      transform: scale(1.2);
+      transform: scale(1.1);
       transition: all 0.3s ease-in-out;
     }
 
-    &:hover::before {
-      color: #ff4301;
+    &:hover .video__icon {
+      fill: #ff4301;
       transition: all 0.3s ease-in-out;
     }
+  }
+
+  &__icon {
+    fill: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%) translateX(-50%);
+    transition: all 0.3s ease-in-out;
   }
 }
