@@ -679,21 +679,6 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<script>
-  document.body.onload = function () {
-    setTimeout(function () {
-      var preloader = document.getElementById('loader');
-      if (!preloader.classList.contains('done')) {
-        preloader.classList.add('done');
-      }
-    }, 1000)
-  };
-</script>
-<div class="loader-body" id="loader">
-  <div class="loader"></div>
-</div>
-<!-- this svg is a container for svg icons and should not appear on the page.
-To emphasise this I use inline style="display: none" -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
   <symbol id="adidas-logo" viewBox="0 0 302 204.27155"><g clip-path="url(#d)" transform="matrix(21.955 0 0 -21.955 -2043.1 10481)"><path d="M105.72 468.11c-.639 0-1.018.327-1.047.798h.611c0-.157.087-.366.465-.379.262 0 .407.157.407.275-.029.183-.262.196-.494.236a2.389 2.389 0 0 0-.611.156.626.626 0 0 0-.32.563c0 .419.35.746.96.746.582 0 .96-.301.988-.759h-.581c0 .117-.029.314-.378.314-.233 0-.378-.039-.407-.209 0-.236.494-.223.872-.314.349-.092.582-.314.582-.629 0-.576-.465-.798-1.047-.798"/></g><path d="M33.537 118.8l44.042-25.578 23.623 40.53H41.836"/><path d="M126.15 202.12v-51.155" stroke="#000" stroke-width="12.888"/><g clip-path="url(#c)" transform="matrix(21.955 0 0 -21.955 -2043.1 10481)"><path d="M93.655 469.31c0-.366.32-.667.668-.667.379 0 .669.301.669.667 0 .353-.29.667-.669.667a.692.692 0 0 1-.668-.667m.639-1.204c-.639 0-1.191.537-1.191 1.204s.552 1.191 1.191 1.191c.262 0 .495-.066.698-.209v.183h.582v-2.316h-.582v.144c-.174-.131-.436-.197-.698-.197"/></g><path d="M197.59 133.74L136.314 26.863 180.355 1l76.601 132.74"/><g clip-path="url(#b)" transform="matrix(21.955 0 0 -21.955 -2043.1 10481)"><path d="M96.33 469.31c0-.366.291-.667.669-.667.348 0 .669.301.669.667a.693.693 0 0 1-.669.667.672.672 0 0 1-.669-.667m.64-1.204c-.669 0-1.192.537-1.192 1.204s.523 1.191 1.192 1.191c.261 0 .494-.066.698-.209v.981h.581v-3.114h-.581v.144a1.265 1.265 0 0 0-.698-.197"/></g><path d="M85.247 73.119l44.678-25.27 49.158 85.888h-46.61v12.646h-12.757v-12.646"/><g clip-path="url(#a)" transform="matrix(21.955 0 0 -21.955 -2043.1 10481)"><path d="M106.39 470.7c-.146 0-.291.131-.291.288s.145.288.291.288c.174 0 .291-.131.291-.288s-.117-.288-.291-.288m0 .536c-.146 0-.233-.117-.233-.248s.087-.249.233-.249c.145 0 .232.118.232.249s-.087.248-.232.248"/><path d="M106.45 470.83l-.058.131h-.058v-.131h-.044v.314h.131c.029 0 .087-.04.087-.092s-.029-.078-.058-.091l.058-.131m-.116.274h-.058V471h.058c.058 0 .058.013.058.052 0 .027 0 .052-.058.052m-3.842-1.794c0-.366.291-.667.669-.667.349 0 .668.301.668.667a.691.691 0 0 1-.668.667.672.672 0 0 1-.669-.667m.639-1.204c-.668 0-1.191.537-1.191 1.204s.523 1.191 1.191 1.191c.262 0 .495-.066.698-.209v.183h.553v-2.316h-.553v.144a1.26 1.26 0 0 0-.698-.197m-3.312 1.204c0-.366.32-.667.669-.667.378 0 .669.301.669.667a.672.672 0 0 1-.669.667.692.692 0 0 1-.669-.667m1.338 1.963h.581v-3.114h-.581v.144a1.107 1.107 0 0 0-.669-.197c-.669 0-1.221.537-1.221 1.204s.552 1.191 1.221 1.191c.261 0 .494-.066.669-.209v.981z"/></g></symbol>
   <symbol id="converse-logo" viewBox="0 0 192.756 192.756"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" d="M0 0h192.756v192.756H0V0z"/><path d="M173.412 57.651h16.51v3.241h-11.264v4.166h9.334l-2.39 3.24h-6.944v5.092h11.264v3.24h-16.51V57.651zm-70.978 0h16.509v3.241H107.68v4.166h9.336l-2.393 3.24h-6.943v5.092h11.263v3.24h-16.509V57.651zm-49.529 0h5.323l9.489 12.345V57.651h5.246V76.63h-5.4L58.15 64.364V76.63h-5.245V57.651zM36.086 73.467c1.697 0 4.706-.154 5.787-1.08V61.895c-1.081-.926-4.089-1.08-5.787-1.08-1.697 0-4.706.154-5.786 1.08v10.493c1.08.925 4.089 1.079 5.786 1.079v3.549c-2.623 0-11.032.462-11.032-3.857V61.123c0-4.32 8.409-3.857 11.032-3.857s11.033-.463 11.033 3.857v12.036c0 4.32-8.41 3.857-11.033 3.857v-3.549zM2.834 61.664c0-3.935 6.018-4.475 10.184-4.475s5.786.386 9.258 1.698l-3.009 3.085c-1.697-.849-7.329-2.006-11.187-.154v10.724c3.858 1.852 9.49.694 11.187-.154l3.009 3.086c-3.472 1.312-5.092 1.697-9.258 1.697S2.834 76.63 2.834 72.696V61.664zm136.555 7.714l5.092 7.252h-5.477l-5.094-7.406h-3.934v-3.24h4.475c1.621 0 3.395 0 4.783-.926v-3.241c-1.389-.926-3.162-.926-4.783-.926h-4.475V76.63h-5.246V57.651h13.5c2.162 0 6.25.155 6.25 4.243v3.086c0 3.437-2.889 4.094-5.094 4.216l.003.182zm15.199-8.177c5.477-1.312 9.875.54 10.801 1.003l2.932-2.932c-1.852-1.003-5.941-2.238-10.262-2.238s-8.949.309-8.949 4.707v1.852c0 3.085.771 3.857 3.01 4.397 2.236.54 7.637 1.465 10.877 1.697v3.472c-5.479 1.312-9.875-.54-11.418-1.234l-2.932 2.932c2.469 1.234 6.557 2.469 10.879 2.469 4.32 0 8.949-.309 8.949-4.706v-2.854c0-2.16-1.697-2.854-2.855-3.241-1.156-.385-7.482-1.542-11.031-1.697v-3.627h-.001zm-78.307-3.55h5.632l6.171 13.116 4.475-9.489h-4.397l1.697-3.627h9.258l-8.95 18.979H85.23l-8.949-18.979zm-4.861 45.904h17.745l5.961-18.198 5.919 18.198h17.898l-14.195 11.263 6.607 20.366-16.636-12.342-15.822 12.342 6.564-20.057-14.041-11.572zm42.314 30.299h.406c.176 0 .373.066.373.293 0 .256-.244.279-.467.279h-.312v.109h.383l.443.678h.139l-.439-.674c.211-.033.379-.15.379-.391 0-.266-.145-.404-.479-.404h-.551v1.469h.125v-1.359z"/><path d="M114.061 133.234c.689 0 1.244.557 1.244 1.244a1.243 1.243 0 1 1-2.488 0c0-.687.556-1.244 1.244-1.244l.004.109c-.643 0-1.121.492-1.121 1.135 0 .629.486 1.135 1.121 1.135s1.113-.51 1.113-1.139c0-.635-.475-1.131-1.113-1.131l-.004-.109z"/></g></symbol>
@@ -800,7 +785,6 @@ To emphasise this I use inline style="display: none" -->
   </symbol>
 
 </svg>
-
 <header class="page-header" role="banner">
   <div class="page-header__logo">
     <a href="#" class="page-header__link">
@@ -929,74 +913,203 @@ To emphasise this I use inline style="display: none" -->
 </header>
 
 <main class="page-content" role="main">
-  <section class="intro">
-    <p class="intro__text">Бесплатная доставка. Используйте код 2131. Предложение действует до 21 августа</p>
-  </section>
-
-  <section class="slider">
-    <div class="slider__slide slider__slide--first">
-
-    </div>
-    <div class="slider__slide slider__slide--second">
-
-    </div>
-    <div class="slider__slide slider__slide--third">
-
-    </div>
-  </section>
-
-  <section class="benefits">
+  <section class="breadcrumbs">
     <div class="container">
-      <div class="benefits__inner">
-        <div class="benefits__item benefits__item--first">
-          <a href="#" class="benefits__link">
-            <div class="benefits__text">
-              <h2 class="benefits__title">Для мужчин</h2>
-              <h3 class="benefits__subtitle">Новая коллекция</h3>
-            </div>
-          </a>
+      <div class="breadcrumbs__inner">
+        <h1 class="breadcrumbs__title">Для бега</h1>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Мужское</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Кроссовки Nike RunAllDay</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="product">
+    <div class="container">
+      <div class="product__inner">
+        <div class="product__images">
+          <img src="img/1-20.jpg" alt="#" class="product__img" width="600" height="600">
+          <img src="img/1-20.jpg" alt="#" class="product__img" width="600" height="600">
+          <img src="img/1-20.jpg" alt="#" class="product__img" width="600" height="600">
+          <img src="img/1-20.jpg" alt="#" class="product__img" width="600" height="600">
         </div>
-        <div class="benefits__item benefits__item--second">
-          <a href="#" class="benefits__link">
-            <div class="benefits__text">
-              <h2 class="benefits__title">Для женщин</h2>
-              <h3 class="benefits__subtitle">Тренды 2018</h3>
-            </div>
-          </a>
+        <div class="product__info">
+          <h3 class="product__title">Кроссовки Nike RunAllDay</h3>
+          <ul class="product__list">
+            <li class="product__star">
+              <svg class="product__icon product__icon--star" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-star"></use>
+              </svg>
+            </li>
+            <li class="product__star">
+              <svg class="product__icon product__icon--star" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-star"></use>
+              </svg>
+            </li>
+            <li class="product__star">
+              <svg class="product__icon product__icon--star" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-star"></use>
+              </svg>
+            </li>
+            <li class="product__star">
+              <svg class="product__icon product__icon--star" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-star"></use>
+              </svg>
+            </li>
+            <li class="product__star">
+              <svg class="product__icon product__icon--star product__icon--stroke" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-star"></use>
+              </svg>
+            </li>
+          </ul>
+          <span class="product__price">
+            55.00
+            <span class="product__currency">Руб.</span>
+          </span>
+          <p class="product__text">Мужские кроссовки Nike RunAllDay гарантируют комфорт и превосходную амортизацию во время бега. Модель подходит для асфальтового покрытия.</p>
+          <div class="product__btns">
+            <form action="#">
+              <input type="number" class="product__input">
+              <button class="product__btn" type="submit">В корзину</button>
+            </form>
+          </div>
+          <div class="product__category">
+            <span class="product__desc">Категория:</span>
+            <span class="product__name">Для бега</span>
+          </div>
+          <div class="product__tags">
+            <span class="product__desc">Тэги:</span>
+            <ul class="product__list">
+              <li class="product__item"><a href="#" class="product__link">Фитнес</a></li>
+              <li class="product__item"><a href="#" class="product__link">Спорт</a></li>
+              <li class="product__item"><a href="#" class="product__link">Бег</a></li>
+            </ul>
+          </div>
+          <button class="product__button" type="button">Добавить в желания
+            <svg class="product__icon" width="20" height="20">
+              <use x="0" y="0" xlink:href="#icon-heart"></use>
+            </svg>
+          </button>
+          <ul class="product__items">
+            <li class="product__item"><a href="#" class="product__link">Facebook</a></li>
+            <li class="product__item"><a href="#" class="product__link">Вконтакте</a></li>
+            <li class="product__item"><a href="#" class="product__link">Twitter</a></li>
+          </ul>
         </div>
-        <div class="benefits__item benefits__item--third">
-          <a href="#" class="benefits__link">
-            <div class="benefits__text">
-              <h3 class="benefits__date">2017</h3>
-              <h2 class="benefits__title">Лучшие товары</h2>
-              <h3 class="benefits__subtitle">Получите скидку 20%</h3>
+
+      </div>
+      <div class="product__tabs">
+        <ul class="product__tabslist">
+          <li class="product__tabitem"><a href="#" class="product__tablink">Описание</a></li>
+          <li class="product__tabitem"><a href="#" class="product__tablink">Дополнительная информация</a></li>
+          <li class="product__tabitem"><a href="#" class="product__tablink">Отзывы <span class="product__counter">(1)</span></a></li>
+        </ul>
+        <div class="product__box">
+          <div class="product__tab">
+            <p class="product__description">Мужские кроссовки Nike RunAllDay гарантируют комфорт и превосходную амортизацию во время бега. Модель подходит для асфальтового покрытия.</p>
+          </div>
+          <div class="product__tab">
+            <div class="product__row">Особенности:</div>
+            <div class="product__row">
+              <p class="product__feature">Модель подходит для асфальтового покрытия</p>
+              <p class="product__feature">Модель подходит для асфальтового покрытия</p>
+              <p class="product__feature">Модель подходит для асфальтового покрытия</p>
             </div>
-          </a>
-        </div>
-        <div class="benefits__item benefits__item--fourth">
-          <a href="#" class="benefits__link">
-            <div class="benefits__text">
-              <h3 class="benefits__date">Тренды</h3>
-              <h2 class="benefits__title">Новые поступления</h2>
-            </div>
-          </a>
-        </div>
-        <div class="benefits__item benefits__item--fifth">
-          <a href="#" class="benefits__link">
-            <div class="benefits__text">
-              <h3 class="benefits__date">Большая распродажа</h3>
-              <h2 class="benefits__title">Летние тренды</h2>
-              <h3 class="benefits__subtitle">Скидки до 80%</h3>
-            </div>
-          </a>
+          </div>
+          <div class="product__tab">
+            <section class="review">
+              <div class="review__heading">
+                <span class="review__counter">1</span>
+                <h3 class="review__title">Отзыв</h3>
+              </div>
+              <ul class="review__list">
+                <li class="review__item">
+                  <div class="review__col">
+                    <img src="#" alt="#" class="review__thumbnail" width="" height="">
+                  </div>
+                  <div class="review__col">
+                    <div class="review__caption">
+                      <span class="review__author">Алексей Истомин</span>
+                      <time class="review__date" datetime="2018-06-07">7 июня 2018</time>
+                      <ul class="review__rating">
+                        <li class="review__star">
+                          <svg class="review__icon review__icon--star" width="20" height="20">
+                            <use x="0" y="0" xlink:href="#icon-star"></use>
+                          </svg>
+                        </li>
+                        <li class="review__star">
+                          <svg class="review__icon review__icon--star" width="20" height="20">
+                            <use x="0" y="0" xlink:href="#icon-star"></use>
+                          </svg>
+                        </li>
+                        <li class="review__star">
+                          <svg class="review__icon review__icon--star" width="20" height="20">
+                            <use x="0" y="0" xlink:href="#icon-star"></use>
+                          </svg>
+                        </li>
+                        <li class="review__star">
+                          <svg class="review__icon review__icon--star" width="20" height="20">
+                            <use x="0" y="0" xlink:href="#icon-star"></use>
+                          </svg>
+                        </li>
+                        <li class="review__star">
+                          <svg class="review__icon review__icon--star review__icon--stroke" width="20" height="20">
+                            <use x="0" y="0" xlink:href="#icon-star"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                    <blockquote class="review__quote">Очень хорошие кроссовки!</blockquote>
+                  </div>
+                </li>
+              </ul>
+              <form action="#" class="review__field">
+                <h4 class="review__title">Оставить отзыв</h4>
+                <div class="review__rate">
+                  <span class="review__text">Ваша оценка</span>
+                  <ul class="review__rating">
+                    <li class="review__star">
+                      <svg class="review__icon review__icon--star" width="20" height="20">
+                        <use x="0" y="0" xlink:href="#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="review__star">
+                      <svg class="review__icon review__icon--star" width="20" height="20">
+                        <use x="0" y="0" xlink:href="#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="review__star">
+                      <svg class="review__icon review__icon--star" width="20" height="20">
+                        <use x="0" y="0" xlink:href="#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="review__star">
+                      <svg class="review__icon review__icon--star" width="20" height="20">
+                        <use x="0" y="0" xlink:href="#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li class="review__star">
+                      <svg class="review__icon review__icon--star review__icon--stroke" width="20" height="20">
+                        <use x="0" y="0" xlink:href="#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <textarea name="#" id="#" cols="30" rows="10" class="review__area" placeholder="Ваш отзыв"></textarea>
+                <input type="text" class="review__input">
+                <input type="email" class="review__input">
+                <button class="review__btn" type="submit"></button>
+              </form>
+            </section>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
   <section class="featured">
     <div class="container">
-      <h3 class="featured__title">Новые поступления</h3>
+      <h3 class="featured__title">Похожие товары</h3>
       <ul class="featured__slider">
         <li class="featured__item">
           <div class="featured__buttons">
@@ -1301,956 +1414,7 @@ To emphasise this I use inline style="display: none" -->
       </ul>
     </div>
   </section>
-
-  <section class="video">
-    <div class="container">
-      <div class="video__inner">
-        <h2 class="video__title">Всё что нужно для занятия кроссфитом</h2>
-        <h3 class="video__subtitle">Продвинутый уровень спорта</h3>
-        <button class="video__btn" type="button">
-          <svg class="video__icon" width="30" height="30">
-            <use x="0" y="0" xlink:href="#icon-play"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <section class="features">
-    <div class="container">
-      <ul class="features__list">
-        <li class="features__item">
-          <svg class="features__icon" width="60" height="60">
-            <use x="0" y="0" xlink:href="#icon-delivery"></use>
-          </svg>
-          <h4 class="features__title">Быстрая доставка</h4>
-          <p class="features__text">Заказанный у нас товар мы с радостью доставим Вам с понедельника по субботу
-            включительно!</p>
-        </li>
-        <li class="features__item">
-          <svg class="features__icon" width="60" height="60">
-            <use x="0" y="0" xlink:href="#icon-card"></use>
-          </svg>
-          <h4 class="features__title">100% возврат денег</h4>
-          <p class="features__text"> В течении 120 дней, с момента покупки вы можете вернуть купленный у нас товар если,
-            например, Вы так и не решились его использовать.</p>
-        </li>
-        <li class="features__item">
-          <svg class="features__icon" width="60" height="60">
-            <use x="0" y="0" xlink:href="#icon-approved"></use>
-          </svg>
-          <h4 class="features__title">Оригиналы и только</h4>
-          <p class="features__text">Мы ценим Вас, Ваше здоровье и уважаем Вас и Ваши деньги. Покупая у нас Вы можете
-            быть уверены что купили отличный оригинальный товар по отличной цене.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="featured">
-    <div class="container">
-      <h3 class="featured__title">Популярные товары</h3>
-      <ul class="featured__slider featured__slider--flex">
-        <li class="featured__item featured__item--maxwidth">
-          <div class="featured__buttons">
-            <a href="#" class="featured__link">
-              <img src="img/1-20.jpg" alt="#" class="featured__img" width="600" height="600"> </a>
-            <button class="featured__button" type="button">В корзину</button>
-          </div>
-          <div class="featured__row">
-            <div class="featured__colors">
-              <span class="featured__color"></span>
-              <span class="featured__color"></span>
-            </div>
-            <div class="featured__btns">
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-heart"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="20" height="20">
-                  <use x="0" y="0" xlink:href="#icon-compare"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-search"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="featured__description">
-            <a href="#" class="featured__name">Кроссовки Nike RunAllDay</a>
-            <div class="featured__categories">
-              <a href="#" class="featured__category">Кроссовки</a>,
-              <a href="#" class="featured__category">Бег</a>,
-              <a href="#" class="featured__category">Унисекс</a>
-            </div>
-            <div class="featured__info">
-              <span class="featured__price">
-                55.00
-                <span class="featured__currency">Руб.</span>
-              </span>
-              <div class="featured__rating">
-                <ul class="featured__list">
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star featured__icon--stroke" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="featured__item featured__item--maxwidth">
-          <div class="featured__buttons">
-            <a href="#" class="featured__link">
-              <img src="img/1-20.jpg" alt="#" class="featured__img" width="600" height="600"> </a>
-            <button class="featured__button" type="button">В корзину</button>
-          </div>
-          <div class="featured__row">
-            <div class="featured__colors">
-              <span class="featured__color"></span>
-              <span class="featured__color"></span>
-            </div>
-            <div class="featured__btns">
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-heart"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="20" height="20">
-                  <use x="0" y="0" xlink:href="#icon-compare"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-search"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="featured__description">
-            <a href="#" class="featured__name">Кроссовки Nike RunAllDay</a>
-            <div class="featured__categories">
-              <a href="#" class="featured__category">Кроссовки</a>,
-              <a href="#" class="featured__category">Бег</a>,
-              <a href="#" class="featured__category">Унисекс</a>
-            </div>
-            <div class="featured__info">
-              <span class="featured__price">
-               55.00
-               <span class="featured__currency">Руб.</span>
-              </span>
-              <div class="featured__rating">
-                <ul class="featured__list">
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star featured__icon--stroke" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="featured__item featured__item--maxwidth">
-          <div class="featured__buttons">
-            <a href="#" class="featured__link">
-              <img src="img/1-20.jpg" alt="#" class="featured__img" width="600" height="600"> </a>
-            <button class="featured__button" type="button">В корзину</button>
-          </div>
-          <div class="featured__row">
-            <div class="featured__colors">
-              <span class="featured__color"></span>
-              <span class="featured__color"></span>
-            </div>
-            <div class="featured__btns">
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-heart"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="20" height="20">
-                  <use x="0" y="0" xlink:href="#icon-compare"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-search"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="featured__description">
-            <a href="#" class="featured__name">Кроссовки Nike RunAllDay</a>
-            <div class="featured__categories">
-              <a href="#" class="featured__category">Кроссовки</a>,
-              <a href="#" class="featured__category">Бег</a>,
-              <a href="#" class="featured__category">Унисекс</a>
-            </div>
-            <div class="featured__info">
-              <span class="featured__price">
-                55.00
-              <span class="featured__currency">Руб.</span>
-              </span>
-              <div class="featured__rating">
-                <ul class="featured__list">
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star featured__icon--stroke" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="featured__item featured__item--maxwidth">
-          <div class="featured__buttons">
-            <a href="#" class="featured__link">
-              <img src="img/1-20.jpg" alt="#" class="featured__img" width="600" height="600"> </a>
-            <button class="featured__button" type="button">В корзину</button>
-          </div>
-          <div class="featured__row">
-            <div class="featured__colors">
-              <span class="featured__color"></span>
-              <span class="featured__color"></span>
-            </div>
-            <div class="featured__btns">
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-heart"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="20" height="20">
-                  <use x="0" y="0" xlink:href="#icon-compare"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-search"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="featured__description">
-            <a href="#" class="featured__name">Кроссовки Nike RunAllDay</a>
-            <div class="featured__categories">
-              <a href="#" class="featured__category">Кроссовки</a>,
-              <a href="#" class="featured__category">Бег</a>,
-              <a href="#" class="featured__category">Унисекс</a>
-            </div>
-            <div class="featured__info">
-              <span class="featured__price">
-                55.00
-              <span class="featured__currency">Руб.</span>
-              </span>
-              <div class="featured__rating">
-                <ul class="featured__list">
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star featured__icon--stroke" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="featured__item featured__item--maxwidth">
-          <div class="featured__buttons">
-            <a href="#" class="featured__link">
-              <img src="img/1-20.jpg" alt="#" class="featured__img" width="600" height="600"> </a>
-            <button class="featured__button" type="button">В корзину</button>
-          </div>
-          <div class="featured__row">
-            <div class="featured__colors">
-              <span class="featured__color"></span>
-              <span class="featured__color"></span>
-            </div>
-            <div class="featured__btns">
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-heart"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="20" height="20">
-                  <use x="0" y="0" xlink:href="#icon-compare"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-search"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="featured__description">
-            <a href="#" class="featured__name">Кроссовки Nike RunAllDay</a>
-            <div class="featured__categories">
-              <a href="#" class="featured__category">Кроссовки</a>,
-              <a href="#" class="featured__category">Бег</a>,
-              <a href="#" class="featured__category">Унисекс</a>
-            </div>
-            <div class="featured__info">
-              <span class="featured__price">
-                55.00
-              <span class="featured__currency">Руб.</span>
-              </span>
-              <div class="featured__rating">
-                <ul class="featured__list">
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star featured__icon--stroke" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="featured__item featured__item--maxwidth">
-          <div class="featured__buttons">
-            <a href="#" class="featured__link">
-              <img src="img/1-20.jpg" alt="#" class="featured__img" width="600" height="600"> </a>
-            <button class="featured__button" type="button">В корзину</button>
-          </div>
-          <div class="featured__row">
-            <div class="featured__colors">
-              <span class="featured__color"></span>
-              <span class="featured__color"></span>
-            </div>
-            <div class="featured__btns">
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-heart"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="20" height="20">
-                  <use x="0" y="0" xlink:href="#icon-compare"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-search"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="featured__description">
-            <a href="#" class="featured__name">Кроссовки Nike RunAllDay</a>
-            <div class="featured__categories">
-              <a href="#" class="featured__category">Кроссовки</a>,
-              <a href="#" class="featured__category">Бег</a>,
-              <a href="#" class="featured__category">Унисекс</a>
-            </div>
-            <div class="featured__info">
-              <span class="featured__price">
-               55.00
-               <span class="featured__currency">Руб.</span>
-              </span>
-              <div class="featured__rating">
-                <ul class="featured__list">
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star featured__icon--stroke" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="featured__item featured__item--maxwidth">
-          <div class="featured__buttons">
-            <a href="#" class="featured__link">
-              <img src="img/1-20.jpg" alt="#" class="featured__img" width="600" height="600"> </a>
-            <button class="featured__button" type="button">В корзину</button>
-          </div>
-          <div class="featured__row">
-            <div class="featured__colors">
-              <span class="featured__color"></span>
-              <span class="featured__color"></span>
-            </div>
-            <div class="featured__btns">
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-heart"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="20" height="20">
-                  <use x="0" y="0" xlink:href="#icon-compare"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-search"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="featured__description">
-            <a href="#" class="featured__name">Кроссовки Nike RunAllDay</a>
-            <div class="featured__categories">
-              <a href="#" class="featured__category">Кроссовки</a>,
-              <a href="#" class="featured__category">Бег</a>,
-              <a href="#" class="featured__category">Унисекс</a>
-            </div>
-            <div class="featured__info">
-              <span class="featured__price">
-                55.00
-              <span class="featured__currency">Руб.</span>
-              </span>
-              <div class="featured__rating">
-                <ul class="featured__list">
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star featured__icon--stroke" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="featured__item featured__item--maxwidth">
-          <div class="featured__buttons">
-            <a href="#" class="featured__link">
-              <img src="img/1-20.jpg" alt="#" class="featured__img" width="600" height="600">
-            </a>
-            <button class="featured__button" type="button">В корзину</button>
-          </div>
-          <div class="featured__row">
-            <div class="featured__colors">
-              <span class="featured__color"></span>
-              <span class="featured__color"></span>
-            </div>
-            <div class="featured__btns">
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-heart"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="20" height="20">
-                  <use x="0" y="0" xlink:href="#icon-compare"></use>
-                </svg>
-              </button>
-              <button class="featured__btn">
-                <svg class="featured__icon" width="15" height="15">
-                  <use x="0" y="0" xlink:href="#icon-search"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="featured__description">
-            <a href="#" class="featured__name">Кроссовки Nike RunAllDay</a>
-            <div class="featured__categories">
-              <a href="#" class="featured__category">Кроссовки</a>,
-              <a href="#" class="featured__category">Бег</a>,
-              <a href="#" class="featured__category">Унисекс</a>
-            </div>
-            <div class="featured__info">
-              <span class="featured__price">
-                55.00
-              <span class="featured__currency">Руб.</span>
-              </span>
-              <div class="featured__rating">
-                <ul class="featured__list">
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                  <li class="featured__star">
-                    <svg class="featured__icon featured__icon--star featured__icon--stroke" width="20" height="20">
-                      <use x="0" y="0" xlink:href="#icon-star"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="promo">
-    <div class="promo__item promo__item--first">
-      <a href="#" class="promo__link">
-        <h2 class="promo__title">Бонусы! Выгода!</h2>
-        <h3 class="promo__subtitle">Получите скидку 20%</h3>
-      </a>
-    </div>
-    <div class="promo__item promo__item--second">
-      <a href="#" class="promo__link">
-        <h2 class="promo__title">Весь магазин в твоём смартфоне</h2>
-        <h3 class="promo__subtitle">Загрузите приложение</h3>
-      </a>
-    </div>
-    <div class="promo__item promo__item--third">
-      <a href="#" class="promo__link">
-        <h2 class="promo__title">Скидка 25%</h2>
-        <h3 class="promo__subtitle">На все товары для зала</h3>
-      </a>
-    </div>
-  </section>
-
-  <section class="news">
-    <div class="container">
-      <h3 class="news__title">Новости</h3>
-      <ul class="news__slider">
-        <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="img/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-        <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="img/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-        <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="img/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-        <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="img/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-        <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="img/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-        <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="img/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-        <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="img/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-        <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="img/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-      </ul>
-      <div class="news__pagination">
-        <ul class="news__controls">
-          <li class="news__control"></li>
-          <li class="news__control"></li>
-          <li class="news__control"></li>
-          <li class="news__control"></li>
-          <li class="news__control"></li>
-          <li class="news__control"></li>
-          <li class="news__control"></li>
-          <li class="news__control"></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="widget">
-    <h2 class="widget__title">Мы в инстаграме</h2>
-    <ul class="widget__list" id="instafeed">
-    </ul>
-  </section>
-
-  <section class="subscribe">
-    <div class="container">
-      <div class="subscribe__inner">
-        <div class="subscribe__text">
-          <h3 class="subscribe__title">Подписка на новостную рассылку</h3>
-          <p class="subscribe__desc">Подпишитесь прямо сейчас и получите скидку 25% на один товар на Ваш выбор +
-            бесплатную доставку.</p>
-        </div>
-        <div class="subscribe__inputs">
-          <form action="#" class="subscribe__form">
-            <input type="email" class="subscribe__input" placeholder="Your email">
-            <button class="subscribe__btn" type="submit">Subscribe!</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="quotes">
-    <div class="container">
-      <ul class="quotes__slider">
-        <li class="quotes__slide">
-          <svg class="quotes__icon" width="60" height="60">
-            <use x="0" y="0" xlink:href="#icon-quote"></use>
-          </svg>
-          <p class="quotes__quote">В "Sport Store" закупаюсь регулярно. Очень нравится ассортимент товаров, качество
-            обуви и одежды. Цены, конечно, иногда кусаются, но периодически проводятся различные акции с хорошими
-            скидками. Но все-таки самое лучшее - это качество, т.к. покупая, например кроссовки, я точно знаю, что они
-            не развалятся через месяц! Спасибо!</p>
-          <cite class="quotes__author">Алексей Истомин</cite>
-        </li>
-        <li class="quotes__slide">
-          <svg class="quotes__icon" width="60" height="60">
-            <use x="0" y="0" xlink:href="#icon-quote"></use>
-          </svg>
-          <p class="quotes__quote">Отличный магазин, качество предлагаемой продукции на высоте, отзывчивые и
-            добросовестные сотрудники, огромный выбор товара, доступные цены!!! СПАСИБО!!!</p>
-          <cite class="quotes__author">Пётр Петров</cite>
-        </li>
-      </ul>
-      <div class="quotes__pagination">
-        <ul class="quotes__controls">
-          <li class="quotes__control"></li>
-          <li class="quotes__control"></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="more">
-    <div class="container">
-      <div class="more__inner">
-        <div class="more__column">
-          <h3 class="more__title">Помощь</h3>
-          <ul class="more__list">
-            <li class="more__item">
-              <a href="#" class="more__link">Как сделать заказ</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Условия доставки</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Мои заказы</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Обмен и возврат</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Подарочные сертификаты</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Гид по размерам</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">О компании</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Оставить отзыв</a>
-            </li>
-          </ul>
-        </div>
-        <div class="more__column">
-          <h3 class="more__title">Бренды</h3>
-          <ul class="more__list">
-            <li class="more__item">
-              <a href="#" class="more__link">Nike</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Adidas</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Vans</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Levi's</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">The North Face</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Converse</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Demix</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Decathlon</a>
-            </li>
-          </ul>
-        </div>
-        <div class="more__column">
-          <h3 class="more__title">Виды спорта</h3>
-          <ul class="more__list">
-            <li class="more__item">
-              <a href="#" class="more__link">Бег</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Велоспорт</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Футбол</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Баскетбол</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Сноубординг</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Скейтбординг</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Бокс</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Теннис</a>
-            </li>
-          </ul>
-        </div>
-        <div class="more__column">
-          <h3 class="more__title">Категории</h3>
-          <ul class="more__list">
-            <li class="more__item">
-              <a href="#" class="more__link">Мужское</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Женское</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Детское</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Распродажа</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="companies">
-    <div class="container">
-      <ul class="companies__list">
-        <li class="companies__item">
-          <svg class="companies__icon" width="150" height="150">
-            <use x="0" y="0" xlink:href="#nike-logo"></use>
-          </svg>
-        </li>
-        <li class="companies__item">
-          <svg class="companies__icon" width="150" height="150">
-            <use x="0" y="0" xlink:href="#adidas-logo"></use>
-          </svg>
-        </li>
-        <li class="companies__item">
-          <svg class="companies__icon" width="150" height="150">
-            <use x="0" y="0" xlink:href="#levi-s-logo"></use>
-          </svg>
-        </li>
-        <li class="companies__item">
-          <svg class="companies__icon" width="150" height="150">
-            <use x="0" y="0" xlink:href="#vans-logo"></use>
-          </svg>
-        </li>
-        <li class="companies__item">
-          <svg class="companies__icon" width="150" height="150">
-            <use x="0" y="0" xlink:href="#vans-logo"></use>
-          </svg>
-        </li>
-      </ul>
-    </div>
-  </section>
 </main>
-
 <footer class="page-footer">
   <div class="container">
     <div class="page-footer__logo">
@@ -2318,8 +1482,6 @@ To emphasise this I use inline style="display: none" -->
   <div class="search-popup__result">
   </div>
 </section>
-
 <script src="js/script.min.js" async></script>
 </body>
-
 </html>
