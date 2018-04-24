@@ -248,6 +248,10 @@
     color: #101010;
   }
 
+  &__currency {
+    margin-left: 10px;
+  }
+
 
   @media @screen-sm {
     &__inner {
@@ -257,11 +261,12 @@
 
     &__images {
       margin-right: 20px;
+      max-width: 600px;
     }
 
     &__desc {
       flex-shrink: 0;
-      width: 50%;
+
     }
 
     &__list {
@@ -274,6 +279,27 @@
 
     &__wrap {
       margin-top: 20px;
+    }
+  }
+
+  @media @screen-md {
+    &__images {
+      margin-right: 30px;
+    }
+
+    &__items {
+      justify-content: flex-start;
+    }
+
+    &__link {
+      &--bold {
+        margin-right: 10px;
+      }
+    }
+
+    &__tabslist {
+      flex-direction: row;
+      align-items: flex-end;
     }
   }
 }
