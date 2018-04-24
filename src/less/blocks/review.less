@@ -1,0 +1,94 @@
+.review {
+  &__heading {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__title,
+  &__counter {
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #101010;
+    margin: 0;
+  }
+
+  &__counter {
+    margin-right: 5px;
+  }
+
+  &__thumbnail {
+    border-radius: 50%;
+    vertical-align: top;
+  }
+
+  &__item {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  &__author {
+    font-size: 14px;
+    line-height: 20px;
+    color: #101010;
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: auto;
+  }
+
+  &__date {
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 18px;
+    color: #545454;
+    margin-right: 15px;
+  }
+
+  &__rating {
+    display: flex;
+  }
+
+  &__icon {
+    fill: #f34c05;
+    margin-right: 10px;
+
+    &--star {
+      fill: gold;
+      margin-right: 0;
+    }
+  }
+
+  &__col {
+    margin-right: 20px;
+    &--width {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__caption {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__quote {
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #545454;
+  }
+
+  &__list {
+    margin-bottom: 50px;
+  }
+}
