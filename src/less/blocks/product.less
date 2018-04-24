@@ -1,0 +1,24 @@
+.product {
+  padding-top: 40px;
+
+  &__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    max-width: 30%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--big {
+      max-width: 100%;
+      margin-bottom: 3%;
+    }
+  }
+}
