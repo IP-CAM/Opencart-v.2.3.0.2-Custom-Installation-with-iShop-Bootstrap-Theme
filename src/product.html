@@ -1006,9 +1006,9 @@
       <div class="product__inner">
         <div class="product__images">
           <img src="img/1-20.jpg" alt="#" class="product__img product__img--big" width="600" height="600">
-          <img src="img/1-20.jpg" alt="#" class="product__img" width="600" height="600">
-          <img src="img/1-20.jpg" alt="#" class="product__img" width="600" height="600">
-          <img src="img/1-20.jpg" alt="#" class="product__img" width="600" height="600">
+          <img src="img/1-20.jpg" alt="#" data-jslghtbx class="product__img jslghtbx-thmb" width="600" height="600">
+          <img src="img/1-20.jpg" alt="#" data-jslghtbx class="product__img jslghtbx-thmb" width="600" height="600">
+          <img src="img/1-20.jpg" alt="#" data-jslghtbx class="product__img jslghtbx-thmb" width="600" height="600">
         </div>
         <div class="product__info">
           <h3 class="product__title">Кроссовки Nike RunAllDay</h3>
@@ -1098,7 +1098,7 @@
       </div>
       <div class="product__tabs">
         <ul data-tabs class="product__tabslist tabs" >
-          <li class="product__tabitem"><a data-tab href="#taba" class="product__tablink product__tablink--active">Описание</a></li>
+          <li class="product__tabitem"><a data-tab href="#taba" class="product__tablink active">Описание</a></li>
           <li class="product__tabitem"><a data-tab href="#tabb" class="product__tablink">Дополнительная информация</a></li>
           <li class="product__tabitem"><a data-tab href="#tabc" class="product__tablink">Отзывы <span
             class="product__counter">(1)</span></a></li>
@@ -1584,6 +1584,10 @@
 <script src="js/script.min.js"></script>
 <script>
   tabby.init();
+</script>
+<script>
+  var lightbox = new Lightbox();
+  lightbox.load();
 </script>
 </body>
 </html>
