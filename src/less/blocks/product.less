@@ -117,16 +117,29 @@
   &__option {
     display: flex;
     margin-bottom: 10px;
+    align-items: center;
   }
 
   &__color {
     display: block;
     box-sizing: border-box;
-    width: 18px;
-    height: 18px;
-    background-color: red;
+    width: 23px;
+    height: 23px;
     border-radius: 50%;
     margin-right: 10px;
+    border: 1px solid #dbdbdb;
+
+    &--black {
+      background-color: #000000;
+    }
+
+    &--white {
+      background-color: #ffffff;
+    }
+
+    &--active {
+      border: 3px solid #545454;
+    }
   }
 
   &__desc {
@@ -150,6 +163,7 @@
     font-weight: 400;
     color: #545454;
     padding-right: 10px;
+    transition: all 0.3s ease-in-out;
 
     &::after {
       content: "/";
@@ -169,6 +183,11 @@
       &::after {
         display: none;
       }
+    }
+
+    &:hover {
+      color: #f34c05;
+      transition: all 0.3s ease-in-out;
     }
   }
 
@@ -300,6 +319,10 @@
     &__tabslist {
       flex-direction: row;
       align-items: flex-end;
+    }
+
+    &__button {
+      margin-top: 15px;
     }
   }
 }
