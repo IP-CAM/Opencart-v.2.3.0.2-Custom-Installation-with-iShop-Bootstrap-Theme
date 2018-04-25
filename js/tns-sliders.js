@@ -12,6 +12,7 @@ var slider = tns({
       items: 1
     },
     700: {
+      items: 1
     },
     900: {
       items: 1
@@ -99,11 +100,13 @@ var companiesSlider = tns({
   items: 1,
   autoplay: true,
   autoplayButtonOutput: false,
+  lazyload: true,
   responsive: {
     640: {
       items: 1
     },
     700: {
+      items: 1
     },
     900: {
       items: 2
