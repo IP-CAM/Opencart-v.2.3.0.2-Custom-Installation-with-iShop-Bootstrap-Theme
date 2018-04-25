@@ -1097,18 +1097,18 @@
 
       </div>
       <div class="product__tabs">
-        <ul class="product__tabslist">
-          <li class="product__tabitem"><a href="#" class="product__tablink product__tablink--active">Описание</a></li>
-          <li class="product__tabitem"><a href="#" class="product__tablink">Дополнительная информация</a></li>
-          <li class="product__tabitem"><a href="#" class="product__tablink">Отзывы <span
+        <ul data-tabs class="product__tabslist tabs" >
+          <li class="product__tabitem"><a data-tab href="#taba" class="product__tablink product__tablink--active">Описание</a></li>
+          <li class="product__tabitem"><a data-tab href="#tabb" class="product__tablink">Дополнительная информация</a></li>
+          <li class="product__tabitem"><a data-tab href="#tabc" class="product__tablink">Отзывы <span
             class="product__counter">(1)</span></a></li>
         </ul>
-        <div class="product__box">
-          <div class="product__tab">
+        <div class="product__box" data-tabs-content>
+          <div data-tabs-pane class="product__tab tabs-pane active" id="taba">
             <p class="product__description">Мужские кроссовки Nike RunAllDay гарантируют комфорт и превосходную
               амортизацию во время бега. Модель подходит для асфальтового покрытия.</p>
           </div>
-          <div class="product__tab">
+          <div class="product__tab tabs-pane" data-tabs-pane id="tabb">
             <div class="product__caption">Особенности:</div>
             <div class="product__row">
               <p class="product__feature">Модель подходит для асфальтового покрытия</p>
@@ -1116,7 +1116,7 @@
               <p class="product__feature">Модель подходит для асфальтового покрытия</p>
             </div>
           </div>
-          <div class="product__tab">
+          <div class="product__tab tabs-pane" data-tabs-pane id="tabc">
             <section class="review">
               <div class="review__heading">
                 <span class="review__counter">1</span>
@@ -1581,6 +1581,9 @@
   <div class="search-popup__result">
   </div>
 </section>
-<script src="js/script.min.js" async></script>
+<script src="js/script.min.js"></script>
+<script>
+  tabby.init();
+</script>
 </body>
 </html>
