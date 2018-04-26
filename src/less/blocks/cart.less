@@ -209,6 +209,12 @@
     border: none;
     margin: 0 auto;
     color: #ffffff;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #f34c05;
+      transition: all 0.3s ease-in-out;
+    }
   }
 
   &__coupon {
@@ -289,6 +295,144 @@
 
   &__collaterials {
     margin-bottom: 80px;
+  }
+
+  @media @screen-md {
+    thead {
+      display: block;
+    }
+
+    &__item {
+      flex-wrap: nowrap;
+    }
+
+    &__remove {
+      padding: 0 20px;
+      position: relative;
+      left: auto;
+      right: auto;
+      top: auto;
+    }
+
+    &__thumbnail {
+      width: 50px;
+      height: 50px;
+      flex-shrink: 0;
+      margin-right: 20px;
+    }
+
+    &__img {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__name {
+      padding-left: 0;
+      padding-right: 10px;
+      text-align: left;
+    }
+
+    &__variations {
+      justify-content: flex-start;
+    }
+
+    &__price {
+      text-align: left;
+      padding: 0;
+      padding-left: 5px;
+    }
+
+    &__input {
+      margin: 0;
+    }
+
+    &__subtotal {
+      padding-left: 0;
+    }
+
+    &__name,
+    &__remove,
+    &__thumbnail,
+    &__price,
+    &__quantity,
+    &__subtotal {
+      &--padding {
+        padding: 15px 0;
+        font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: bold;
+        font-style: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #101010;
+        text-align: left;
+      }
+    }
+
+    &__remove {
+      &--padding {
+        box-sizing: border-box;
+        position: relative;
+        width: 60px;
+        left: auto;
+        right: auto;
+        top: auto;
+        flex-shrink: 0;
+      }
+    }
+
+    &__thumbnail {
+      &--padding {
+        width: 50px;
+        flex-shrink: 0;
+        height: initial;
+      }
+    }
+
+    &__tr {
+      &--border {
+        border: 1px solid #dbdbdb;
+        border-bottom: none;
+        background-color: #f8f8f8;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #dbdbdb;
+      border-top: none;
+    }
+
+    &__coupon {
+      display: flex;
+      justify-content: space-between;
+      width: 450px;
+      margin: 0;
+    }
+
+    &__input {
+      &--width {
+        max-width: 260px;
+      }
+    }
+
+    &__button {
+      margin: 0;
+
+      &--width {
+        width: 65px;
+      }
+    }
+
+    &__table {
+      &--total {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+
   }
 
 

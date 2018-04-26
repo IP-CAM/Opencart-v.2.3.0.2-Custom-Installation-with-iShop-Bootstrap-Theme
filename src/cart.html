@@ -982,13 +982,13 @@ To emphasise this I use inline style="display: none" -->
         <form action="#" class="cart__field">
           <table class="cart__table">
             <thead>
-            <tr>
-              <th class="cart__remove">&nbsp;</th>
-              <th class="cart__thumbnail">&nbsp;</th>
-              <th class="cart__name">Product</th>
-              <th class="cart__price">Price</th>
-              <th class="cart__quantity">Quantity</th>
-              <th class="cart__subtotal">Total</th>
+            <tr class="cart__tr cart__tr--border">
+              <th class="cart__remove cart__remove--padding">&nbsp;</th>
+              <th class="cart__thumbnail cart__thumbnail--padding">&nbsp;</th>
+              <th class="cart__name cart__name--padding">Товар</th>
+              <th class="cart__price cart__price--padding">Цена</th>
+              <th class="cart__quantity cart__quantity--padding">Количество</th>
+              <th class="cart__subtotal cart__subtotal--padding">Итого</th>
             </tr>
             </thead>
             <tbody>
@@ -1024,7 +1024,7 @@ To emphasise this I use inline style="display: none" -->
                 </td>
               </tr>
               <tr>
-                <td colspan="6" class="cart__buttons">
+                <td class="cart__buttons">
                   <div class="cart__coupon">
                     <label for="cart__code" class="cart__label">Coupon:</label>
                     <input type="text" name="cart__code" class="cart__input cart__input--width" id="cart__code" value="" placeholder="Код">
@@ -1055,7 +1055,7 @@ To emphasise this I use inline style="display: none" -->
           </tr>
           </tbody>
         </table>
-        <a class="cart__button" type="button">Оплатить</a>
+        <a class="cart__button cart__button--width" type="button" >Оплатить</a>
       </div>
     </div>
   </section>
