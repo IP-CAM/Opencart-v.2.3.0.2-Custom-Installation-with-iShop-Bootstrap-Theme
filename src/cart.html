@@ -1026,11 +1026,11 @@ To emphasise this I use inline style="display: none" -->
               <tr>
                 <td colspan="6" class="cart__buttons">
                   <div class="cart__coupon">
-                    <label for="cart__code">Coupon:</label>
-                    <input type="text" name="cart__code" class="cart__input" id="cart__code" value="" placeholder="Код">
-                    <button class="cart__button" type="submit"></button>
+                    <label for="cart__code" class="cart__label">Coupon:</label>
+                    <input type="text" name="cart__code" class="cart__input cart__input--width" id="cart__code" value="" placeholder="Код">
+                    <button class="cart__button" type="submit">Применить</button>
                   </div>
-                  <button class="cart__button" type="submit"></button>
+                  <button class="cart__button" type="submit">Обновить</button>
                 </td>
               </tr>
             </tbody>
@@ -1039,18 +1039,18 @@ To emphasise this I use inline style="display: none" -->
       </div>
       <div class="cart__collaterials">
         <h2 class="cart__title">Всего:</h2>
-        <table cellspacing="0" class="cart__table">
+        <table cellspacing="0" class="cart__table cart__table--total">
           <tbody>
-          <tr class="cart__subtotal">
-            <th>Цена</th>
-            <td>
-              <span class="cart__price">55<span class="cart__currency">Руб.</span></span>
+          <tr class="cart__pricing">
+            <th class="cart__th cart__th--border">Цена</th>
+            <td class="cart__td cart__td--border">
+              <span class="cart__price cart__price--table">55<span class="cart__currency">Руб.</span></span>
             </td>
           </tr>
           <tr class="cart__total">
-            <th>Всего</th>
-            <td>
-              <span class="cart__price">55<span class="cart__currency">Руб.</span></span>
+            <th class="cart__th">Всего</th>
+            <td class="cart__td">
+              <span class="cart__price cart__price--table">55<span class="cart__currency">Руб.</span></span>
             </td>
           </tr>
           </tbody>

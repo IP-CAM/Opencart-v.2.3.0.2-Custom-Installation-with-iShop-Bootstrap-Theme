@@ -4,6 +4,7 @@
   &__inner {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
   }
 
   &__collaterials {
@@ -170,5 +171,127 @@
     border: 1px solid #dbdbdb;
     color: #a0a0a0;
     background-color: #ffffff;
+
+    &--width {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
+
+  tr {
+    display: flex;
+  }
+
+  &__label {
+    display: none;
+  }
+
+  &__buttons {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    background-color: #f8f8f8;
+  }
+
+  &__button {
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    padding: 0 40px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #101010;
+    border: none;
+    margin: 0 auto;
+    color: #ffffff;
+  }
+
+  &__coupon {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #101010;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__table {
+    &--total {
+      width: 100%;
+      border-spacing: 0;
+      border-collapse: separate;
+      margin-bottom: 10px;
+      vertical-align: middle;
+    }
+  }
+
+  &__pricing,
+  &__total {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f8f8f8;
+  }
+
+  &__th {
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #101010;
+    border: 1px solid #dbdbdb;
+    width: 43%;
+    padding: 15px 20px;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+
+    &--border {
+      border-bottom: none;
+    }
+  }
+
+  &__td {
+    border: 1px solid #dbdbdb;
+    border-left: none;
+    padding: 15px 20px;
+    width: 57%;
+    text-align: right;
+
+    &--border {
+      border-bottom: none;
+    }
+  }
+
+  &__price {
+    &--table {
+      font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #f34c05;
+    }
+  }
+
+  &__collaterials {
+    margin-bottom: 80px;
+  }
+
+
+
+
 }
