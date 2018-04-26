@@ -189,9 +189,7 @@
       position: relative;
 
       &:hover .page-header__box {
-        opacity: 1;
-        top: 100%;
-        transition: all 0.3s ease-in-out;
+        display: block;
       }
 
       &::before {
@@ -205,8 +203,7 @@
     }
 
     &__box {
-      display: block;
-      opacity: 0;
+      display: none;
       box-sizing: border-box;
       width: 300px;
       padding: 15px 0;
@@ -215,8 +212,7 @@
       background-color: #191919;
       left: auto;
       right: 10px;
-      top: 150%;
-      transition: all 0.3s ease-in-out;
+      top: 100%;
 
       &::after {
         content: '';
