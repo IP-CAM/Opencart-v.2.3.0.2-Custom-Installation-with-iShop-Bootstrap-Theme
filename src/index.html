@@ -803,7 +803,7 @@ To emphasise this I use inline style="display: none" -->
 
 <header class="page-header" role="banner">
   <div class="page-header__logo">
-    <a href="#" class="page-header__link">
+    <a href="#" class="page-header__home">
       <img src="img/logo-black.svg" alt="Sports Store" class="page-header__logotype" width="206" height="26">
     </a>
   </div>
@@ -818,12 +818,48 @@ To emphasise this I use inline style="display: none" -->
         <use x="0" y="0" xlink:href="#icon-search"></use>
       </svg>
     </a>
-    <a href="#" class="page-header__cart">
-      <svg class="page-header__icon" width="20" height="20">
-        <use x="0" y="0" xlink:href="#icon-cart"></use>
-      </svg>
-      <span class="page-header__counter">0</span>
-    </a>
+    <div class="page-header__inner">
+      <a href="#" class="page-header__cart">
+        <svg class="page-header__icon" width="20" height="20">
+          <use x="0" y="0" xlink:href="#icon-cart"></use>
+        </svg>
+        <span class="page-header__counter">1</span>
+      </a>
+      <div class="page-header__box">
+        <ul class="page-header__items">
+          <li class="page-header__item">
+            <div class="page-header__wrap">
+              <img src="img/1-20.jpg" alt="#" class="page-header__img" width="600" height="600">
+              <div class="page-header__wrapper">
+                <div class="page-header__links">
+                  <a href="#" class="page-header__link">Кроссовки Nike RunAllDay</a>
+                  <a href="#" class="page-header__link">
+                    <span></span>
+                    <span></span>
+                  </a>
+                </div>
+                <div class="page-header__variations">
+                  <span class="page-header__variation">Цвет:</span>
+                  <span class="page-header__value">Черный</span>
+                </div>
+                <div class="page-header__quantity">
+                  <span class="page-header__price">55 <span class="page-header__currency">Руб.</span></span>
+                  <span class="page-header__value">x1</span>
+                </div>
+              </div>
+            </div>
+            <div class="page-header__total">
+              <span class="page-header__subtotal">Всего:</span>
+              <span class="page-header__price page-header__price--big">55 <span class="page-header__currency">Руб.</span></span>
+            </div>
+            <div class="page-header__btns">
+              <a href="#" class="page-header__btn">В корзину</a>
+              <a href="#" class="page-header__btn page-header__btn--orange">Оплатить</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
     <a href="#" class="page-header__wishlist">
       <svg class="page-header__icon" width="20" height="20">
         <use x="0" y="0" xlink:href="#icon-heart"></use>
@@ -2318,7 +2354,6 @@ To emphasise this I use inline style="display: none" -->
   <div class="search-popup__result">
   </div>
 </section>
-
 <script src="js/script.min.js" async></script>
 </body>
 
