@@ -1,3 +1,174 @@
 .cart {
-  
+  padding-top: 80px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__collaterials {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__field{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    border: 1px solid #dbdbdb;
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: block;
+    text-align: center;
+    overflow: hidden
+  }
+
+  &__remove {
+    padding: 0;
+    position: absolute;
+    left: auto;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+  }
+
+  &__link {
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #101010;
+
+    &--remove {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+
+      & span {
+        display: block;
+        width: 15px;
+        height: 1px;
+        background-color: #101010;
+        position: absolute;
+      }
+
+      & span:first-child {
+        transform: rotate(45deg);
+      }
+
+      & span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__thumbnail {
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  &__name {
+    padding: 15px;
+    width: 100%;
+
+  }
+
+  &__variations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__variation {
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-right: 5px;
+    color: #545454;
+    min-width: 50px;
+    text-align: left;
+  }
+
+  &__value {
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #545454;
+    min-width: 50px;
+    text-align: left;
+  }
+
+  &__price,
+  &__quantity,
+  &__subtotal {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 33.33%;
+    margin: 0 -2px;
+    vertical-align: middle;
+    padding: 15px;
+  }
+
+  &__subtotal {
+    text-align: left;
+  }
+
+  &__price {
+    display: inline;
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #545454;
+    text-align: right;
+
+    &--orange {
+      color: #f34c05;
+    }
+  }
+
+  &__currency {
+    margin-left: 5px;
+  }
+
+  &__input {
+    display: block;
+    width: 65px;
+    margin: 0 auto;
+    box-sizing: border-box !important;
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 11px 15px;
+    max-width: 100%;
+    border: 1px solid #dbdbdb;
+    color: #a0a0a0;
+    background-color: #ffffff;
+  }
 }
