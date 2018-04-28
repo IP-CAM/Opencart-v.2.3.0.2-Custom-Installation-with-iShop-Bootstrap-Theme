@@ -1,0 +1,105 @@
+.login {
+  padding-top: 80px;
+  margin-bottom: 80px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__field {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 22px;
+    color: #101010;
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__label {
+    display: block;
+    font-size: 12px;
+    padding-bottom: 5px;
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #545454;
+
+    & span {
+      color: #f34c05;
+    }
+
+    &--nopadding {
+      padding: 0;
+      margin-left: 5px;
+    }
+  }
+
+  &__input {
+    margin-bottom: 22px;
+    color: #a0a0a0;
+    border: 1px solid #dbdbdb;
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 11px 15px;
+    height: 46px;
+    max-width: 100%;
+    width: 260px;
+    box-sizing: border-box !important;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    display: block;
+    padding: 0 40px;
+    margin-right: 15px;
+    border: none;
+    background-color: #101010;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #f34c05;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__link {
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #f34c05;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #dbdbdb;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  @media @screen-sm {
+    &__inner {
+      align-items: center;
+    }
+  }
+}
