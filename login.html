@@ -321,53 +321,45 @@ To emphasise this I use inline style="display: none" -->
 </header>
 
 <main class="page-content" role="main">
-  <section class="new">
-    <ul class="new__list">
-      <li class="new__item new__item--first">
-        <time class="new__date" datetime="2017-05-05">2017</time>
-        <h2 class="new__title">Кроссовки для бега</h2>
-        <a href="#" class="new__btn">Купить сейчас</a>
-      </li>
-      <li class="new__item new__item--second">
-        <time class="new__date" datetime="2017-05-05">2017</time>
-        <h2 class="new__title">Кроссовки для бега</h2>
-        <a href="#" class="new__btn">Купить сейчас</a>
-      </li>
-      <li class="new__item new__item--third">
-        <time class="new__date" datetime="2017-05-05">2017</time>
-        <h2 class="new__title">Кроссовки для бега</h2>
-        <a href="#" class="new__btn">Купить сейчас</a>
-      </li>
-      <li class="new__item new__item--fourth">
-        <time class="new__date" datetime="2017-05-05">2017</time>
-        <h2 class="new__title">Кроссовки для бега</h2>
-        <a href="#" class="new__btn">Купить сейчас</a>
-      </li>
-    </ul>
-  </section>
-  <section class="subscribe">
+  <section class="breadcrumbs">
     <div class="container">
-      <div class="subscribe__inner">
-        <div class="subscribe__text">
-          <h3 class="subscribe__title">Подписка на новостную рассылку</h3>
-          <p class="subscribe__desc">Подпишитесь прямо сейчас и получите скидку 25% на один товар на Ваш выбор +
-            бесплатную доставку.</p>
-        </div>
-        <div class="subscribe__inputs">
-          <form action="#" class="subscribe__form">
-            <input type="email" class="subscribe__input" placeholder="Your email">
-            <button class="subscribe__btn" type="submit">Subscribe!</button>
-          </form>
+      <div class="breadcrumbs__inner">
+        <h1 class="breadcrumbs__title">Мой аккаунт</h1>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Мой аккаунт</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="login">
+    <div class="container">
+      <div class="login__inner">
+        <h2 class="login__title">Авторизация</h2>
+        <form action="#" class="login__field">
+          <label for="login" class="login__label">Имя пользователя или e-mail <span>*</span></label>
+          <input type="text" class="login__input" name="login" id="login">
+          <label for="pass" class="login__label">Пароль<span>*</span></label>
+          <input type="password" class="login__input" id="pass">
+          <div class="login__btns">
+            <button class="login__btn" type="submit">Войти</button>
+            <input type="checkbox" class="login__checkbox" name="remember" id="remember">
+            <label for="remember" class="login__label login__label--nopadding">Запомнить меня</label>
+          </div>
+        </form>
+        <div class="login__links">
+          <a href="#" class="login__link">Забыли пароль?</a>
+          <a href="#" class="login__link">Зарегистрироваться</a>
         </div>
       </div>
     </div>
   </section>
 </main>
-
 <footer class="page-footer">
   <div class="container">
     <div class="page-footer__logo">
-      <a href="index.html" class="page-footer__link">
+      <a href="#" class="page-footer__link">
         <img src="img/logo-white.svg" alt="Sports Store" class="page-footer__logotype  " width="206" height="26">
       </a>
     </div>
