@@ -316,14 +316,168 @@ To emphasise this I use inline style="display: none" -->
     </ul>
   </nav>
 </header>
+
 <main class="page-content" role="main">
-  <section class="error">
+  <section class="breadcrumbs">
     <div class="container">
-      <h1 class="error__title">404</h1>
-      <p class="error__text">Извините, страница не найдена</p>
+      <div class="breadcrumbs__inner">
+        <h1 class="breadcrumbs__title">Блог</h1>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Блог</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="blog">
+    <div class="container">
+      <div class="blog__inner">
+        <div class="blog__posts">
+          <ul class="blog__list">
+            <li class="blog__item">
+              <img src="#" alt="#" class="blog__img" width="" height="">
+              <div class="blog__wrapper">
+                <time class="blog__date" datetime="2018-05-05">5 Мая, 2018</time>
+                <a href="#" class="blog__like"><span class="blog__counter">12</span></a>
+                <a href="#" class="blog__comment"><span class="blog__counter">5</span></a>
+              </div>
+              <h2 class="blog__title">6 причин заниматься спортом</h2>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
+              <div class="blog__category">Категория: <a href="#" class="blog__link">Советы</a></div>
+            </li>
+            <li class="blog__item">
+              <img src="#" alt="#" class="blog__img" width="" height="">
+              <div class="blog__wrapper">
+                <time class="blog__date" datetime="2018-05-05">5 Мая, 2018</time>
+                <a href="#" class="blog__like"><span class="blog__counter">12</span></a>
+                <a href="#" class="blog__comment"><span class="blog__counter">5</span></a>
+              </div>
+              <h2 class="blog__title">6 причин заниматься спортом</h2>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
+              <div class="blog__category">Категория: <a href="#" class="blog__link">Советы</a></div>
+            </li>
+            <li class="blog__item">
+              <img src="#" alt="#" class="blog__img" width="" height="">
+              <div class="blog__wrapper">
+                <time class="blog__date" datetime="2018-05-05">5 Мая, 2018</time>
+                <a href="#" class="blog__like"><span class="blog__counter">12</span></a>
+                <a href="#" class="blog__comment"><span class="blog__counter">5</span></a>
+              </div>
+              <h2 class="blog__title">6 причин заниматься спортом</h2>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
+              <div class="blog__category">Категория: <a href="#" class="blog__link">Советы</a></div>
+            </li>
+            <li class="blog__item">
+              <img src="#" alt="#" class="blog__img" width="" height="">
+              <div class="blog__wrapper">
+                <time class="blog__date" datetime="2018-05-05">5 Мая, 2018</time>
+                <a href="#" class="blog__like"><span class="blog__counter">12</span></a>
+                <a href="#" class="blog__comment"><span class="blog__counter">5</span></a>
+              </div>
+              <h2 class="blog__title">6 причин заниматься спортом</h2>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
+              <div class="blog__category">Категория: <a href="#" class="blog__link">Советы</a></div>
+            </li>
+            <li class="blog__item">
+              <img src="#" alt="#" class="blog__img" width="" height="">
+              <div class="blog__wrapper">
+                <time class="blog__date" datetime="2018-05-05">5 Мая, 2018</time>
+                <a href="#" class="blog__like"><span class="blog__counter">12</span></a>
+                <a href="#" class="blog__comment"><span class="blog__counter">5</span></a>
+              </div>
+              <h2 class="blog__title">6 причин заниматься спортом</h2>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
+              <div class="blog__category">Категория: <a href="#" class="blog__link">Советы</a></div>
+            </li>
+          </ul>
+          <button class="blog__btn">Загрузить больше</button>
+        </div>
+        <aside class="blog__aside">
+          <form action="#" class="blog__field">
+            <input type="search" class="blog__input" aria-label="Введите название" placeholder="Введите название">
+            <button class="blog__button">
+              <svg class="blog__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <h3 class="blog__title">Категории</h3>
+          <ul class="blog__list">
+            <li class="blog__item"><a href="#" class="blog__link">Советы</a></li>
+            <li class="blog__item"><a href="#" class="blog__link">Мода</a></li>
+            <li class="blog__item"><a href="#" class="blog__link">Идеальное тело</a></li>
+            <li class="blog__item"><a href="#" class="blog__link">Тренировки</a></li>
+          </ul>
+          <h3 class="blog__title">Блог</h3>
+          <div class="blog__tabs">
+            <ul data-tabs="" class="blog__tabslist tabs">
+              <li class="blog__tabitem"><a data-tab="" href="#taba" class="blog__tablink active">Последние</a></li>
+              <li class="blog__tabitem"><a data-tab="" href="#tabb" class="blog__tablink">Популярные</a></li>
+            </ul>
+            <div class="blog__box" data-tabs-content="">
+              <div data-tabs-pane="" class="blog__tab tabs-pane active" id="taba">
+                <ul class="blog__list">
+                  <li class="blog__item">
+                    <img src="#" alt="#" class="blog__thumb" width="" height="">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                  <li class="blog__item">
+                    <img src="#" alt="#" class="blog__thumb" width="" height="">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                  <li class="blog__item">
+                    <img src="#" alt="#" class="blog__thumb" width="" height="">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="blog__tab tabs-pane" data-tabs-pane="" id="tabb">
+                <ul class="blog__list">
+                  <li class="blog__item">
+                    <img src="#" alt="#" class="blog__thumb" width="" height="">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                  <li class="blog__item">
+                    <img src="#" alt="#" class="blog__thumb" width="" height="">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                  <li class="blog__item">
+                    <img src="#" alt="#" class="blog__thumb" width="" height="">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h3 class="blog__title">Подпишитесь на нашу рассылку</h3>
+          <form action="#" class="blog__field">
+            <input type="email" class="blog__input" placeholder="Ваш e-mail" aria-label="email">
+            <button class="type__btn" type="submit">Подписаться!</button>
+          </form>
+        </aside>
+      </div>
     </div>
   </section>
 </main>
+
 <footer class="page-footer">
   <div class="container">
     <div class="page-footer__logo">
@@ -404,4 +558,5 @@ To emphasise this I use inline style="display: none" -->
   });
 </script>
 </body>
+
 </html>
