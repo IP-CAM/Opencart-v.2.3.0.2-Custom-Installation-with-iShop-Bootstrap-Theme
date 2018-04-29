@@ -321,94 +321,208 @@ To emphasise this I use inline style="display: none" -->
   <section class="breadcrumbs">
     <div class="container">
       <div class="breadcrumbs__inner">
-        <h1 class="breadcrumbs__title">Корзина</h1>
+        <h1 class="breadcrumbs__title">Блог</h1>
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Корзина</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--active">Блог</a></li>
         </ul>
       </div>
     </div>
   </section>
-  <section class="cart">
+  <section class="blog">
     <div class="container">
-      <div class="cart__inner">
-        <form action="#" class="cart__field">
-          <table class="cart__table">
-            <thead>
-            <tr class="cart__tr cart__tr--border">
-              <th class="cart__remove cart__remove--padding">&nbsp;</th>
-              <th class="cart__thumbnail cart__thumbnail--padding">&nbsp;</th>
-              <th class="cart__name cart__name--padding">Товар</th>
-              <th class="cart__price cart__price--padding">Цена</th>
-              <th class="cart__quantity cart__quantity--padding">Количество</th>
-              <th class="cart__subtotal cart__subtotal--padding">Итого</th>
-            </tr>
-            </thead>
-            <tbody>
-              <tr class="cart__item">
-                <td class="cart__remove">
-                  <a href="#" class="cart__link cart__link--remove">
-                    <span></span>
-                    <span></span>
-                  </a>
-                </td>
-                <td class="cart__thumbnail">
-                  <a href="#" class="cart__link"><img src="img/1-20.jpg" alt="#" class="cart__img" width="600" height="600"></a>
-                </td>
-                <td class="cart__name">
-                  <a href="#" class="cart__link">Кроссовки NikeRunAllDay</a>
-                  <div class="cart__variations">
-                    <span class="cart__variation">Размер:</span>
-                    <span class="cart__value">42</span>
-                  </div>
-                  <div class="cart__variations">
-                    <span class="cart__variation">Цвет: </span>
-                    <span class="cart__value">Черный</span>
-                  </div>
-                </td>
-                <td class="cart__price">
-                  <span class="cart__price">55<span class="cart__currency">Руб.</span></span>
-                </td>
-                <td class="cart__quantity">
-                  <input type="number" class="cart__input" value="1">
-                </td>
-                <td class="cart__subtotal">
-                  <span class="cart__price cart__price--orange">55<span class="cart__currency">Руб.</span></span>
-                </td>
-              </tr>
-              <tr>
-                <td class="cart__buttons">
-                  <div class="cart__coupon">
-                    <label for="cart__code" class="cart__label">Coupon:</label>
-                    <input type="text" name="cart__code" class="cart__input cart__input--width" id="cart__code" value="" placeholder="Код">
-                    <button class="cart__button" type="submit">Применить</button>
-                  </div>
-                  <button class="cart__button" type="submit">Обновить</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </form>
-      </div>
-      <div class="cart__collaterials">
-        <h2 class="cart__title">Всего:</h2>
-        <table cellspacing="0" class="cart__table cart__table--total">
-          <tbody>
-          <tr class="cart__pricing">
-            <th class="cart__th cart__th--border">Цена</th>
-            <td class="cart__td cart__td--border">
-              <span class="cart__price cart__price--table">55<span class="cart__currency">Руб.</span></span>
-            </td>
-          </tr>
-          <tr class="cart__total">
-            <th class="cart__th">Всего</th>
-            <td class="cart__td">
-              <span class="cart__price cart__price--table">55<span class="cart__currency">Руб.</span></span>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-        <a class="cart__button cart__button--width" type="button" >Оплатить</a>
+      <div class="blog__inner">
+        <div class="blog__posts">
+          <ul class="blog__list">
+            <li class="blog__item">
+              <img src="img/6-860x526.jpg" alt="#" class="blog__img" width="860" height="526">
+              <div class="blog__wrapper">
+                <time class="blog__date" datetime="2018-05-05">5 Мая, 2018</time>
+                <a href="#" class="blog__like">
+                  <svg class="blog__icon" width="12" height="12">
+                    <use x="0" y="0" xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="blog__counter">12</span>
+                </a>
+                <a href="#" class="blog__comment">
+                  <svg class="blog__icon" width="12" height="12">
+                    <use x="0" y="0" xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="blog__counter">5</span>
+                </a>
+              </div>
+              <h2 class="blog__title">6 причин заниматься спортом</h2>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
+              <div class="blog__category">Категория: <a href="#" class="blog__link">Советы</a></div>
+            </li>
+            <li class="blog__item">
+              <img src="img/6-860x526.jpg" alt="#" class="blog__img" width="860" height="526">
+              <div class="blog__wrapper">
+                <time class="blog__date" datetime="2018-05-05">5 Мая, 2018</time>
+                <a href="#" class="blog__like">
+                  <svg class="blog__icon" width="12" height="12">
+                    <use x="0" y="0" xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="blog__counter">12</span>
+                </a>
+                <a href="#" class="blog__comment">
+                  <svg class="blog__icon" width="12" height="12">
+                    <use x="0" y="0" xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="blog__counter">5</span>
+                </a>
+              </div>
+              <h2 class="blog__title">6 причин заниматься спортом</h2>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
+              <div class="blog__category">Категория: <a href="#" class="blog__link">Советы</a></div>
+            </li>
+            <li class="blog__item">
+              <img src="img/6-860x526.jpg" alt="#" class="blog__img" width="860" height="526">
+              <div class="blog__wrapper">
+                <time class="blog__date" datetime="2018-05-05">5 Мая, 2018</time>
+                <a href="#" class="blog__like">
+                  <svg class="blog__icon" width="12" height="12">
+                    <use x="0" y="0" xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="blog__counter">12</span>
+                </a>
+                <a href="#" class="blog__comment">
+                  <svg class="blog__icon" width="12" height="12">
+                    <use x="0" y="0" xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="blog__counter">5</span>
+                </a>
+              </div>
+              <h2 class="blog__title">6 причин заниматься спортом</h2>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
+              <div class="blog__category">Категория: <a href="#" class="blog__link">Советы</a></div>
+            </li>
+            <li class="blog__item">
+              <img src="img/6-860x526.jpg" alt="#" class="blog__img" width="860" height="526">
+              <div class="blog__wrapper">
+                <time class="blog__date" datetime="2018-05-05">5 Мая, 2018</time>
+                <a href="#" class="blog__like">
+                  <svg class="blog__icon" width="12" height="12">
+                    <use x="0" y="0" xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="blog__counter">12</span>
+                </a>
+                <a href="#" class="blog__comment">
+                  <svg class="blog__icon" width="12" height="12">
+                    <use x="0" y="0" xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="blog__counter">5</span>
+                </a>
+              </div>
+              <h2 class="blog__title">6 причин заниматься спортом</h2>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
+              <div class="blog__category">Категория: <a href="#" class="blog__link">Советы</a></div>
+            </li>
+            <li class="blog__item">
+              <img src="img/6-860x526.jpg" alt="#" class="blog__img" width="860" height="526">
+              <div class="blog__wrapper">
+                <time class="blog__date" datetime="2018-05-05">5 Мая, 2018</time>
+                <a href="#" class="blog__like">
+                  <svg class="blog__icon" width="12" height="12">
+                    <use x="0" y="0" xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="blog__counter">12</span>
+                </a>
+                <a href="#" class="blog__comment">
+                  <svg class="blog__icon" width="12" height="12">
+                    <use x="0" y="0" xlink:href="#icon-heart"></use>
+                  </svg>
+                  <span class="blog__counter">5</span>
+                </a>
+              </div>
+              <h2 class="blog__title">6 причин заниматься спортом</h2>
+              <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quasi.</p>
+              <div class="blog__category">Категория: <a href="#" class="blog__link">Советы</a></div>
+            </li>
+          </ul>
+          <button class="blog__btn">Загрузить больше</button>
+        </div>
+        <aside class="blog__aside">
+          <form action="#" class="blog__field">
+            <input type="search" class="blog__input" aria-label="Введите название" placeholder="Введите название">
+            <button class="blog__button">
+              <svg class="blog__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <h3 class="blog__title blog__title--margin blog__title--small">Категории</h3>
+          <ul class="blog__list blog__list--margin">
+            <li class="blog__item blog__item--nomarg"><a href="#" class="blog__link">Советы</a></li>
+            <li class="blog__item blog__item--nomarg"><a href="#" class="blog__link">Мода</a></li>
+            <li class="blog__item blog__item--nomarg"><a href="#" class="blog__link">Идеальное тело</a></li>
+            <li class="blog__item blog__item--nomarg"><a href="#" class="blog__link">Тренировки</a></li>
+          </ul>
+          <h3 class="blog__title blog__title--margin blog__title--small">Блог</h3>
+          <div class="blog__tabs">
+            <ul data-tabs="" class="blog__tabslist tabs">
+              <li class="blog__tabitem"><a data-tab="" href="#taba" class="blog__tablink active">Последние</a></li>
+              <li class="blog__tabitem"><a data-tab="" href="#tabb" class="blog__tablink">Популярные</a></li>
+            </ul>
+            <div class="blog__box" data-tabs-content="">
+              <div data-tabs-pane="" class="blog__tab tabs-pane active" id="taba">
+                <ul class="blog__list">
+                  <li class="blog__post">
+                    <img src="img/6-580x420.jpg" alt="#" class="blog__thumb" width="284" height="206">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link blog__link--orange">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                  <li class="blog__post">
+                    <img src="img/6-580x420.jpg" alt="#" class="blog__thumb" width="284" height="206">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link blog__link--orange">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                  <li class="blog__post">
+                    <img src="img/6-580x420.jpg" alt="#" class="blog__thumb" width="284" height="206">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link blog__link--orange">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="blog__tab tabs-pane" data-tabs-pane="" id="tabb">
+                <ul class="blog__list">
+                  <li class="blog__post">
+                    <img src="img/6-580x420.jpg" alt="#" class="blog__thumb" width="284" height="206">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link blog__link--orange">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                  <li class="blog__post">
+                    <img src="img/6-580x420.jpg" alt="#" class="blog__thumb" width="284" height="206">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link blog__link--orange">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                  <li class="blog__post">
+                    <img src="img/6-580x420.jpg" alt="#" class="blog__thumb" width="284" height="206">
+                    <div class="blog__desc">
+                      <a href="#" class="blog__link blog__link--orange">6 причин заняться спортом</a>
+                      <time class="blog__date" datetime="2018-05-05">5 мая, 2018</time>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h3 class="blog__title blog__title--margin blog__title--small">Подпишитесь на нашу рассылку</h3>
+          <form action="#" class="blog__field">
+            <input type="email" class="blog__input blog__input--margin" placeholder="Ваш e-mail" aria-label="email">
+            <button class="blog__btn blog__btn--nomargin" type="submit">Подписаться!</button>
+          </form>
+        </aside>
       </div>
     </div>
   </section>
@@ -417,7 +531,7 @@ To emphasise this I use inline style="display: none" -->
 <footer class="page-footer">
   <div class="container">
     <div class="page-footer__logo">
-      <a href="#" class="page-footer__link">
+      <a href="index.html" class="page-footer__link">
         <img src="img/logo-white.svg" alt="Sports Store" class="page-footer__logotype  " width="206" height="26">
       </a>
     </div>
@@ -481,7 +595,7 @@ To emphasise this I use inline style="display: none" -->
   <div class="search-popup__result">
   </div>
 </section>
-<script src="js/script.min.js" defer></script>
+<script src="js/script.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const styles = ['css/style.min.css'];
@@ -493,5 +607,9 @@ To emphasise this I use inline style="display: none" -->
   });
   });
 </script>
+<script>
+  tabby.init();
+</script>
 </body>
+
 </html>
