@@ -52,6 +52,11 @@
     &--margin {
       margin-bottom: 20px;
     }
+
+    &--small {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   &__text {
@@ -172,7 +177,6 @@
   &__tabitem {
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid #dbdbdb;
   }
 
   &__tablink {
@@ -185,6 +189,11 @@
     font-weight: bold;
     color: #101010;
     text-transform: uppercase;
+    border-bottom: 2px solid #dbdbdb;
+
+    &.active {
+      border-bottom: 2px solid #101010;
+    }
   }
 
   &__thumb {
@@ -197,5 +206,23 @@
   &__post {
     display: flex;
     margin-bottom: 20px;
+  }
+
+  @media @screen-md {
+    &__inner {
+      display: flex;
+    }
+
+    &__posts {
+      margin-right: 40px;
+      flex-grow: 2;
+      flex-shrink: 1;
+    }
+
+    &__aside {
+      padding: 0;
+      flex-grow: 1;
+      flex-shrink: 3;
+    }
   }
 }
