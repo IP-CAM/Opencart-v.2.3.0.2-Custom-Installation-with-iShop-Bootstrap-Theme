@@ -441,23 +441,31 @@ To emphasise this I use inline style="display: none" -->
             </div>
           </div>
       </section>
-      <div class="contacts__about">
-        <h3 class="contacts__title">О компании</h3>
-        <p class="contacts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita natus praesentium tenetur! Aut autem eaque quibusdam recusandae sapiente voluptatum.</p>
-      </div>
-      <div class="contacts__question">
-        <h3 class="contacts__title">У меня есть вопрос</h3>
-        <p class="contacts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita natus praesentium tenetur! Aut autem eaque quibusdam recusandae sapiente voluptatum.</p>
-        <form action="#" class="contacts__field">
-          <label for="name" class="contacts__label">Имя</label>
-          <input type="text" class="contacts__input" id="name">
-          <label for="email" class="contacts__label">E-mail</label>
-          <input type="email" class="contacts__input" id="email">
-          <label for="message" class="contacts__label">Сообщение</label>
-          <textarea name="message" id="message" cols="30" rows="10" class="contacts__area"></textarea>
-          <button class="contacts__btn" type="submit">Отправить</button>
-        </form>
-      </div>
+        <div class="contacts__wrapper">
+          <div class="contacts__about">
+            <h3 class="contacts__title contacts__title--margin">О компании</h3>
+            <p class="contacts__text">Мы — спортивный магазин для всей семьи! Все для спорта и активного отдыха – от самых простых спорттоваров до технологичного снаряжения последнего поколения.
+              Каждый год наши магазины посещает более 200 миллионов человек. По общим показателям мы давно вошли в топ-10 мировых розничных спортивных сетей, а в нашей стране и на территории Восточной Европы прочно заняли первое место. И неважно, живете ли вы в Москве или Самаре, Екатеринбурге или Новосибирске — мы всегда рядом!</p>
+          </div>
+          <div class="contacts__question">
+            <h3 class="contacts__title">У меня есть вопрос</h3>
+            <p class="contacts__text">Мы расскажем, где ваш заказ и когда приедет. Узнайте о наличии товара, продлите срок хранения заказа.
+            </p>
+            <form action="#" class="contacts__field">
+              <label for="name" class="contacts__label">Имя
+                <input type="text" class="contacts__input" id="name">
+              </label>
+
+              <label for="email" class="contacts__label">E-mail
+                <input type="email" class="contacts__input" id="email">
+              </label>
+              <label for="message" class="contacts__label contacts__label--width">Сообщение
+                <textarea name="message" id="message" cols="30" rows="10" class="contacts__area"></textarea>
+              </label>
+              <button class="contacts__btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
     </div>
     </div>
   </section>
