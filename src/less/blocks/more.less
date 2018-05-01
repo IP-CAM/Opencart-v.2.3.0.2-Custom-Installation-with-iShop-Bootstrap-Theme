@@ -7,6 +7,10 @@
     border-color: #232323;
   }
 
+  &--order {
+    order: 3;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 25px;
@@ -45,10 +49,13 @@
 
   @media @screen-sm {
 
-
     &__inner {
       display: flex;
       justify-content: space-between;
+
+      &--column {
+        flex-direction: column;
+      }
     }
   }
 }

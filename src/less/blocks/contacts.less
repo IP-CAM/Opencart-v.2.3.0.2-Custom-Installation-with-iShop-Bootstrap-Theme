@@ -1,0 +1,107 @@
+.contacts {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__about {
+    order: 1;
+  }
+
+  &__question {
+    order: 2;
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #101010;
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    padding-bottom: 42px;
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    color: #939393;
+    font-size: 14px;
+    line-height: 26px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  &__field {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    padding-bottom: 6px;
+    font-size: 12px;
+    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #545454;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box !important;
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 11px 15px;
+    max-width: 100%;
+    border: 1px solid #dbdbdb;
+    color: #a0a0a0;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  &__area {
+    box-sizing: border-box;
+    resize: none;
+    border: 1px solid #dbdbdb;
+    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 11px 15px;
+    color: #a0a0a0;
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+      font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+      font-size: 14px;
+      line-height: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: flex;
+      padding: 0 40px;
+      cursor: pointer;
+      text-align: center;
+      white-space: nowrap;
+      background-color: #101010;
+      border: none;
+      margin: 0 auto;
+      color: #ffffff;
+      transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #f34c05;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+
+}

@@ -332,7 +332,8 @@ To emphasise this I use inline style="display: none" -->
 
   <section class="contacts">
     <div class="container">
-      <section class="more">
+      <div class="contacts__inner">
+      <section class="more more--order">
           <div class="more__inner more__inner--column">
             <div class="more__column">
               <h3 class="more__title">Помощь</h3>
@@ -452,10 +453,12 @@ To emphasise this I use inline style="display: none" -->
           <input type="text" class="contacts__input" id="name">
           <label for="email" class="contacts__label">E-mail</label>
           <input type="email" class="contacts__input" id="email">
-          <textarea name="message" id="" cols="30" rows="10" class="contacts__area"></textarea>
+          <label for="message" class="contacts__label">Сообщение</label>
+          <textarea name="message" id="message" cols="30" rows="10" class="contacts__area"></textarea>
           <button class="contacts__btn" type="submit">Отправить</button>
         </form>
       </div>
+    </div>
     </div>
   </section>
 </main>
