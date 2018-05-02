@@ -224,18 +224,18 @@ To emphasise this I use inline style="display: none" -->
       </svg>
     </a>
   </div>
-  <nav class="main-nav main-nav--closed" style="display: none" role="navigation">
+  <nav class="main-nav main-nav--closed dropdown-menu" style="display: none" role="navigation">
     <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a href="index.html" class="main-nav__link main-nav__link--active">
+      <li class="main-nav__item dropdown">
+        <a href="index.html" class="main-nav__link main-nav__link--active" data-toggle="dropdown">
           <span class="main-nav__text">Главная</span>
           <span class="main-nav__toggler">
               <svg class="main-nav__icon" width="20" height="20">
                 <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
               </svg>
-            </span>
+          </span>
         </a>
-        <ul class="main-nav__sublist main-nav__sublist--closed">
+        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
           <li class="main-nav__item">
             <a href="#" class="main-nav__sublink">
               <span class="main-nav__text main-nav__text--small">Блог</span>
@@ -248,8 +248,8 @@ To emphasise this I use inline style="display: none" -->
           </li>
         </ul>
       </li>
-      <li class="main-nav__item">
-        <a href="#" class="main-nav__link">
+      <li class="main-nav__item dropdown">
+        <a href="#" class="main-nav__link" data-toggle="dropdown">
           <span class="main-nav__text">Виды спорта</span>
           <span class="main-nav__toggler">
               <svg class="main-nav__icon" width="20" height="20">
@@ -257,7 +257,7 @@ To emphasise this I use inline style="display: none" -->
               </svg>
             </span>
         </a>
-        <ul class="main-nav__sublist main-nav__sublist--closed">
+        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
           <li class="main-nav__item">
             <a href="#" class="main-nav__sublink">
               <span class="main-nav__text main-nav__text--small">Бег</span>
@@ -283,27 +283,73 @@ To emphasise this I use inline style="display: none" -->
           </li>
         </ul>
       </li>
-      <li class="main-nav__item">
+      <li class="main-nav__item dropdown">
         <a href="catalog.html" class="main-nav__link">
           <span class="main-nav__text">Мужское</span>
+          <span class="main-nav__toggler">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
+              </svg>
+          </span>
         </a>
+        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Блог</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Контакты</span>
+            </a>
+          </li>
+        </ul>
       </li>
-      <li class="main-nav__item">
+      <li class="main-nav__item dropdown">
         <a href="catalog.html" class="main-nav__link">
           <span class="main-nav__text">Женское</span>
+          <span class="main-nav__toggler">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
+              </svg>
+          </span>
         </a>
+        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Блог</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Контакты</span>
+            </a>
+          </li>
+        </ul>
       </li>
-      <li class="main-nav__item">
+      <li class="main-nav__item dropdown">
         <a href="catalog.html" class="main-nav__link">
           <span class="main-nav__text">Детям</span>
           <span class="main-nav__toggler">
               <svg class="main-nav__icon" width="20" height="20">
                 <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
               </svg>
-            </span>
+        </span>
         </a>
+        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Блог</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Контакты</span>
+            </a>
+          </li>
+        </ul>
       </li>
-      <li class="main-nav__item">
+      <li class="main-nav__item dropdown">
         <a href="#" class="main-nav__link">
           <span class="main-nav__text">Распродажа</span>
           <span class="main-nav__toggler">
@@ -312,6 +358,18 @@ To emphasise this I use inline style="display: none" -->
               </svg>
             </span>
         </a>
+        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Блог</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Контакты</span>
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
   </nav>
@@ -1722,6 +1780,7 @@ To emphasise this I use inline style="display: none" -->
   });
   });
 </script>
+
 </body>
 
 </html>
