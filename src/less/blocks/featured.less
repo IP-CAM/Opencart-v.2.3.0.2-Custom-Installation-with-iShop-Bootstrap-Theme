@@ -1,5 +1,4 @@
 .featured {
-
   &--margin {
     margin-bottom: 40px;
   }
@@ -10,27 +9,32 @@
 
   &__img {
     width: 100%;
+
     object-fit: cover;
   }
 
   &__title {
     position: relative;
+
     margin: 0;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+
     font-weight: 700;
-    text-transform: uppercase;
-    color: #101010;
     font-size: 24px;
     line-height: 26px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     text-align: center;
+    color: #101010;
+    text-transform: uppercase;
 
     &::before {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 100%;
       left: 50%;
+
       width: 30px;
       height: 3px;
+
       background-color: #ff4301;
       transform: translateX(-50%) translateY(200%);
     }
@@ -43,14 +47,17 @@
   }
 
   &__item {
-    border: 1px solid transparent;
-    padding: 12px !important;
-    min-height: 390px;
-    transition: all 0.5s;
     box-sizing: border-box;
+    min-height: 390px;
+    padding: 12px !important;
+
+    border: 1px solid transparent;
+
+    transition: all 0.5s;
 
     &:hover {
       border-color: lightgray;
+
       transition: all 0.5s;
     }
   }
@@ -61,10 +68,12 @@
 
   &__buttons {
     position: relative;
+
     overflow: hidden;
 
     &:hover .featured__button {
       bottom: 0;
+
       transition: bottom 0.5s, background-color 0.5s;
     }
   }
@@ -74,24 +83,29 @@
   }
 
   &__button {
+    position: absolute;
+    bottom: -40px;
+
     display: block;
     width: 100%;
-    position: absolute;
     padding: 10px 0;
-    bottom: -40px;
-    color: #ffffff;
-    background-color: #a0a0a0;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+
     font-weight: 700;
-    text-transform: uppercase;
     font-size: 13px;
     line-height: 20px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #a0a0a0;
     border: none;
+
     transition: bottom 0.5s, background-color 0.5s;
 
     &:hover {
       background-color: #000000;
+
       transition: all 0.5s;
     }
   }
@@ -99,16 +113,19 @@
   &__name {
     display: block;
     margin-top: 12px;
-    color: #101010;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    color: #101010;
     text-transform: uppercase;
+
     transition: all 0.5s;
 
     &:hover {
       color: #ff4301;
+
       transition: all 0.5s;
     }
   }
@@ -118,15 +135,17 @@
   }
 
   &__category {
-    color: #545454;
-    transition: all 0.5s;
-    font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 22px;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #545454;
+
+    transition: all 0.5s;
 
     &:hover {
       color: #ff4301;
+
       transition: all 0.5s;
     }
   }
@@ -147,11 +166,12 @@
 
   &__price {
     margin-top: 5px;
-    color: #101010;
+
+    font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    font-family: 'Roboto', 'Arial', sans-serif;
-    font-weight: 400;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #101010;
   }
 
   &__list {
@@ -160,20 +180,22 @@
   }
 
   &__controls {
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 200px;
     display: flex;
     justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
   }
 
   &__control {
     width: 8px;
     height: 8px;
     margin-right: 10px;
+
     background-color: rgb(84, 84, 84);
     border-radius: 50%;
     opacity: 0.5;
+
     transition: all 0.5s;
 
     &:last-child {
@@ -182,6 +204,7 @@
 
     &:hover {
       opacity: 1;
+
       transition: all 0.5s;
     }
   }
@@ -190,8 +213,9 @@
     transition: fill 0.3s ease-in-out;
 
     &:hover {
-      fill: #f34c05;
       transition: fill 0.3s ease-in-out;
+
+      fill: #f34c05;
     }
 
     &--star {
@@ -214,7 +238,6 @@
   }
 
   @media @screen-xs {
-
     &__slider {
       &--flex {
         display: flex;
@@ -277,6 +300,7 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 12px;
+
       visibility: hidden;
     }
 
@@ -286,21 +310,23 @@
 
     &__color {
       display: block;
+      box-sizing: border-box;
       width: 10px;
       height: 10px;
-      background-color: #000000;
-      box-sizing: border-box;
-      border-radius: 50%;
       margin-right: 5px;
       padding: 2px;
+
+      background-color: #000000;
       border: 2px solid #6b6b6b;
+      border-radius: 50%;
     }
 
     &__btn {
-      padding: 0;
-      border: none;
-      background-color: transparent;
       margin-right: 5px;
+      padding: 0;
+
+      background-color: transparent;
+      border: none;
 
       &:first-child {
         margin-right: 0;
@@ -310,11 +336,5 @@
         margin-right: 0;
       }
     }
-
-
-
-
-
-
   }
 }

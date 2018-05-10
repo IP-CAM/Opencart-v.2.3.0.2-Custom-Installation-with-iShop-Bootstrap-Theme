@@ -3,23 +3,27 @@
 
   &__title {
     position: relative;
+
     margin: 0;
     margin-bottom: 60px;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+
     font-weight: 700;
-    text-transform: uppercase;
-    color: #101010;
     font-size: 24px;
     line-height: 26px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     text-align: center;
+    color: #101010;
+    text-transform: uppercase;
 
     &::before {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 100%;
       left: 50%;
+
       width: 30px;
       height: 3px;
+
       background-color: #ff4301;
       transform: translateX(-50%) translateY(200%);
     }
@@ -27,8 +31,8 @@
 
   &__list {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   &__item {
@@ -48,7 +52,6 @@
   }
 
   @media @screen-sm {
-
     &__list {
       flex-wrap: nowrap;
     }

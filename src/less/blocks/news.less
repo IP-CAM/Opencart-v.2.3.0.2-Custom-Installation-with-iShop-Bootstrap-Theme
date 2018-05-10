@@ -1,27 +1,32 @@
 .news {
   margin-top: 100px;
   padding-bottom: 50px;
+
   border-bottom: 1px solid #dbdbdb;
 
   &__title {
     position: relative;
+
     margin: 0;
     margin-bottom: 60px;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+
     font-weight: 700;
-    text-transform: uppercase;
-    color: #101010;
     font-size: 24px;
     line-height: 26px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     text-align: center;
+    color: #101010;
+    text-transform: uppercase;
 
     &::before {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 100%;
       left: 50%;
+
       width: 30px;
       height: 3px;
+
       background-color: #ff4301;
       transform: translateX(-50%) translateY(200%);
     }
@@ -32,26 +37,29 @@
   }
 
   &__img {
-    vertical-align: top;
-    object-fit: cover;
     width: 100%;
+
+    vertical-align: top;
+
+    object-fit: cover;
   }
 
   &__date {
-    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 22px;
+    font-family: "Roboto", "Arial", sans-serif;
     color: #545454;
   }
 
   &__heading {
     margin: 0;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+
+    font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     color: #101010;
+    text-transform: uppercase;
   }
 
 
@@ -60,20 +68,22 @@
   }
 
   &__controls {
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 200px;
     display: flex;
     justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
   }
 
   &__control {
     width: 8px;
     height: 8px;
     margin-right: 10px;
+
     background-color: rgb(84, 84, 84);
     border-radius: 50%;
     opacity: 0.5;
+
     transition: all 0.5s;
 
     &:last-child {
@@ -82,6 +92,7 @@
 
     &:hover {
       opacity: 1;
+
       transition: all 0.5s;
     }
   }

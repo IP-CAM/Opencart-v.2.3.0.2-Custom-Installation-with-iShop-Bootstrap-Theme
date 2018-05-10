@@ -12,25 +12,28 @@
     flex-direction: column;
   }
 
-  &__field{
+  &__field {
     display: flex;
     flex-direction: column;
   }
 
   &__item {
+    position: relative;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    position: relative;
+
     border: 1px solid #dbdbdb;
   }
 
   &__img {
     width: 150px;
     height: 150px;
+
     border-radius: 50%;
   }
 
@@ -40,40 +43,44 @@
 
   tbody {
     display: block;
+    overflow: hidden;
+
     text-align: center;
-    overflow: hidden
   }
 
   &__remove {
-    padding: 0;
     position: absolute;
-    left: auto;
-    right: 20px;
     top: 20px;
+    right: 20px;
+    left: auto;
     z-index: 1;
+
+    padding: 0;
   }
 
   &__link {
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #101010;
+    text-transform: uppercase;
 
     &--remove {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       width: 20px;
       height: 20px;
 
       & span {
+        position: absolute;
+
         display: block;
         width: 15px;
         height: 1px;
+
         background-color: #101010;
-        position: absolute;
       }
 
       & span:first-child {
@@ -87,52 +94,54 @@
   }
 
   &__thumbnail {
-    padding: 15px 0;
     width: 100%;
+    padding: 15px 0;
   }
 
   &__name {
-    padding: 15px;
     width: 100%;
-
+    padding: 15px;
   }
 
   &__variations {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
 
   &__variation {
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    min-width: 50px;
+    margin-right: 5px;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
-    margin-right: 5px;
-    color: #545454;
-    min-width: 50px;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     text-align: left;
+    color: #545454;
   }
 
   &__value {
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    min-width: 50px;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
-    color: #545454;
-    min-width: 50px;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     text-align: left;
+    color: #545454;
   }
 
   &__price,
   &__quantity,
   &__subtotal {
-    box-sizing: border-box;
     display: inline-block;
+    box-sizing: border-box;
     width: 33.33%;
     margin: 0 -2px;
-    vertical-align: middle;
     padding: 15px;
+
+    vertical-align: middle;
   }
 
   &__subtotal {
@@ -141,12 +150,13 @@
 
   &__price {
     display: inline;
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
-    color: #545454;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     text-align: right;
+    color: #545454;
 
     &--orange {
       color: #f34c05;
@@ -159,18 +169,20 @@
 
   &__input {
     display: block;
-    width: 65px;
-    margin: 0 auto;
     box-sizing: border-box !important;
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    width: 65px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 11px 15px;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
-    padding: 11px 15px;
-    max-width: 100%;
-    border: 1px solid #dbdbdb;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #a0a0a0;
+
     background-color: #ffffff;
+    border: 1px solid #dbdbdb;
 
     &--width {
       width: 100%;
@@ -187,32 +199,38 @@
   }
 
   &__buttons {
+    display: block;
     width: 100%;
     padding: 15px;
+
     text-align: center;
-    display: block;
+
     background-color: #f8f8f8;
   }
 
   &__button {
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    font-weight: 700;
     font-size: 14px;
     line-height: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: flex;
-    padding: 0 40px;
-    cursor: pointer;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
     white-space: nowrap;
+
     background-color: #101010;
     border: none;
-    margin: 0 auto;
-    color: #ffffff;
+    cursor: pointer;
+
     transition: all 0.3s ease-in-out;
 
     &:hover {
       background-color: #f34c05;
+
       transition: all 0.3s ease-in-out;
     }
   }
@@ -222,48 +240,55 @@
   }
 
   &__title {
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #101010;
     margin: 0;
     margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    color: #101010;
+    text-transform: uppercase;
   }
 
   &__table {
     &--total {
       width: 100%;
-      border-spacing: 0;
-      border-collapse: separate;
       margin-bottom: 10px;
+
+      border-collapse: separate;
+      border-spacing: 0;
       vertical-align: middle;
     }
   }
 
   &__pricing,
   &__total {
-    width: 100%;
     position: relative;
+
+    width: 100%;
     overflow: hidden;
+
     background-color: #f8f8f8;
   }
 
   &__th {
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #101010;
-    border: 1px solid #dbdbdb;
+    position: relative;
+
     width: 43%;
     padding: 15px 20px;
-    vertical-align: middle;
-    position: relative;
-    text-align: left;
     overflow: hidden;
+
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    vertical-align: middle;
+    text-align: left;
+    color: #101010;
+    text-transform: uppercase;
+
+    border: 1px solid #dbdbdb;
 
     &--border {
       border-bottom: none;
@@ -271,11 +296,13 @@
   }
 
   &__td {
+    width: 57%;
+    padding: 15px 20px;
+
+    text-align: right;
+
     border: 1px solid #dbdbdb;
     border-left: none;
-    padding: 15px 20px;
-    width: 57%;
-    text-align: right;
 
     &--border {
       border-bottom: none;
@@ -284,12 +311,12 @@
 
   &__price {
     &--table {
-      font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+      font-weight: 400;
       font-size: 13px;
       line-height: 16px;
-      font-weight: 400;
-      text-transform: uppercase;
+      font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
       color: #f34c05;
+      text-transform: uppercase;
     }
   }
 
@@ -307,17 +334,18 @@
     }
 
     &__remove {
-      padding: 0 20px;
       position: relative;
-      left: auto;
-      right: auto;
       top: auto;
+      right: auto;
+      left: auto;
+
+      padding: 0 20px;
     }
 
     &__thumbnail {
+      flex-shrink: 0;
       width: 50px;
       height: 50px;
-      flex-shrink: 0;
       margin-right: 20px;
     }
 
@@ -327,8 +355,9 @@
     }
 
     &__name {
-      padding-left: 0;
       padding-right: 10px;
+      padding-left: 0;
+
       text-align: left;
     }
 
@@ -337,9 +366,10 @@
     }
 
     &__price {
-      text-align: left;
       padding: 0;
       padding-left: 5px;
+
+      text-align: left;
     }
 
     &__input {
@@ -358,49 +388,52 @@
     &__subtotal {
       &--padding {
         padding: 15px 0;
-        font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+        font-weight: bold;
         font-size: 16px;
         line-height: 22px;
-        font-weight: bold;
-        font-style: normal;
+        font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+        text-align: left;
+        color: #101010;
         text-transform: uppercase;
         text-decoration: none;
-        color: #101010;
-        text-align: left;
+        font-style: normal;
       }
     }
 
     &__remove {
       &--padding {
-        box-sizing: border-box;
         position: relative;
-        width: 60px;
-        left: auto;
-        right: auto;
         top: auto;
+        right: auto;
+        left: auto;
+
         flex-shrink: 0;
+        box-sizing: border-box;
+        width: 60px;
       }
     }
 
     &__thumbnail {
       &--padding {
-        width: 50px;
         flex-shrink: 0;
+        width: 50px;
         height: initial;
       }
     }
 
     &__tr {
       &--border {
+        background-color: #f8f8f8;
         border: 1px solid #dbdbdb;
         border-bottom: none;
-        background-color: #f8f8f8;
       }
     }
 
     &__buttons {
       display: flex;
       justify-content: space-between;
+
       border: 1px solid #dbdbdb;
       border-top: none;
     }
@@ -432,10 +465,5 @@
         margin-bottom: 20px;
       }
     }
-
   }
-
-
-
-
 }

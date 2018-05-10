@@ -5,8 +5,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 40px;
   }
 
@@ -24,14 +24,15 @@
   }
 
   &__title {
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-weight: 700;
     font-size: 28px;
     line-height: 36px;
-    margin: 0;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #101010;
-    margin-bottom: 15px;
+    text-transform: uppercase;
   }
 
   &__list {
@@ -40,33 +41,37 @@
   }
 
   &__icon {
-    fill: #f34c05;
     margin-right: 10px;
 
+    fill: #f34c05;
+
     &--star {
-      fill: gold;
       margin-right: 0;
+
+      fill: gold;
     }
   }
 
   &__price {
     display: block;
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    margin-bottom: 25px;
+
+    font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #545454;
-    margin-bottom: 25px;
+    text-transform: uppercase;
   }
 
   &__text {
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    margin-bottom: 40px;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #545454;
-    margin-bottom: 40px;
   }
 
   &__field {
@@ -79,45 +84,51 @@
   }
 
   &__input {
-    background-color: #ffffff;
-    color: #a0a0a0;
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-    font-size: 13px;
-    line-height: 22px;
-    font-weight: 400;
-    padding: 11px 15px;
     box-sizing: border-box !important;
     width: 65px;
     max-width: 100%;
-    border: 1px solid #dbdbdb;
     margin-right: 60px;
+    padding: 11px 15px;
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    color: #a0a0a0;
+
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
   }
 
   &__btn {
     display: block;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    padding: 0 15px;
+
+    font-weight: 700;
     font-size: 14px;
     line-height: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: #101010;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #101010;
     border: none;
-    padding: 0 15px;
+
     transition: all 0.3s ease-in-out;
 
 
     &:hover {
       background-color: #f34c05;
+
       transition: all 0.3s ease-in-out;
     }
   }
 
   &__option {
     display: flex;
-    margin-bottom: 10px;
     align-items: center;
+    margin-bottom: 10px;
   }
 
   &__color {
@@ -125,9 +136,10 @@
     box-sizing: border-box;
     width: 23px;
     height: 23px;
-    border-radius: 50%;
     margin-right: 10px;
+
     border: 1px solid #dbdbdb;
+    border-radius: 50%;
 
     &--black {
       background-color: #000000;
@@ -145,40 +157,46 @@
   &__desc {
     display: block;
     width: 125px;
-    text-align: left;
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+    font-weight: 700;
     font-size: 13px;
     line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    text-align: left;
     color: #101010;
+    text-transform: uppercase;
   }
 
   &__link {
-    display: block;
     position: relative;
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+    display: block;
+    padding-right: 10px;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #545454;
-    padding-right: 10px;
+
     transition: all 0.3s ease-in-out;
 
     &::after {
       content: "/";
       position: absolute;
-      right: 2px;
       top: 50%;
+      right: 2px;
+
       transform: translateY(-50%);
     }
 
     &--bold {
-      font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-      line-height: 20px;
-      font-weight: 700;
-      text-transform: uppercase;
       padding: 0;
+
+      font-weight: 700;
+      line-height: 20px;
+      font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+      text-transform: uppercase;
 
       &::after {
         display: none;
@@ -187,35 +205,41 @@
 
     &:hover {
       color: #f34c05;
+
       transition: all 0.3s ease-in-out;
     }
   }
 
   &__button {
     display: flex;
-    background-color: transparent;
-    border: none;
+    margin-bottom: 30px;
     padding: 0;
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #101010;
+
+    background-color: transparent;
+    border: none;
+
     transition: all 0.3s ease-in-out;
-    margin-bottom: 30px;
 
     &:hover {
       color: #f34c05;
+
       transition: all 0.3s ease-in-out;
     }
   }
 
   &__items {
-    padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #dbdbdb;
     margin-bottom: 50px;
+    padding-top: 20px;
+
+    border-top: 1px solid #dbdbdb;
   }
 
   &__tabs {
@@ -225,27 +249,30 @@
   &__tabslist {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-bottom: 35px;
   }
 
   &__tabitem {
     width: 100%;
+
     text-align: center;
   }
 
   &__tablink {
-    width: 100%;
     display: block;
     box-sizing: border-box;
+    width: 100%;
     padding: 18px 30px;
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+    font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #101010;
+    text-transform: uppercase;
+
     border-bottom: 2px solid #dbdbdb;
 
     &.active {
@@ -255,21 +282,22 @@
 
   &__description,
   &__feature {
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
     font-size: 13px;
     line-height: 22px;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #545454;
   }
 
   &__caption {
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    margin-bottom: 20px;
+
+    font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    font-weight: bold;
-    font-style: normal;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #101010;
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-style: normal;
   }
 
   &__currency {
@@ -284,13 +312,12 @@
     }
 
     &__images {
-      margin-right: 20px;
       max-width: 600px;
+      margin-right: 20px;
     }
 
     &__desc {
       flex-shrink: 0;
-
     }
 
     &__list {

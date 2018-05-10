@@ -1,6 +1,7 @@
 .more {
   padding-top: 55px;
   padding-bottom: 30px;
+
   border-bottom: 1px solid #dbdbdb;
 
   &--dark {
@@ -14,11 +15,12 @@
   &__title {
     margin: 0;
     margin-bottom: 25px;
-    color: #101010;
+
+    font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: 700;
+    color: #101010;
     text-transform: uppercase;
 
     &--white {
@@ -28,13 +30,16 @@
 
   &__link {
     display: block;
-    line-height: 22px;
+
     font-size: 14px;
-    transition: color 0.3s ease-in-out;
+    line-height: 22px;
     color: #828282;
+
+    transition: color 0.3s ease-in-out;
 
     &:hover {
       color: #ff4301;
+
       transition: color 0.3s ease-in-out;
     }
   }
@@ -48,7 +53,6 @@
   }
 
   @media @screen-sm {
-
     &__inner {
       display: flex;
       justify-content: space-between;
@@ -61,9 +65,9 @@
 
   @media @screen-md {
     &--order {
+      flex-shrink: 0;
       order: initial;
       width: 200px;
-      flex-shrink: 0;
       margin-right: 40px;
     }
   }

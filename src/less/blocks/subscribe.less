@@ -1,25 +1,28 @@
 .subscribe {
   padding-top: 60px;
   padding-bottom: 40px;
+
   background-color: #101010;
 
   &__title {
     margin: 0;
+
+    font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &__desc {
     padding-bottom: 20px;
+
     font-size: 13px;
     line-height: 22px;
-    font-family: 'Roboto', 'Arial', sans-serif;
-    color: #a5a5a5;
+    font-family: "Roboto", "Arial", sans-serif;
     text-align: center;
+    color: #a5a5a5;
   }
 
   &__form {
@@ -27,45 +30,53 @@
   }
 
   &__input {
-    box-sizing: border-box;
-    border: 2px solid #3a3a3a;
-    border-right: transparent;
-    padding: 10px 25px;
-    font-size: 13px;
-    line-height: 22px;
-    font-family: 'Roboto', 'Arial', sans-serif;
-    color: #a5a5a5;
-    background-color: rgba(165, 165, 165, 0.08);
-    transition: all .3s ease-in-out;
-    outline-color: #fa5400;
     flex-grow: 2;
     flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 10px 25px;
+
+    font-size: 13px;
+    line-height: 22px;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #a5a5a5;
+
+    background-color: rgba(165, 165, 165, 0.08);
+    border: 2px solid #3a3a3a;
+    border-right: transparent;
+    outline-color: #fa5400;
+
+    transition: all 0.3s ease-in-out;
 
     &:focus {
       border-color: #fa5400;
-      transition: all .3s ease-in-out;
+
+      transition: all 0.3s ease-in-out;
     }
   }
 
   &__btn {
-    padding: 0;
-    margin-left: -1px;
+    flex-grow: 1;
+    flex-shrink: 0;
     box-sizing: border-box;
-    background-color: #3a3a3a;
-    color: #ffffff;
-    transition: all .3s ease-in-out;
-    border: none;
+    margin-left: -1px;
+    padding: 0;
+
+    font-weight: 700;
     font-size: 14px;
     line-height: 48px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
+    color: #ffffff;
     text-transform: uppercase;
-    font-weight: 700;
-    flex-shrink: 0;
-    flex-grow: 1;
+
+    background-color: #3a3a3a;
+    border: none;
+
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       background-color: #fa5400;
-      transition: all .3s ease-in-out;
+
+      transition: all 0.3s ease-in-out;
     }
   }
 
@@ -79,9 +90,9 @@
 
     &__text {
       display: flex;
+      flex-grow: 1;
       flex-direction: column;
       align-items: flex-start;
-      flex-grow: 1;
     }
 
     &__inputs {

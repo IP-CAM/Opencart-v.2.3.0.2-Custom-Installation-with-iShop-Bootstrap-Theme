@@ -6,14 +6,15 @@
 
   &__title,
   &__counter {
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    margin: 0;
+
+    font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    font-weight: bold;
-    font-style: normal;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #101010;
-    margin: 0;
+    text-transform: uppercase;
+    font-style: normal;
 
     &--margin {
       margin-bottom: 22px;
@@ -25,35 +26,39 @@
   }
 
   &__thumbnail {
-    border-radius: 50%;
     vertical-align: top;
+
+    border-radius: 50%;
   }
 
   &__item {
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
+
     border-bottom: 1px solid #dbdbdb;
   }
 
   &__author {
+    margin-right: auto;
+
+    font-weight: 700;
     font-size: 14px;
     line-height: 20px;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #101010;
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-    font-weight: 700;
     text-transform: uppercase;
-    margin-right: auto;
   }
 
   &__date {
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    margin-right: 15px;
+
     font-weight: 700;
-    text-transform: uppercase;
     font-size: 11px;
     line-height: 18px;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #545454;
-    margin-right: 15px;
+    text-transform: uppercase;
   }
 
   &__rating {
@@ -61,12 +66,14 @@
   }
 
   &__icon {
-    fill: #f34c05;
     margin-right: 10px;
 
+    fill: #f34c05;
+
     &--star {
-      fill: gold;
       margin-right: 0;
+
+      fill: gold;
     }
   }
 
@@ -79,16 +86,16 @@
   }
 
   &__caption {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   &__quote {
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #545454;
   }
 
@@ -97,30 +104,33 @@
   }
 
   &__text {
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: 700;
     font-size: 12px;
     line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #545454;
+    text-transform: uppercase;
   }
 
   &__area {
-    margin-top: 25px;
-    width: 100%;
     box-sizing: border-box;
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    width: 100%;
+    max-width: 100%;
+    min-height: 160px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 11px 15px;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #a0a0a0;
-    padding: 11px 15px;
-    max-width: 100%;
-    border: 1px solid #dbdbdb;
+
     background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+
     resize: none;
-    min-height: 160px;
-    margin-bottom: 15px;
   }
 
   &__field {
@@ -130,34 +140,40 @@
   }
 
   &__input {
+    max-width: 100%;
     margin-bottom: 15px;
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    padding: 11px 15px;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
-    padding: 11px 15px;
-    max-width: 100%;
-    border: 1px solid #dbdbdb;
-    background-color: #ffffff;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #a0a0a0;
+
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
   }
 
   &__btn {
     display: block;
-    border: none;
-    background-color: #101010;
+    max-width: 200px;
     padding: 0 40px;
-    color: #ffffff;
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+    font-weight: 700;
     font-size: 14px;
     line-height: 48px;
-    font-weight: 700;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    color: #ffffff;
     text-transform: uppercase;
-    max-width: 200px;
+
+    background-color: #101010;
+    border: none;
+
     transition: all 0.3s ease-in-out;
 
     &:hover {
       background-color: #f34c05;
+
       transition: all 0.3s ease-in-out;
     }
   }

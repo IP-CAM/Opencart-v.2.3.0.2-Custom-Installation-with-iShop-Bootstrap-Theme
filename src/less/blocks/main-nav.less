@@ -1,8 +1,9 @@
 .main-nav {
   position: absolute;
-  width: 100%;
   top: 100%;
   left: 0;
+
+  width: 100%;
 
   &--closed {
     display: none;
@@ -26,9 +27,9 @@
   }
 
   &__sublist {
-   &--closed {
-     display: none;
-   }
+    &--closed {
+      display: none;
+    }
 
     &--opened {
       display: block;
@@ -36,22 +37,26 @@
   }
 
   &__link {
-    display: block;
     position: relative;
+
+    display: block;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
+
+    font-weight: 700;
     font-size: 15px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: 700;
     color: rgba(255,255,255,0.65);
     text-transform: uppercase;
+
     background-color: #191919;
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    -webkit-transition: 0.25s ease-in-out;
+       -moz-transition: 0.25s ease-in-out;
+         -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out;
 
     &:hover {
       color: rgba(255,255,255,1);
@@ -66,16 +71,19 @@
     position: absolute;
     top: 0;
     right: 0;
+
     display: block;
     width: 40px;
     height: 100%;
   }
 
   &__icon {
-    fill: @color-text;
     position: absolute;
     top: 50%;
+
     transform: translateY(-50%);
+
+    fill: @color-text;
   }
 
   &__sublink {
@@ -83,16 +91,19 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 50px;
-    font-size: 13px;
-    font-family: 'Roboto', 'Arial', sans-serif;
+
     font-weight: 400;
-    background-color: #191919;
+    font-size: 13px;
+    font-family: "Roboto", "Arial", sans-serif;
     color: rgba(255,255,255,0.65);
+
+    background-color: #191919;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
     -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
+       -moz-transition: 0.25s ease-in-out;
+         -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out;
 
     &:hover {
       color: rgba(255,255,255,1);
@@ -107,16 +118,18 @@
 
   @media @screen-lg {
     &--closed {
+      position: relative;
+      left: auto;
+      z-index: auto;
+
       display: block;
+      order: 2;
+      width: auto;
       min-width: 650px;
+
+      transform: translateY(0);
       visibility: visible;
       opacity: 1;
-      left: auto;
-      width: auto;
-      z-index: auto;
-      position: relative;
-      transform: translateY(0);
-      order: 2;
     }
 
     &__list {
@@ -125,10 +138,11 @@
 
     &__item {
       &:hover .main-nav__sublist {
-        display: block;
-        width: 200px;
         position: absolute;
         z-index: 1;
+
+        display: block;
+        width: 200px;
       }
 
       &:hover .main-nav__link {
@@ -138,8 +152,10 @@
 
     &__link {
       padding-right: 20px;
-      background-color: transparent;
+
       color: #191919;
+
+      background-color: transparent;
 
       &:hover {
         color: #ff4301;
@@ -156,15 +172,16 @@
 
     &__sublist {
       &--closed {
-        display: none;
         position: absolute;
         z-index: 0;
+
+        display: none;
       }
     }
 
     &__sublink {
-      padding-left: 15px;
       padding-right: 15px;
+      padding-left: 15px;
 
       &:last-child {
         border: none;

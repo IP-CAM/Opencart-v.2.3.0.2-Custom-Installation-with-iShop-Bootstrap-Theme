@@ -12,58 +12,65 @@
   }
 
   &__item {
+    position: relative;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    position: relative;
+
     border: 1px solid #dbdbdb;
   }
 
   &__img {
     width: 150px;
     height: 150px;
+
     border-radius: 50%;
   }
 
   tbody {
     display: block;
+    overflow: hidden;
+
     text-align: center;
-    overflow: hidden
   }
 
   &__remove {
-    padding: 0;
     position: absolute;
-    left: auto;
-    right: 20px;
     top: 20px;
+    right: 20px;
+    left: auto;
     z-index: 1;
+
+    padding: 0;
   }
 
   &__link {
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #101010;
+    text-transform: uppercase;
 
     &--remove {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       width: 20px;
       height: 20px;
 
       & span {
+        position: absolute;
+
         display: block;
         width: 15px;
         height: 1px;
+
         background-color: #101010;
-        position: absolute;
       }
 
       & span:first-child {
@@ -77,61 +84,64 @@
   }
 
   &__thumbnail {
-    padding: 15px 0;
     width: 100%;
+    padding: 15px 0;
   }
 
   &__name {
-    padding: 15px;
     width: 100%;
-
+    padding: 15px;
   }
 
   &__variations {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
 
   &__variation {
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    min-width: 50px;
+    margin-right: 5px;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
-    margin-right: 5px;
-    color: #545454;
-    min-width: 50px;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     text-align: left;
+    color: #545454;
   }
 
   &__value {
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    min-width: 50px;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
-    color: #545454;
-    min-width: 50px;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     text-align: left;
+    color: #545454;
   }
 
   &__price,
   &__stock {
-    box-sizing: border-box;
     display: inline-block;
+    box-sizing: border-box;
     width: 50%;
-    vertical-align: middle;
     padding: 15px;
+
+    vertical-align: middle;
   }
 
   &__price,
   &__stock {
     display: inline;
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+    font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    font-weight: 400;
-    color: #545454;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     text-align: right;
+    color: #545454;
   }
 
   &__currency {
@@ -151,8 +161,8 @@
   &__cart {
     width: 100%;
     margin-top: 20px;
-    padding-left: 20px;
     padding-right: 20px;
+    padding-left: 20px;
   }
 
   &__btn {
@@ -160,20 +170,23 @@
     width: 100%;
     margin: 0 0 15px;
     padding: 0;
-    border: none;
-    background-color: #101010;
-    color: #ffffff;
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+    font-weight: 700;
     font-size: 14px;
     line-height: 48px;
-    font-weight: 700;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    color: #ffffff;
     text-transform: uppercase;
+
+    background-color: #101010;
+    border: none;
+
     transition: all 0.3s ease-in-out;
 
     &:hover {
       background-color: #f34c05;
-      transition: all 0.3s ease-in-out;
 
+      transition: all 0.3s ease-in-out;
     }
   }
 
@@ -193,6 +206,7 @@
     display: block;
     width: 20px;
     height: 20px;
+
     background-color: #101010;
     border-radius: 50%;
   }
@@ -208,17 +222,18 @@
     }
 
     &__remove {
-      padding: 0 20px;
       position: relative;
-      left: auto;
-      right: auto;
       top: auto;
+      right: auto;
+      left: auto;
+
+      padding: 0 20px;
     }
 
     &__thumbnail {
+      flex-shrink: 0;
       width: 50px;
       height: 50px;
-      flex-shrink: 0;
       margin-right: 20px;
     }
 
@@ -228,8 +243,9 @@
     }
 
     &__name {
-      padding-left: 0;
       padding-right: 50px;
+      padding-left: 0;
+
       text-align: left;
     }
 
@@ -241,15 +257,16 @@
     &__cart {
       &--padding {
         padding: 15px 0;
-        font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+        font-weight: bold;
         font-size: 16px;
         line-height: 22px;
-        font-weight: bold;
-        font-style: normal;
+        font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+        text-align: left;
+        color: #101010;
         text-transform: uppercase;
         text-decoration: none;
-        color: #101010;
-        text-align: left;
+        font-style: normal;
       }
     }
 
@@ -261,24 +278,25 @@
 
     &__remove {
       &--padding {
-        display: block;
-        box-sizing: border-box;
         position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+
+        display: block;
+        flex-shrink: 0;
+        box-sizing: border-box;
         width: 60px;
         height: 50px;
-        left: auto;
-        right: auto;
-        top: auto;
-        flex-shrink: 0;
       }
     }
 
     &__thumbnail {
       &--padding {
         display: block;
+        flex-shrink: 0;
         box-sizing: border-box;
         width: 50px;
-        flex-shrink: 0;
         height: 50px;
       }
     }
@@ -286,26 +304,25 @@
     &__tr {
       &--border {
         display: flex;
+
+        background-color: #f8f8f8;
         border: 1px solid #dbdbdb;
         border-bottom: none;
-        background-color: #f8f8f8;
       }
     }
 
     &__cart {
-      margin-top: 0;
-      width: 236px;
       flex-grow: 0;
       flex-shrink: 0;
+      width: 236px;
+      margin-top: 0;
       padding-left: 20px;
     }
 
     &__price {
-      text-align: left;
       padding-left: 0;
+
+      text-align: left;
     }
-
-
-
   }
 }

@@ -7,29 +7,34 @@
   }
 
   &__link {
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
-    position: relative;
     min-height: inherit;
 
 
     &::before {
       content: "";
       position: absolute;
+
       width: 100%;
       height: 100%;
+
       background-color: #000000;
       opacity: 0.5;
+
       transition: all 0.5s;
     }
 
     &:hover {
       &::before {
         opacity: 0.2;
+
         transition: all 0.5s;
       }
     }
@@ -37,21 +42,24 @@
 
 
   &__item {
+    min-height: 270px;
+
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 270px;
 
 
 
     &--first {
-      background-image: url("../img/for-men.jpg");
       min-height: 380px;
+
+      background-image: url("../img/for-men.jpg");
     }
 
     &--second {
-      background-image: url("../img/for-women.jpg");
       min-height: 380px;
       margin-bottom: 20px;
+
+      background-image: url("../img/for-women.jpg");
     }
 
     &--third {
@@ -70,35 +78,38 @@
 
   &__title {
     margin: 0;
+
     font-size: 40px;
     line-height: 40px;
-    font-style: italic;
-    color: #ffffff;
-    text-transform: uppercase;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
   }
 
   &__subtitle {
     margin: 0;
-    font-family: 'Roboto Condensed', "Arial", sans-serif;
+
+    font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     text-align: center;
     color: #ffffff;
+    text-transform: uppercase;
   }
 
   &__date {
     margin: 0;
-    font-family: 'Roboto Condensed', "Arial", sans-serif;
+
+    font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     text-align: center;
     color: #ffffff;
+    text-transform: uppercase;
   }
 
   @media @screen-md {

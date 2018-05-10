@@ -2,13 +2,14 @@
   padding-top: 117px;
 
   &__item {
+    min-height: 600px;
     padding-top: 70px;
     padding-left: 10px;
-    min-height: 600px;
+
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 
     &--first {
       background-image: url("../img/new-1.jpg");
@@ -30,43 +31,50 @@
   &__date {
     display: block;
     margin-bottom: 10px;
-    font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+    font-weight: 700;
     font-size: 40px;
     line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     color: #ffffff;
+    text-transform: uppercase;
   }
 
   &__title {
     margin: 0;
     margin-bottom: 40px;
-    font-size: 40px;
-    font-style: italic;
-    color: #ffffff;
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
     font-weight: 700;
+    font-size: 40px;
     line-height: 36px;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    color: #ffffff;
     text-transform: uppercase;
+    font-style: italic;
   }
 
   &__btn {
     display: inline-block;
-    color: #191919;
-    background-color: #ffffff;
-    padding: 0 40px;
     box-sizing: border-box;
-    transition: all .3s ease-in-out;
-    font-family: 'Roboto Condensed', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    padding: 0 40px;
+
+    font-weight: 700;
     font-size: 14px;
     line-height: 48px;
-    font-weight: 700;
+    font-family: "Roboto Condensed", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    color: #191919;
     text-transform: uppercase;
 
+    background-color: #ffffff;
+
+    transition: all 0.3s ease-in-out;
+
     &:hover {
-      background-color: #000000;
       color: #ffffff;
-      transition: all .3s ease-in-out;
+
+      background-color: #000000;
+
+      transition: all 0.3s ease-in-out;
     }
   }
 
