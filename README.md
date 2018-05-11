@@ -1,4 +1,4 @@
-# Дипломный проект Sport Store 
+# Личный проект Sport Store 
 <a href="http://ishop.mcdir.ru/" target="_blank" rel="noreferrer">http://ishop.mcdir.ru/</a>
 ---
 [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
