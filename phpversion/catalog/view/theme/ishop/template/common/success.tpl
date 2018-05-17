@@ -1,21 +1,7 @@
 <?=$header?>
-  <section class="breadcrumbs">
-    <div class="container">
-      <div class="breadcrumbs__inner">
-        <h1 class="breadcrumbs__title">Выход</h1>
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a href="my-account/" class="breadcrumbs__link">Мой аккаунт</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="/logout" class="breadcrumbs__link breadcrumbs__link--active">Выход</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
-<section class="account">
+
+<section class="account" style="height: 70vh;margin-top: 10%">
   <div id="content" class="container">
     <div class="account__inner account__inner--center">
       <div class="account__column">
@@ -23,9 +9,11 @@
       <p class="account__text">
         <?php echo $text_message; ?>
       </p>
-        <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary account__btn"><?php echo $button_continue; ?></a></div>
+        <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary account__btn" style="margin: 0 auto"><?php echo $button_continue; ?></a></div>
       </div>
     </div>
   </div>
 </section>
+
+<?=$footer?>
 

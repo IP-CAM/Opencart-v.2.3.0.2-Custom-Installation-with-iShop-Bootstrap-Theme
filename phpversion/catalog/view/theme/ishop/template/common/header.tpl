@@ -42,6 +42,16 @@
   <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link rel="preload" href="catalog/view/theme/ishop/stylesheet/style.min.css" as="style" onload="this.rel='stylesheet'">
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+  <script
+          src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+          integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="catalog/view/javascript/common.js"></script>
   <link rel="prefetch" href="catalog/view/javascript/script.min.js" as="script">
   <link rel="prefetch" href="catalog/view/fonts/roboto-v18-latin_cyrillic-regular.woff2" as="font">
   <!-- Yandex.Metrika counter -->

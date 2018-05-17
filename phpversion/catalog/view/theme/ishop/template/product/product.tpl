@@ -19,18 +19,11 @@
   <div class="container">
     <div class="breadcrumbs__inner">
       <h1 class="breadcrumbs__title"><?php echo $heading_title; ?></h1>
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a href="/" class="breadcrumbs__link">Каталог</a>
-        </li>
-
-        <li class="breadcrumbs__item">
-              <a href="/my-account" class="breadcrumbs__link">Футболки</a>
-          </li>
-
-          <li class="breadcrumbs__item">
-              <a href="/my-account" class="breadcrumbs__link breadcrumbs__link--active"><?php echo $heading_title; ?></a>
-          </li>
+         <ul class="breadcrumbs__list">
+           <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+        <?php } ?>
       </ul>
     </div>
   </div>
@@ -222,7 +215,7 @@
             <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control product__input" />
             <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
             <br />
-            <button style="margin-top: 40px;margin-bottom: 40px;" type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block product__btn"><?php echo $button_cart; ?></button>
+            <button style="margin-top: 40px;margin-bottom: 40px;max-width:150px" type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block product__btn"><?php echo $button_cart; ?></button>
           </div>
           <?php if ($minimum > 1) { ?>
           <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
