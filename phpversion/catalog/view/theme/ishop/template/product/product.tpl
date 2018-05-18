@@ -391,7 +391,6 @@
       <?php } ?>
     </p>
     <?php } ?>
-    <?php echo $content_bottom; ?></div>
 </section>
 
 

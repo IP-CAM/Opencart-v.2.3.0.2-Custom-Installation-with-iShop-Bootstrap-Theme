@@ -40,7 +40,7 @@
           <?php foreach ($totals as $total) { ?>
           <tr>
             <td class="text-right page-header__subtotal" style="padding-right: 40px"><strong><?php echo $total['title']; ?></strong></td>
-            <td class="text-right page-header__subtotal"><?php echo $total['text']; ?></td>
+            <td class="text-right page-header__subtotal" style="min-width: 70px"><?php echo $total['text']; ?></td>
           </tr>
           <?php } ?>
         </table>

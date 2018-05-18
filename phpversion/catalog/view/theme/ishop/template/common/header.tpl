@@ -246,151 +246,29 @@ To emphasise this I use inline style="display: none" -->
   </div>
   <nav class="main-nav main-nav--closed dropdown-menu" style="display: none" role="navigation">
     <ul class="main-nav__list">
-      <li class="main-nav__item dropdown">
-        <a href="index.html" class="main-nav__link main-nav__link--active" data-toggle="dropdown">
-          <span class="main-nav__text">Главная</span>
-          <span class="main-nav__toggler">
-              <svg class="main-nav__icon" width="20" height="20">
-                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
-              </svg>
-          </span>
-        </a>
-        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Блог</span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Контакты</span>
-            </a>
-          </li>
-        </ul>
+      <?php foreach ($categories as $category) { ?>
+      <?php if ($category['children']) { ?>
+      <li class="dropdown main-nav__item">
+        <a href="<?php echo $category['href']; ?>" class="dropdown-toggle main-nav__link" data-toggle="dropdown"><?php echo $category['name']; ?></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-inner">
+            <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
+            <ul class="list-unstyled main-nav__sublist main-nav__sublist--closed">
+              <?php foreach ($children as $child) { ?>
+              <li class="main-nav__item">
+                <a class="main-nav__sublink" href="<?php echo $child['href']; ?>">
+                  <span class="main-nav__text main-nav__text--small"><?php echo $child['name']; ?></span>
+                </a>
+              </li>
+              <?php } ?>
+            </ul>
+            <?php } ?>
+          </div>
       </li>
-      <li class="main-nav__item dropdown">
-        <a href="#" class="main-nav__link" data-toggle="dropdown">
-          <span class="main-nav__text">Виды спорта</span>
-          <span class="main-nav__toggler">
-              <svg class="main-nav__icon" width="20" height="20">
-                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
-              </svg>
-            </span>
-        </a>
-        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Бег</span>
-            </a>
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Велоспорт</span>
-            </a>
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Баскетбол</span>
-            </a>
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Футбол</span>
-            </a>
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Сноубординг</span>
-            </a>
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Скейтбординг</span>
-            </a>
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Бокс</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="main-nav__item dropdown">
-        <a href="catalog.html" class="main-nav__link">
-          <span class="main-nav__text">Мужское</span>
-          <span class="main-nav__toggler">
-              <svg class="main-nav__icon" width="20" height="20">
-                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
-              </svg>
-          </span>
-        </a>
-        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Блог</span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Контакты</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="main-nav__item dropdown">
-        <a href="catalog.html" class="main-nav__link">
-          <span class="main-nav__text">Женское</span>
-          <span class="main-nav__toggler">
-              <svg class="main-nav__icon" width="20" height="20">
-                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
-              </svg>
-          </span>
-        </a>
-        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Блог</span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Контакты</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="main-nav__item dropdown">
-        <a href="catalog.html" class="main-nav__link">
-          <span class="main-nav__text">Детям</span>
-          <span class="main-nav__toggler">
-              <svg class="main-nav__icon" width="20" height="20">
-                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
-              </svg>
-        </span>
-        </a>
-        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Блог</span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Контакты</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="main-nav__item dropdown">
-        <a href="#" class="main-nav__link">
-          <span class="main-nav__text">Распродажа</span>
-          <span class="main-nav__toggler">
-              <svg class="main-nav__icon" width="20" height="20">
-                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
-              </svg>
-            </span>
-        </a>
-        <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Блог</span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Контакты</span>
-            </a>
-          </li>
-        </ul>
-      </li>
+      <?php } else { ?>
+      <li class="main-nav__item"><a class="main-nav__link" href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+      <?php } ?>
+      <?php } ?>
     </ul>
   </nav>
 </header>
