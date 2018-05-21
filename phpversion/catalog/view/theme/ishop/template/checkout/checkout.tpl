@@ -20,18 +20,18 @@
 <section class="breadcrumbs">
   <div class="container">
     <div class="breadcrumbs__inner">
-      <h1 class="breadcrumbs__title">Оформление заказа</h1>
+      <h1 class="breadcrumbs__title"><?php echo $heading_title; ?></h1>
       <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a href="/cart" class="breadcrumbs__link">Корзина</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="/checkout" class="breadcrumbs__link breadcrumbs__link--active">Оформление заказа</a>
-        </li>
+        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+        <?php } ?>
       </ul>
     </div>
   </div>
 </section>
+
+
   <?php if ($error_warning) { ?>
   <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?>
     <button type="button" class="close" data-dismiss="alert">&times;</button>

@@ -2,14 +2,12 @@
 <section class="breadcrumbs">
   <div class="container">
     <div class="breadcrumbs__inner">
-      <h1 class="breadcrumbs__title">Восстановление пароля</h1>
+      <h1 class="breadcrumbs__title"><?php echo $heading_title; ?></h1>
       <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a href="/login" class="breadcrumbs__link">Авторизация</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="/forgot-password" class="breadcrumbs__link breadcrumbs__link--active">Восстановление пароля</a>
-        </li>
+        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+        <?php } ?>
       </ul>
     </div>
   </div>

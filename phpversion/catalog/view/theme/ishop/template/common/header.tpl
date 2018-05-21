@@ -50,8 +50,9 @@
           src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
           integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
           crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="catalog/view/javascript/common.js"></script>
+
+
+    <script src="catalog/view/javascript/common.js"></script>
   <link rel="prefetch" href="catalog/view/javascript/script.min.js" as="script">
   <link rel="prefetch" href="catalog/view/fonts/roboto-v18-latin_cyrillic-regular.woff2" as="font">
   <!-- Yandex.Metrika counter -->
@@ -223,17 +224,19 @@ To emphasise this I use inline style="display: none" -->
       </svg>
     </a>
     <div class="page-header__inner">
-      <a href="cart.html" class="page-header__cart">
+      <a href="http://ishop/cart/" class="page-header__cart">
         <svg class="page-header__icon" width="20" height="20">
           <use x="0" y="0" xlink:href="#icon-cart"></use>
         </svg>
-        <span class="page-header__counter"></span>
+        <span class="page-header__counter">
+          <?php echo $count; ?>
+        </span>
       </a>
       <div class="page-header__box">
         <?=$cart?>
       </div>
     </div>
-    <a href="wishlist.html" class="page-header__wishlist">
+    <a href="<?php echo $wishlist; ?>" class="page-header__wishlist">
       <svg class="page-header__icon" width="20" height="20">
         <use x="0" y="0" xlink:href="#icon-heart"></use>
       </svg>
@@ -246,14 +249,41 @@ To emphasise this I use inline style="display: none" -->
   </div>
   <nav class="main-nav main-nav--closed dropdown-menu" style="display: none" role="navigation">
     <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="/" class="main-nav__link">
+          <span class="main-nav__text">Главная</span>
+          <span class="main-nav__toggler">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </span>
+        </a>
+        <ul class="main-nav__sublist main-nav__sublist--closed">
+          <li class="main-nav__item">
+            <a href="/blog.php" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Блог</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__sublink">
+              <span class="main-nav__text main-nav__text--small">Контакты</span>
+            </a>
+          </li>
+        </ul>
+      </li>
       <?php foreach ($categories as $category) { ?>
       <?php if ($category['children']) { ?>
-      <li class="dropdown main-nav__item">
-        <a href="<?php echo $category['href']; ?>" class="dropdown-toggle main-nav__link" data-toggle="dropdown"><?php echo $category['name']; ?></a>
-        <div class="dropdown-menu">
-          <div class="dropdown-inner">
+      <li class="main-nav__item dropdown">
+        <a href="<?php echo $category['href']; ?>" class="main-nav__link" data-toggle="dropdown">
+            <span class="main-nav__text"><?php echo $category['name']; ?></span>
+            <span class="main-nav__toggler">
+              <svg class="main-nav__icon" width="20" height="20">
+                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </span>
+        </a>
             <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
-            <ul class="list-unstyled main-nav__sublist main-nav__sublist--closed">
+            <ul class="main-nav__sublist main-nav__sublist--closed dropdown-menu">
               <?php foreach ($children as $child) { ?>
               <li class="main-nav__item">
                 <a class="main-nav__sublink" href="<?php echo $child['href']; ?>">
@@ -263,7 +293,6 @@ To emphasise this I use inline style="display: none" -->
               <?php } ?>
             </ul>
             <?php } ?>
-          </div>
       </li>
       <?php } else { ?>
       <li class="main-nav__item"><a class="main-nav__link" href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>

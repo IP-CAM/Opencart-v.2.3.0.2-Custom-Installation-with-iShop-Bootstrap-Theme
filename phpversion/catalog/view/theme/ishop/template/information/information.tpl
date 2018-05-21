@@ -1,6 +1,6 @@
 <?=$header?>
-    <div id="content" class="<?php echo $class; ?>">
+    <div id="content" class="container">
       <h1><?php echo $heading_title; ?></h1>
-      <?php echo $description; ?><?php echo $content_bottom; ?>
+      <?php echo $description; ?>
     </div>
 <?=$footer?>

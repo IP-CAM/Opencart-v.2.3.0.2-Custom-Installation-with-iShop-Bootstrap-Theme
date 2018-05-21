@@ -1,15 +1,17 @@
 <?=$header?>
 <section class="breadcrumbs">
     <div class="container">
-      <div class="breadcrumbs__inner">
-        <h1 class="breadcrumbs__title">Мой аккаунт</h1>
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="/login" class="breadcrumbs__link breadcrumbs__link--active">Мой аккаунт</a></li>
-        </ul>
-      </div>
+        <div class="breadcrumbs__inner">
+            <h1 class="breadcrumbs__title"><?php echo $heading_title; ?></h1>
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+                <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+                <?php } ?>
+            </ul>
+        </div>
     </div>
-  </section>
+</section>
 <section class="login">
     <div class="container">
     <?php if ($success) { ?>

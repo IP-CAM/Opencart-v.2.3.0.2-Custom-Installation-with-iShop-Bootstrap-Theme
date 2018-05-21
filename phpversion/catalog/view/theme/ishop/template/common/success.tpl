@@ -1,6 +1,4 @@
 <?=$header?>
-
-
 <section class="account" style="height: 70vh;margin-top: 10%">
   <div id="content" class="container">
     <div class="account__inner account__inner--center">

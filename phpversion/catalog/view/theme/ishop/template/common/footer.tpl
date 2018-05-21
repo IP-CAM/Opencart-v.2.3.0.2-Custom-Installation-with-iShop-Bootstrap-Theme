@@ -56,15 +56,7 @@
   </svg>
 </button>
 <section class="search-popup search-popup--closed">
-  <button class="search-popup__btn">
-    <span></span>
-    <span></span>
-  </button>
-  <form action="#" class="search-popup__form">
-    <input type="search" class="search-popup__input" placeholder="Название товара">
-  </form>
-  <div class="search-popup__result">
-  </div>
+  <?php echo $search; ?>
 </section>
 <script src="catalog/view/javascript/script.min.js" defer></script>
 <script>
@@ -78,6 +70,11 @@
         });
     });
 </script>
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function(){ var widget_id = 'LwBZhjS2Lk';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
 </body>
 
 </html>

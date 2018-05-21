@@ -28,6 +28,7 @@
     </div>
   </div>
 </section>
+
 <section class="product">
   <div id="content" class="container">
     <div class="product__inner">

@@ -13,6 +13,7 @@
     </div>
   </div>
 </section>
+
   <?php if ($attention) { ?>
   <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $attention; ?>
     <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -139,9 +140,9 @@
         </table>
       </div>
     </div>
-    <div class="buttons clearfix" style="display: flex;">
-      <div class="pull-left"><a href="<?php echo $continue; ?>" class="cart__button" style="flex-grow: 0;margin-right: 150px"><?php echo $button_shopping; ?></a></div>
-      <div class="pull-right"><a href="<?php echo $checkout; ?>" class="cart__button" style="flex-grow: 0;"><?php echo $button_checkout; ?></a></div>
+    <div class="buttons clearfix" style="display: flex; flex-wrap: wrap">
+      <div class="pull-left"><a href="<?php echo $continue; ?>" class="cart__button" style="margin-bottom: 10px;margin-right: 20px"><?php echo $button_shopping; ?></a></div>
+      <div class="pull-right"><a href="<?php echo $checkout; ?>" class="cart__button"><?php echo $button_checkout; ?></a></div>
     </div>
 </section>
 

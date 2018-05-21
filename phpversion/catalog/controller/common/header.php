@@ -88,12 +88,16 @@ class ControllerCommonHeader extends Controller {
 		$data['contact'] = $this->url->link('information/contact');
 		$data['telephone'] = $this->config->get('config_telephone');
 
-		// Menu
+
+        $data['count'] = $this->cart->countProducts();
+
+
+        // Menu
 		$this->load->model('catalog/category');
 
 		$this->load->model('catalog/product');
 
-		$data['categories'] = array();
+        $data['categories'] = array();
 
 		$categories = $this->model_catalog_category->getCategories(0);
 
@@ -130,6 +134,7 @@ class ControllerCommonHeader extends Controller {
 		$data['currency'] = $this->load->controller('common/currency');
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
+
 
 		// For page specific css
 		if (isset($this->request->get['route'])) {
