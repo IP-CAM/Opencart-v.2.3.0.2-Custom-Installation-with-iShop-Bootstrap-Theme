@@ -84,12 +84,6 @@ final class Loader {
 				$template->set($key, $value);
 			}
 		
-
-            //d_twig.xml 2
-
-            $output = $this->controller('event/d_twig_manager/support', array('route' => $route, 'data' => $data));
-            if(!$output && file_exists( DIR_TEMPLATE . $route . '.tpl'))
-            
 			$output = $template->render($route . '.tpl');
 		}
 		

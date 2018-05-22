@@ -50,8 +50,6 @@
           src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
           integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
           crossorigin="anonymous"></script>
-
-
     <script src="catalog/view/javascript/common.js"></script>
   <link rel="prefetch" href="catalog/view/javascript/script.min.js" as="script">
   <link rel="prefetch" href="catalog/view/fonts/roboto-v18-latin_cyrillic-regular.woff2" as="font">
@@ -258,18 +256,6 @@ To emphasise this I use inline style="display: none" -->
               </svg>
             </span>
         </a>
-        <ul class="main-nav__sublist main-nav__sublist--closed">
-          <li class="main-nav__item">
-            <a href="/blog.php" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Блог</span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__sublink">
-              <span class="main-nav__text main-nav__text--small">Контакты</span>
-            </a>
-          </li>
-        </ul>
       </li>
       <?php foreach ($categories as $category) { ?>
       <?php if ($category['children']) { ?>

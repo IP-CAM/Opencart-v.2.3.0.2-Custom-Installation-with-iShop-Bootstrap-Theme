@@ -526,13 +526,6 @@ class ControllerExtensionInstaller extends Controller {
 						// Check to see if the modification is already installed or not.
 						$modification_info = $this->model_extension_modification->getModificationByCode($code);
 
-            //d_opencart_patch.xml 1
-            if (strpos($code, 'd_') === 0 && $modification_info) {
-                $this->model_extension_modification->deleteModification($modification_info['modification_id']);
-                $modification_info = false; 
-            }
-            
-
 						if ($modification_info) {
 							$json['error'] = sprintf($this->language->get('error_exists'), $modification_info['name']);
 						}
