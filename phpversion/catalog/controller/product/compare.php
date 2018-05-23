@@ -56,7 +56,10 @@ class ControllerProductCompare extends Controller {
 		$data['button_cart'] = $this->language->get('button_cart');
 		$data['button_remove'] = $this->language->get('button_remove');
 
-		if (isset($this->session->data['success'])) {
+        $data['search'] = $this->load->controller('common/search');
+
+
+        if (isset($this->session->data['success'])) {
 			$data['success'] = $this->session->data['success'];
 
 			unset($this->session->data['success']);

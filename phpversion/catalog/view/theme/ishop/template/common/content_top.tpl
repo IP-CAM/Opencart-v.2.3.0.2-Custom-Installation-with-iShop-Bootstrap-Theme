@@ -9,6 +9,7 @@
     <div class="slider__slide slider__slide--second">
 
     </div>
+    </div>
     <div class="slider__slide slider__slide--third">
 
     </div>
@@ -216,24 +217,6 @@
     </ul>
   </section>
 
-  <section class="subscribe">
-    <div class="container">
-      <div class="subscribe__inner">
-        <div class="subscribe__text">
-          <h3 class="subscribe__title">Подписка на новостную рассылку</h3>
-          <p class="subscribe__desc">Подпишитесь прямо сейчас и получите скидку 25% на один товар на Ваш выбор +
-            бесплатную доставку.</p>
-        </div>
-        <div class="subscribe__inputs">
-          <form action="#" class="subscribe__form">
-            <input type="email" class="subscribe__input" placeholder="Your email">
-            <button class="subscribe__btn" type="submit">Subscribe!</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="quotes">
     <div class="container">
       <ul class="quotes__slider">
@@ -271,9 +254,6 @@
         <div class="more__column">
           <h3 class="more__title">Помощь</h3>
           <ul class="more__list">
-            <li class="more__item">
-              <a href="#" class="more__link">Как сделать заказ</a>
-            </li>
             <li class="more__item">
               <a href="http://ishop/delivery" class="more__link">Условия доставки</a>
             </li>
@@ -324,28 +304,19 @@
           <h3 class="more__title">Виды спорта</h3>
           <ul class="more__list">
             <li class="more__item">
-              <a href="#" class="more__link">Бег</a>
+              <a href="http://ishop/index.php?route=product/category&path=76_70" class="more__link">Баскетбол</a>
             </li>
             <li class="more__item">
-              <a href="#" class="more__link">Велоспорт</a>
+              <a href="http://ishop/index.php?route=product/category&path=76_68" class="more__link">Бег</a>
             </li>
             <li class="more__item">
-              <a href="#" class="more__link">Футбол</a>
+              <a href="http://ishop/index.php?route=product/category&path=76_73" class="more__link">Скейтбординг</a>
             </li>
             <li class="more__item">
-              <a href="#" class="more__link">Баскетбол</a>
+              <a href="http://ishop/index.php?route=product/category&path=76_74" class="more__link">Бокс</a>
             </li>
             <li class="more__item">
-              <a href="#" class="more__link">Сноубординг</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Скейтбординг</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Бокс</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Теннис</a>
+              <a href="http://ishop/index.php?route=product/category&path=76_71" class="more__link">Футбол</a>
             </li>
           </ul>
         </div>
@@ -353,16 +324,16 @@
           <h3 class="more__title">Категории</h3>
           <ul class="more__list">
             <li class="more__item">
-              <a href="#" class="more__link">Мужское</a>
+              <a href="http://ishop/index.php?route=product/category&path=77" class="more__link">Мужское</a>
             </li>
             <li class="more__item">
-              <a href="#" class="more__link">Женское</a>
+              <a href="http://ishop/index.php?route=product/category&path=78" class="more__link">Женское</a>
             </li>
             <li class="more__item">
-              <a href="#" class="more__link">Детское</a>
+              <a href="http://ishop/index.php?route=product/category&path=79" class="more__link">Детское</a>
             </li>
             <li class="more__item">
-              <a href="#" class="more__link">Распродажа</a>
+              <a href="http://ishop/index.php?route=product/category&path=80" class="more__link">Распродажа</a>
             </li>
           </ul>
         </div>

@@ -36,4 +36,12 @@
       <?php } ?>
     </ul>
   </div>
+  <div class="featured__pagination">
+    <ul class="featured__controls">
+      <li class="featured__control"></li>
+      <li class="featured__control"></li>
+      <li class="featured__control"></li>
+      <li class="featured__control"></li>
+    </ul>
+  </div>
 </section>

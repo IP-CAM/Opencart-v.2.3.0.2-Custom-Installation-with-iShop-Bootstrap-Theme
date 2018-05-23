@@ -14,7 +14,7 @@
     </div>
 </section>
 
-<div class="container" style="margin-bottom: 100px">
+<div class="container catalog" style="margin-bottom: 100px">
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
@@ -43,7 +43,7 @@
         <div class="col-sm-3">
           <ul>
             <?php foreach ($categories as $category) { ?>
-            <li><a href="<?php echo $category['href']; ?>" class="catalog__link--active"><?php echo $category['name']; ?></a></li>
+            <li><a href="<?php echo $category['href']; ?>" class="catalog__link catalog__link--active" style="color: #101010;font-size: 16px;"><?php echo $category['name']; ?></a></li>
             <?php } ?>
           </ul>
         </div>
@@ -54,7 +54,7 @@
         <div class="col-sm-3">
           <ul>
             <?php foreach ($categories as $category) { ?>
-            <li><a href="<?php echo $category['href']; ?> " class="catalog__link--active"><?php echo $category['name']; ?></a></li>
+            <li><a href="<?php echo $category['href']; ?> " style="color: #101010" class="catalog__link catalog__link--active"><?php echo $category['name']; ?></a></li>
             <?php } ?>
           </ul>
         </div>
@@ -72,7 +72,7 @@
         </div>
         <div class="col-md-3 col-sm-6" style="padding-top: 5px">
 
-            <a href="<?php echo $compare; ?>" id="compare-total" class="catalog__link--active" ><?php echo $text_compare; ?></a>
+            <a href="<?php echo $compare; ?>" id="compare-total" class="catalog__link catalog__link--active" ><?php echo $text_compare; ?></a>
 
         </div>
         <div class="col-md-4 col-xs-6">
@@ -206,7 +206,7 @@
   </svg>
 </button>
 <section class="search-popup search-popup--closed">
-    <?php echo $search; ?>
+  <?php echo $search; ?>
 </section>
 <script src="catalog/view/javascript/script.min.js" defer></script>
 <script>

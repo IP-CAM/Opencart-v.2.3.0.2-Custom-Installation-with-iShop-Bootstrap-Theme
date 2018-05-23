@@ -1,7 +1,12 @@
-<div id="search" class="input-group">
-  <input type="text" name="search" value="<?php echo $search; ?>" placeholder="Поиск товара" class="form-control input-lg search-popup__input" />
-  <span class="input-group-btn">
-    <button type="button" class="btn btn-default btn-lg search-popup__button" style="margin-top: 50px">Искать</i></button>
+<div id="search">
+  <input type="text" name="search" value="<?php echo $search; ?>" placeholder="Поиск товара" class="search-popup__input" />
+  <span>
+    <button type="button" class="btn search-popup__button" style="  display: block;
+  margin-right: 15px;
+  padding: 0 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 48px;margin-top: 50px;outline-color: #cb4b16">Искать</i></button>
   </span>
   <button class="search-popup__btn">
     <span></span>
