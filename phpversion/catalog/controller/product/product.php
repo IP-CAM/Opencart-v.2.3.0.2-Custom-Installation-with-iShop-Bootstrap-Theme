@@ -236,8 +236,6 @@ class ControllerProductProduct extends Controller {
 				$data['heading_title'] = $product_info['name'];
 			}
 
-            $data['search'] = $this->load->controller('common/search');
-
             $data['text_select'] = $this->language->get('text_select');
 			$data['text_manufacturer'] = $this->language->get('text_manufacturer');
 			$data['text_model'] = $this->language->get('text_model');
@@ -282,6 +280,7 @@ class ControllerProductProduct extends Controller {
 			$data['reward'] = $product_info['reward'];
 			$data['points'] = $product_info['points'];
 			$data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+            $data['search'] = $this->load->controller('common/search');
 
 			if ($product_info['quantity'] <= 0) {
 				$data['stock'] = $product_info['stock_status'];
