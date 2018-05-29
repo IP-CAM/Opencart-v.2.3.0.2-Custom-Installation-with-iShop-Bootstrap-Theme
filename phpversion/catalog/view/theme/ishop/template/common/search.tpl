@@ -6,9 +6,9 @@
   padding: 0 40px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 48px;margin-top: 50px;outline-color: #cb4b16">Искать</i></button>
+  line-height: 48px;margin-top: 50px;outline-color: #cb4b16">Искать</button>
   </span>
-  <button class="search-popup__btn">
+  <button class="search-popup__btn" type="button" title="Закрыть">
     <span></span>
     <span></span>
   </button>

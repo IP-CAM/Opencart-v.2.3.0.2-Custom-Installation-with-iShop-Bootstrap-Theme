@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="google-site-verification" content="sddEkFIw4noHYz2sNmqQF0HJvxYW4HECU39HdEgJqz8" />
   <title><?=$title?></title>
   <base href="<?=$base?>"/>
   <meta name="description" content="<?=$description?>">
@@ -29,16 +30,17 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <link href='//ajax.googleapis.com' rel='dns-prefetch'/>
+  <link href='//stackpath.bootstrapcdn.com' rel='dns-prefetch'/>
+  <link href='//scontent.cdninstagram.com' rel='dns-prefetch'/>
+<link href='//cdn-cis.jivosite.com' rel='dns-prefetch'/>
+ 
+
   <link rel="preload" href="catalog/view/theme/ishop/stylesheet/style.min.css" as="style" onload="this.rel='stylesheet'">
 
-  <script
-          src="https://code.jquery.com/jquery-3.3.1.min.js"
-          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-          crossorigin="anonymous"></script>
-  <script
-          src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-          integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-          crossorigin="anonymous"></script>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="catalog/view/javascript/common.js"></script>
   <link rel="prefetch" href="catalog/view/javascript/script.min.js" as="script">
@@ -73,7 +75,8 @@
 </head>
 <body>
 <script>
-    document.body.onload = function () {
+if (typeof window.orientation == 'undefined') { 
+document.body.onload = function () {
         setTimeout(function () {
             var preloader = document.getElementById('loader');
             if (!preloader.classList.contains('done')) {
@@ -81,6 +84,7 @@
             }
         }, 1000)
     };
+};   
 </script>
 <div class="loader-body" id="loader">
   <div class="loader"></div>
@@ -201,18 +205,18 @@ To emphasise this I use inline style="display: none" -->
     </a>
   </div>
   <div class="page-header__buttons">
-    <button class="page-header__toggler" type="button">
+    <button class="page-header__toggler" type="button" title="Открыть меню">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <a href="#" class="page-header__search">
+    <a href="#" class="page-header__search" title="Искать товар">
       <svg class="page-header__icon" width="20" height="20">
         <use x="0" y="0" xlink:href="#icon-search"></use>
       </svg>
     </a>
     <div class="page-header__inner">
-      <a href="http://ishop/cart/" class="page-header__cart">
+      <a href="http://ishop.mcdir.ru/cart/" class="page-header__cart" title="Открыть корзину">
         <svg class="page-header__icon" width="20" height="20">
           <use x="0" y="0" xlink:href="#icon-cart"></use>
         </svg>
@@ -224,12 +228,12 @@ To emphasise this I use inline style="display: none" -->
         <?=$cart?>
       </div>
     </div>
-    <a href="<?php echo $wishlist; ?>" class="page-header__wishlist">
+    <a href="<?php echo $wishlist; ?>" class="page-header__wishlist" title="Открыть избранное">
       <svg class="page-header__icon" width="20" height="20">
         <use x="0" y="0" xlink:href="#icon-heart"></use>
       </svg>
     </a>
-    <a href="/login" class="page-header__login">
+    <a href="/login" class="page-header__login" title="Личный кабинет">
       <svg class="page-header__icon" width="20" height="20">
         <use x="0" y="0" xlink:href="#icon-user"></use>
       </svg>
@@ -240,11 +244,6 @@ To emphasise this I use inline style="display: none" -->
       <li class="main-nav__item">
         <a href="/" class="main-nav__link">
           <span class="main-nav__text">Главная</span>
-          <span class="main-nav__toggler">
-              <svg class="main-nav__icon" width="20" height="20">
-                <use x="0" y="0" xlink:href="#icon-arrow-right"></use>
-              </svg>
-            </span>
         </a>
       </li>
       <?php foreach ($categories as $category) { ?>

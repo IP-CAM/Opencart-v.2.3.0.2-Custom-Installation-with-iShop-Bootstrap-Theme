@@ -118,7 +118,7 @@
                   <?php if (!$product['special']) { ?>
                   <?php echo $product['price']; ?>
                   <?php } else { ?>
-                  <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                  <span class="price-new" style="display:block;color: #ff4301;"><?php echo $product['special']; ?></span> <span class="price-old" style="text-decoration: line-through;"><?php echo $product['price']; ?></span>
                   <?php } ?>
                 </p>
                 <?php } ?>

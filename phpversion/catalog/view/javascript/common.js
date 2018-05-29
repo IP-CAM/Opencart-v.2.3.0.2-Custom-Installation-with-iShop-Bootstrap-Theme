@@ -717,3 +717,4 @@ $('select[name=\'category_id\']').on('change', function() {
 
 $('select[name=\'category_id\']').trigger('change');
 
+

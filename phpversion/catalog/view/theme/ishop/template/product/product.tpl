@@ -57,9 +57,9 @@
             <h2 class="product__price"><?php echo $price; ?></h2>
           </li>
           <?php } else { ?>
-          <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li>
+          <li><span style="text-decoration: line-through;display:block; margin-top: 20px;"><?php echo $price; ?></span></li>
           <li>
-            <h2 ><?php echo $special; ?></h2>
+            <h2 style="color:#ff4301;"><?php echo $special; ?></h2>
           </li>
           <?php } ?>
           <?php if ($points) { ?>
@@ -70,7 +70,7 @@
             <hr>
           </li>
           <?php foreach ($discounts as $discount) { ?>
-          <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li>
+          <li  class="product__price"><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li>
           <?php } ?>
           <?php } ?>
         </ul>

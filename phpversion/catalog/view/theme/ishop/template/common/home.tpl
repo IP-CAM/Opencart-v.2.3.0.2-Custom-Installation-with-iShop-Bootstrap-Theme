@@ -8,51 +8,51 @@
                 <img src="catalog/view/theme/ishop/image/logo-white.svg" alt="Sports Store" class="page-footer__logotype  " width="206" height="26">
             </a>
         </div>
-        <section class="socials">
-            <ul class="socials__list">
-                <li class="socials__item">
-                    <a href="#" class="socials__link">
-                        <svg class="socials__icon" width="30" height="30">
-                            <use x="0" y="0" xlink:href="#icon-vk"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="#" class="socials__link">
-                        <svg class="socials__icon" width="30" height="30">
-                            <use x="0" y="0" xlink:href="#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="#" class="socials__link">
-                        <svg class="socials__icon" width="30" height="30">
-                            <use x="0" y="0" xlink:href="#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="#" class="socials__link">
-                        <svg class="socials__icon" width="30" height="30">
-                            <use x="0" y="0" xlink:href="#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="#" class="socials__link">
-                        <svg class="socials__icon" width="30" height="30">
-                            <use x="0" y="0" xlink:href="#icon-googleplus"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </section>
+         <section class="socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a href="https://vk.com/" class="socials__link">
+            <svg class="socials__icon" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://twitter.com/" class="socials__link">
+            <svg class="socials__icon" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://www.facebook.com/" class="socials__link">
+            <svg class="socials__icon" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="http://instagram.com/" class="socials__link">
+            <svg class="socials__icon" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://plus.google.com/discover?hl=ru" class="socials__link">
+            <svg class="socials__icon" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-googleplus"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
         <div class="page-footer__copyright">
             <p class="page-footer__text">© 2018 Алексей Истомин</p>
         </div>
     </div>
 </footer>
-<button class="back-to-top" id="back-to-top" type="button">
+<button class="back-to-top" id="back-to-top" type="button" title="Наверх">
     <svg class="back-to-top__icon" width="20" height="20">
         <use x="0" y="0" xlink:href="#icon-arrow-top"></use>
     </svg>
@@ -438,7 +438,7 @@
         userId: '6725512930',   // <-- new
         clientId: '218e4100d4a44d94b8a38e2dbab7e81d',
         accessToken: '6725512930.218e410.24afc32b09b14c2eb3464b1dc3a4664f',
-        template: '<li class="widget__item"><a href="{{link}}" class="widget__link"><img src="{{image}}" class="widget__img" /></a></li>',
+        template: '<li class="widget__item"><a href="{{link}}" class="widget__link"><img data-src="{{image}}" class="widget__img lazyload" /></a></li>',
         sortBy: 'most-recent',
         limit: '10',
         resolution: 'low_resolution'

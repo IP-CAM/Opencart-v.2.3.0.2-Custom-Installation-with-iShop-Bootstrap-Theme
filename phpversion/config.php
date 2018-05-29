@@ -1,28 +1,28 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://ishop/');
+define('HTTP_SERVER', 'http://ishop.mcdir.ru/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://ishop/');
+define('HTTPS_SERVER', 'http://ishop.mcdir.ru/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/OSPanel/domains/ishop/catalog/');
-define('DIR_SYSTEM', 'C:/OSPanel/domains/ishop/system/');
-define('DIR_IMAGE', 'C:/OSPanel/domains/ishop/image/');
-define('DIR_LANGUAGE', 'C:/OSPanel/domains/ishop/catalog/language/');
-define('DIR_TEMPLATE', 'C:/OSPanel/domains/ishop/catalog/view/theme/');
-define('DIR_CONFIG', 'C:/OSPanel/domains/ishop/system/config/');
-define('DIR_CACHE', 'C:/OSPanel/domains/ishop/system/storage/cache/');
-define('DIR_DOWNLOAD', 'C:/OSPanel/domains/ishop/system/storage/download/');
-define('DIR_LOGS', 'C:/OSPanel/domains/ishop/system/storage/logs/');
-define('DIR_MODIFICATION', 'C:/OSPanel/domains/ishop/system/storage/modification/');
-define('DIR_UPLOAD', 'C:/OSPanel/domains/ishop/system/storage/upload/');
+define('DIR_APPLICATION', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/catalog/');
+define('DIR_SYSTEM', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/system/');
+define('DIR_IMAGE', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/image/');
+define('DIR_LANGUAGE', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/catalog/language/');
+define('DIR_TEMPLATE', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/catalog/view/theme/');
+define('DIR_CONFIG', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/system/config/');
+define('DIR_CACHE', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/system/storage/cache/');
+define('DIR_DOWNLOAD', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/system/storage/download/');
+define('DIR_LOGS', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/system/storage/logs/');
+define('DIR_MODIFICATION', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/system/storage/modification/');
+define('DIR_UPLOAD', '/home/httpd/vhosts/ishop.mcdir.ru/httpdocs/system/storage/upload/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', 'ishop');
+define('DB_HOSTNAME', 'a231010.mysql.mchost.ru');
+define('DB_USERNAME', 'a231010_1');
+define('DB_PASSWORD', 'DyOw37OyoJ');
+define('DB_DATABASE', 'a231010_1');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'ishop_');

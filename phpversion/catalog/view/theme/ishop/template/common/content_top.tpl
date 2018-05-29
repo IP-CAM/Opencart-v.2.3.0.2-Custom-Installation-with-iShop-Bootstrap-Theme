@@ -10,10 +10,10 @@
 
     </div>
     </div>
-    <div class="slider__slide slider__slide--third">
+    <div class="slider__slide slider__slide--third lazyload" data-bg="/catalog/view/theme/ishop/image/main-slide-3.jpg">
 
     </div>
-    <div class="slider__slide slider__slide--fourth">
+    <div class="slider__slide slider__slide--fourth lazyload" data-bg="/catalog/view/theme/ishop/image/main-slide-4.jpg">
 
     </div>
   </section>
@@ -22,7 +22,7 @@
     <div class="container">
       <div class="benefits__inner">
         <div class="benefits__item benefits__item--first">
-          <a href="catalog.html" class="benefits__link">
+          <a href="http://ishop/index.php?route=product/category&path=77" class="benefits__link">
             <div class="benefits__text">
               <h2 class="benefits__title">Для мужчин</h2>
               <h3 class="benefits__subtitle">Новая коллекция</h3>
@@ -30,7 +30,7 @@
           </a>
         </div>
         <div class="benefits__item benefits__item--second">
-          <a href="catalog.html" class="benefits__link">
+          <a href="http://ishop/index.php?route=product/category&path=78" class="benefits__link">
             <div class="benefits__text">
               <h2 class="benefits__title">Для женщин</h2>
               <h3 class="benefits__subtitle">Тренды 2018</h3>
@@ -38,16 +38,16 @@
           </a>
         </div>
         <div class="benefits__item benefits__item--third">
-          <a href="catalog.html" class="benefits__link">
+          <a href="http://ishop/index.php?route=product/category&path=80" class="benefits__link">
             <div class="benefits__text">
-              <h3 class="benefits__date">2017</h3>
+              <h3 class="benefits__date">2018</h3>
               <h2 class="benefits__title">Лучшие товары</h2>
               <h3 class="benefits__subtitle">Получите скидку 20%</h3>
             </div>
           </a>
         </div>
         <div class="benefits__item benefits__item--fourth">
-          <a href="#" class="benefits__link">
+          <a href="http://ishop/index.php?route=product/category&path=79" class="benefits__link">
             <div class="benefits__text">
               <h2 class="benefits__title">Для детей</h2>
               <h3 class="benefits__date">Лучшие предложения сезона</h3>
@@ -55,7 +55,7 @@
           </a>
         </div>
         <div class="benefits__item benefits__item--fifth">
-          <a href="catalog.html" class="benefits__link">
+          <a href="http://ishop/index.php?route=product/category&path=80" class="benefits__link">
             <div class="benefits__text">
               <h3 class="benefits__date">Успей купить</h3>
               <h2 class="benefits__title">Летние тренды</h2>
@@ -71,12 +71,12 @@
  <?php echo $module; ?>
  <?php } ?>
 
-  <section class="video">
+  <section class="video lazyload" data-bg="/catalog/view/theme/ishop/image/8.jpg">
     <div class="container">
       <div class="video__inner">
         <h2 class="video__title">Всё что нужно для занятия кроссфитом</h2>
         <h3 class="video__subtitle">Продвинутый уровень спорта</h3>
-        <a class="video__btn mediabox" href="https://www.youtube.com/watch?v=LXPoTx9VEJM&t=12s">
+        <a class="video__btn mediabox" href="https://www.youtube.com/watch?v=LXPoTx9VEJM&t=12s" title="Открыть видео">
           <svg class="video__icon" width="30" height="30">
             <use x="0" y="0" xlink:href="#icon-play"></use>
           </svg>
@@ -124,9 +124,9 @@
     <div class="container">
       <h3 class="news__title">Новости</h3>
       <ul class="news__slider">
-        <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
+      <li class="news__item">
+          <a href="javascript:void(0);" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
               <h3 class="news__heading">Как спорт помогает в жизни?</h3>
@@ -134,8 +134,8 @@
           </a>
         </li>
         <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
+          <a href="javascript:void(0);" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
               <h3 class="news__heading">Как спорт помогает в жизни?</h3>
@@ -143,8 +143,8 @@
           </a>
         </li>
         <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
+          <a href="javascript:void(0);" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
               <h3 class="news__heading">Как спорт помогает в жизни?</h3>
@@ -152,8 +152,8 @@
           </a>
         </li>
         <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
+          <a href="javascript:void(0);" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
               <h3 class="news__heading">Как спорт помогает в жизни?</h3>
@@ -161,8 +161,8 @@
           </a>
         </li>
         <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
+          <a href="javascript:void(0);" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
               <h3 class="news__heading">Как спорт помогает в жизни?</h3>
@@ -170,8 +170,8 @@
           </a>
         </li>
         <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
+          <a href="javascript:void(0);" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
               <h3 class="news__heading">Как спорт помогает в жизни?</h3>
@@ -179,8 +179,8 @@
           </a>
         </li>
         <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
+          <a href="javascript:void(0);" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
               <h3 class="news__heading">Как спорт помогает в жизни?</h3>
@@ -188,8 +188,8 @@
           </a>
         </li>
         <li class="news__item">
-          <a href="#" class="news__link">
-            <img src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="#" class="news__img" width="284" height="206">
+          <a href="javascript:void(0);" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
               <h3 class="news__heading">Как спорт помогает в жизни?</h3>
@@ -284,19 +284,10 @@
               <a href="#" class="more__link">Vans</a>
             </li>
             <li class="more__item">
-              <a href="#" class="more__link">Levi's</a>
+              <a href="#" class="more__link">New Balance</a>
             </li>
             <li class="more__item">
-              <a href="#" class="more__link">The North Face</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Converse</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Demix</a>
-            </li>
-            <li class="more__item">
-              <a href="#" class="more__link">Decathlon</a>
+              <a href="#" class="more__link">Kappa</a>
             </li>
           </ul>
         </div>

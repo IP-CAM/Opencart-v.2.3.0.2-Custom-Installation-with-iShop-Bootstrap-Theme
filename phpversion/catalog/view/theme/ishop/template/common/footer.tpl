@@ -9,35 +9,35 @@
     <section class="socials">
       <ul class="socials__list">
         <li class="socials__item">
-          <a href="#" class="socials__link">
+          <a href="https://vk.com/" class="socials__link">
             <svg class="socials__icon" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link">
+          <a href="https://twitter.com/" class="socials__link">
             <svg class="socials__icon" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link">
+          <a href="https://www.facebook.com/" class="socials__link">
             <svg class="socials__icon" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link">
+          <a href="http://instagram.com/" class="socials__link">
             <svg class="socials__icon" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link">
+          <a href="https://plus.google.com/discover?hl=ru" class="socials__link">
             <svg class="socials__icon" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-googleplus"></use>
             </svg>
@@ -50,7 +50,7 @@
     </div>
   </div>
 </footer>
-<button class="back-to-top" id="back-to-top" type="button">
+<button class="back-to-top" id="back-to-top" type="button" title="Наверх">
   <svg class="back-to-top__icon" width="20" height="20">
     <use x="0" y="0" xlink:href="#icon-arrow-top"></use>
   </svg>
