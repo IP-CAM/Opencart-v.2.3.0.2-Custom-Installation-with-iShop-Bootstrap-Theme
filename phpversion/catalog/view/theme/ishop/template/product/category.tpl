@@ -118,7 +118,7 @@
                   <?php if (!$product['special']) { ?>
                   <?php echo $product['price']; ?>
                   <?php } else { ?>
-                  <span class="price-new" style="display:block;color: #ff4301;"><?php echo $product['special']; ?></span> <span class="price-old" style="text-decoration: line-through;"><?php echo $product['price']; ?></span>
+                  <span class="price-new" style="color: #ff4301;"><?php echo $product['special']; ?></span> <span class="price-old" style="text-decoration: line-through;"><?php echo $product['price']; ?></span>
                   <?php } ?>
                 </p>
                 <?php } ?>
@@ -135,7 +135,7 @@
       </div>
       <div class="row" style="margin-top: 50px;">
         <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
-        <div class="col-sm-6 text-right"><?php echo $results; ?></div>
+        <div class="col-sm-6 text-right" style="margin-top:30px;"><?php echo $results; ?></div>
       </div>
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
@@ -220,7 +220,6 @@
         });
     });
 </script>
-<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript" defer></script>
 <link href="catalog/view/javascript/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" />
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 </body>

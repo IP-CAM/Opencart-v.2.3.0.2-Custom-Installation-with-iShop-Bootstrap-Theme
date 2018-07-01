@@ -22,7 +22,7 @@
     <div class="container">
       <div class="benefits__inner">
         <div class="benefits__item benefits__item--first">
-          <a href="http://ishop/index.php?route=product/category&path=77" class="benefits__link">
+          <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=77" class="benefits__link">
             <div class="benefits__text">
               <h2 class="benefits__title">Для мужчин</h2>
               <h3 class="benefits__subtitle">Новая коллекция</h3>
@@ -30,7 +30,7 @@
           </a>
         </div>
         <div class="benefits__item benefits__item--second">
-          <a href="http://ishop/index.php?route=product/category&path=78" class="benefits__link">
+          <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=78" class="benefits__link">
             <div class="benefits__text">
               <h2 class="benefits__title">Для женщин</h2>
               <h3 class="benefits__subtitle">Тренды 2018</h3>
@@ -38,7 +38,7 @@
           </a>
         </div>
         <div class="benefits__item benefits__item--third">
-          <a href="http://ishop/index.php?route=product/category&path=80" class="benefits__link">
+          <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=80" class="benefits__link">
             <div class="benefits__text">
               <h3 class="benefits__date">2018</h3>
               <h2 class="benefits__title">Лучшие товары</h2>
@@ -47,7 +47,7 @@
           </a>
         </div>
         <div class="benefits__item benefits__item--fourth">
-          <a href="http://ishop/index.php?route=product/category&path=79" class="benefits__link">
+          <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=79" class="benefits__link">
             <div class="benefits__text">
               <h2 class="benefits__title">Для детей</h2>
               <h3 class="benefits__date">Лучшие предложения сезона</h3>
@@ -55,7 +55,7 @@
           </a>
         </div>
         <div class="benefits__item benefits__item--fifth">
-          <a href="http://ishop/index.php?route=product/category&path=80" class="benefits__link">
+          <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=80" class="benefits__link">
             <div class="benefits__text">
               <h3 class="benefits__date">Успей купить</h3>
               <h2 class="benefits__title">Летние тренды</h2>
@@ -125,83 +125,53 @@
       <h3 class="news__title">Новости</h3>
       <ul class="news__slider">
       <li class="news__item">
-          <a href="javascript:void(0);" class="news__link">
-            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
+          <a href="http://ishop.mcdir.ru/men/sneakers-for-men/?filter=16" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/news-new-3.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
+              <h3 class="news__heading">Новые поступления Nike SB</h3>
             </div>
           </a>
         </li>
         <li class="news__item">
-          <a href="javascript:void(0);" class="news__link">
-            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
+         <a href="http://ishop.mcdir.ru/men/sneakers-for-men/?filter=16" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/news-new-1.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
+              <h3 class="news__heading">SPECIAL: SUMMER DROP '18. LOOKBOOK</h3>
             </div>
           </a>
         </li>
         <li class="news__item">
-          <a href="javascript:void(0);" class="news__link">
-            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
+          <a href="http://ishop.mcdir.ru/men/sneakers-for-men/?filter=16" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/news-new-2.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
+              <h3 class="news__heading">СВЕЖИЕ НОВИНКИ ОТ ADIDAS</h3>
             </div>
           </a>
         </li>
         <li class="news__item">
-          <a href="javascript:void(0);" class="news__link">
-            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
+          <a href="http://ishop.mcdir.ru/men/sneakers-for-men/?filter=16" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/news-new-4.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
+              <h3 class="news__heading">СВЕЖИЕ НОВИНКИ ОТ NIKE</h3>
             </div>
           </a>
         </li>
         <li class="news__item">
-          <a href="javascript:void(0);" class="news__link">
-            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
+          <a href="http://ishop.mcdir.ru/men/sneakers-for-men/?filter=16" class="news__link">
+            <img data-src="catalog/view/theme/ishop/image/news-new-5.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
             <div class="news__desc">
               <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-        <li class="news__item">
-          <a href="javascript:void(0);" class="news__link">
-            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-        <li class="news__item">
-          <a href="javascript:void(0);" class="news__link">
-            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
-            </div>
-          </a>
-        </li>
-        <li class="news__item">
-          <a href="javascript:void(0);" class="news__link">
-            <img data-src="catalog/view/theme/ishop/image/6-580x420.jpg" alt="Как спорт помогает в жизни?" class="news__img lazyload" width="284" height="206">
-            <div class="news__desc">
-              <time class="news__date" datetime="2018-06-15">15 Июня, 2018</time>
-              <h3 class="news__heading">Как спорт помогает в жизни?</h3>
+              <h3 class="news__heading">Как собраться на скалы</h3>
             </div>
           </a>
         </li>
       </ul>
       <div class="news__pagination">
         <ul class="news__controls">
-          <li class="news__control"></li>
-          <li class="news__control"></li>
-          <li class="news__control"></li>
           <li class="news__control"></li>
           <li class="news__control"></li>
           <li class="news__control"></li>
@@ -255,19 +225,19 @@
           <h3 class="more__title">Помощь</h3>
           <ul class="more__list">
             <li class="more__item">
-              <a href="http://ishop/delivery" class="more__link">Условия доставки</a>
+              <a href="http://ishop.mcdir.ru/delivery" class="more__link">Условия доставки</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/order-history/" class="more__link">Мои заказы</a>
+              <a href="http://ishop.mcdir.ru/order-history/" class="more__link">Мои заказы</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/returns/" class="more__link">Обмен и возврат</a>
+              <a href="http://ishop.mcdir.ru/returns/" class="more__link">Обмен и возврат</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/index.php?route=information/information&information_id=7" class="more__link">Гид по размерам</a>
+              <a href="http://ishop.mcdir.ru/index.php?route=information/information&information_id=7" class="more__link">Гид по размерам</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/about_us" class="more__link">О компании</a>
+              <a href="http://ishop.mcdir.ru/about_us" class="more__link">О компании</a>
             </li>
           </ul>
         </div>
@@ -295,19 +265,19 @@
           <h3 class="more__title">Виды спорта</h3>
           <ul class="more__list">
             <li class="more__item">
-              <a href="http://ishop/index.php?route=product/category&path=76_70" class="more__link">Баскетбол</a>
+              <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=76_70" class="more__link">Баскетбол</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/index.php?route=product/category&path=76_68" class="more__link">Бег</a>
+              <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=76_68" class="more__link">Бег</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/index.php?route=product/category&path=76_73" class="more__link">Скейтбординг</a>
+              <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=76_73" class="more__link">Скейтбординг</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/index.php?route=product/category&path=76_74" class="more__link">Бокс</a>
+              <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=76_74" class="more__link">Бокс</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/index.php?route=product/category&path=76_71" class="more__link">Футбол</a>
+              <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=76_71" class="more__link">Футбол</a>
             </li>
           </ul>
         </div>
@@ -315,16 +285,16 @@
           <h3 class="more__title">Категории</h3>
           <ul class="more__list">
             <li class="more__item">
-              <a href="http://ishop/index.php?route=product/category&path=77" class="more__link">Мужское</a>
+              <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=77" class="more__link">Мужское</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/index.php?route=product/category&path=78" class="more__link">Женское</a>
+              <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=78" class="more__link">Женское</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/index.php?route=product/category&path=79" class="more__link">Детское</a>
+              <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=79" class="more__link">Детское</a>
             </li>
             <li class="more__item">
-              <a href="http://ishop/index.php?route=product/category&path=80" class="more__link">Распродажа</a>
+              <a href="http://ishop.mcdir.ru/index.php?route=product/category&path=80" class="more__link">Распродажа</a>
             </li>
           </ul>
         </div>

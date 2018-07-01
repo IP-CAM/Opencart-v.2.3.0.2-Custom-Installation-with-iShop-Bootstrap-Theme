@@ -11,35 +11,35 @@
          <section class="socials">
       <ul class="socials__list">
         <li class="socials__item">
-          <a href="https://vk.com/" class="socials__link">
+          <a href="https://vk.com/" class="socials__link" title="Вконтакте">
             <svg class="socials__icon" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="https://twitter.com/" class="socials__link">
+          <a href="https://twitter.com/" class="socials__link" title="Твиттер">
             <svg class="socials__icon" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="https://www.facebook.com/" class="socials__link">
+          <a href="https://www.facebook.com/" class="socials__link" title="Фейсбук">
             <svg class="socials__icon" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="http://instagram.com/" class="socials__link">
+          <a href="http://instagram.com/" class="socials__link" title="Инстаграм">
             <svg class="socials__icon" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="https://plus.google.com/discover?hl=ru" class="socials__link">
+          <a href="https://plus.google.com/discover?hl=ru" class="socials__link" title="Гугл плюс">
             <svg class="socials__icon" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-googleplus"></use>
             </svg>

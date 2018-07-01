@@ -41,8 +41,8 @@
   
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="catalog/view/javascript/common.js"></script>
+<script src="catalog/view/javascript/bootstrap.min.js"></script>
+<script src="catalog/view/javascript/common.js"></script>
   <link rel="prefetch" href="catalog/view/javascript/script.min.js" as="script">
   <link rel="prefetch" href="catalog/view/fonts/roboto-v18-latin_cyrillic-regular.woff2" as="font">
   <!-- Yandex.Metrika counter -->

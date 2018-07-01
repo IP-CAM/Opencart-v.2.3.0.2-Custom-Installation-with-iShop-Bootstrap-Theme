@@ -67,7 +67,7 @@
 			</div>
 			<div class="subscribe__inputs">
 				<form action="" method="post" class="subscribe__form" id="form-newsletter">
-					<input type="email" name="txtemail" id="txtemail" value="" class="subscribe__input" placeholder="Ваш e-mail">
+					<input type="email" name="txtemail" id="txtemail" value="" class="subscribe__input" placeholder="Ваш e-mail" aria-label="Введите e-mail">
 					<button class="subscribe__btn" type="submit" onclick="return regNewsletter();">Подписаться!</button>
 				</form>
 			</div>

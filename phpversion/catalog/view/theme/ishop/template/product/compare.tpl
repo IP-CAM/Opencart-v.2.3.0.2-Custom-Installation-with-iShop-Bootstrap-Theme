@@ -13,7 +13,7 @@
     </div>
   </div>
 </section>
-<div class="container">
+<div class="container" style="min-height: 60vh;">
 
   <?php if ($success) { ?>
   <div class="alert alert-success"><i class="fa fa-check-circle"></i> <?php echo $success; ?>
@@ -47,7 +47,7 @@
           <tr>
             <td><?php echo $text_image; ?></td>
             <?php foreach ($products as $product) { ?>
-            <td class="text-center"><?php if ($product['thumb']) { ?>
+            <td class="text-center" style="width: 30%;"><?php if ($product['thumb']) { ?>
               <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-thumbnail" />
               <?php } ?></td>
             <?php } ?>

@@ -11,7 +11,7 @@
         </div>
         <div class="featured__row">
           <div class="featured__btns">
-            <button onclick="wishlist.add('<?php echo $product['product_id']; ?>')" class="featured__btn">
+            <button onclick="wishlist.add('<?php echo $product['product_id']; ?>')" class="featured__btn" type="button" title="Добавить в избранное">
               <svg class="featured__icon" width="15" height="15">
                 <use x="0" y="0" xlink:href="#icon-heart"></use>
               </svg>

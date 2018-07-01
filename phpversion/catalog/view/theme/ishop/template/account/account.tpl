@@ -101,7 +101,7 @@
             </div>
 
             <div class="account__column">
-                <a href="http://ishop/logout/" class="account__btn">Выйти</a>
+                <a href="http://ishop.mcdir.ru//logout/" class="account__btn">Выйти</a>
             </div>
         </div>
 
