@@ -28,33 +28,17 @@
 
 ---
 
-## _Не удаляйте и не обращайте внимание на файлы:_
-*	### `.editorconfig`
-*	### `.gitignore`
-*	### `.travis.yml`
-*	### `package.json`
-*	### `.csscomb.json`
+## _Do not delete or pay attention to files: _
+* ### `.editorconfig`
+* ### `.gitignore`
+* ### `.travis.yml`
+* ### `package.json`
+* ### `.csscomb.json`
 ---
 
-## В ходе создания магазина я преследовал следующие задачи:
-1. Создать каталог товаров, корзину покупателя, систему скидок, отзывов
-2. Интегрировать систему оплаты
-3. Создать систему регистрации пользователей и личный кабинет для просмотра истории заказов
-4. Осуществить функцию обратной связи с помощью Jivosite
-5. Реализовать систему информирования о выполняемых пользователем действий по email
-6. Подключить yandex метрику
-
-## Для их достижения я использовал следующие технологии:
-1. HTML
-2. CSS
-3. JS
-4. PHP
-5. OpenCart
-
-## Различные тесты
-<img src="mockup/googlespeed.png">
-<img src="mockup/webpagetest.png">
-<img src="mockup/loaddy.png">
-
-## Скриншот сайта:
-<img src="mockup/screen.png">
+## During the creation of the store, I pursued the following tasks:
+1. Create a catalog of goods, a shopping cart, a system of discounts, reviews
+2. Integrate the payment system
+3. Create a user registration system and a personal account for viewing order history
+4. Implement a feedback function using Jivosite
+5. 
