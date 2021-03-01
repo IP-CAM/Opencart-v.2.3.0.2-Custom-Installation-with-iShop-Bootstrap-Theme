@@ -41,4 +41,3 @@
 2. Integrate the payment system
 3. Create a user registration system and a personal account for viewing order history
 4. Implement a feedback function using Jivosite
-5. 
